@@ -1,0 +1,36 @@
+{"content":[
+    {"keyword":"metales",
+        "patterns":["Li","Litio","Be","Berilio","Na","Sodio", "Mg", "Magnesio","K","Potasio","Ca", "Calcio", "Sc", "escandio",
+            "Ti","Titanio","V","Vanadio","Cr","Cromo","Mn", "Manganeso","Fe","Hierro","Co","Cobalto","Ni","Niquel","Zn","Zinc",
+            "Al", "Aluminio","Ga","Galio","Ge","Germanio0","Rb","Rubidio","Sr","Estroncio","Y","Itrio","Zr","Circonio","Nb","Niobio",
+            "Mo","Molibdeno","Tc","Tecnecio","Ru","Rutenio","Rh","Rodio","Pd","Paladio","Ag","Plata","Cd","Cadmio","In","Indio","Sn",
+            "Estaño","Sb","Antimonio","Cs","Cesio","Ba","Bario","Hf","Hafnio","Ta","Tantalio","W","Tungsteno","Re","Renio","Os","Osmio",
+            "Ir","Iridio","Pt","Platino","Au","Oro","Hg","Mercurio","Tl","Talio","Pb","Plomo","Bismuto","Po","Polonio","At","Astato",
+            "Fr","Francio","Ra","Radio","La","Lantano","Ce","Cerio","Pr","Praseodimio","Nd","Neodimio","Sm","Samario","Eu","Europio",
+            "Gd","Gadolinio","Tb","Terbio","Dy","Disprosio","Ho","Holmio","Er","Erbio","Tm","Tulio","Yb","Iterbio",
+            "Lu","Lutecio","Ac","Actinio","Th","Torio","Pa","Protactinio","U","Uranio"],
+        "answers":[] 
+    },
+    {"keyword": "hidruros",
+        "patterns": ["Hidruro de Sodio","NaH","Fosfina","PH3","Hidruro de Bario","BaH2","Hidruro de Calcio","CaH2",
+            "Hidruro de Manganeso","MnH3","Amoniaco","NH3","Arsina","AsH3","Hidruro de Estroncio","SrH2","Acido Bromhidrico",
+            "HBr","Borano","BH3","Metano","CH4","Silano","Acido Fluorhidrico","HF","Acido Clorhidrico","HCl","Hidruro Ferroso",
+            "Acido Yodhidrico","HI","Acido Sulfhidrico","H2S","Acido Selenhidrico","H2Se","Acido Telurhidrico","H2Te","Hidruro de Litio",
+            "LiH"],
+        "answers":[]
+    },
+    {"keyword": "no metales",
+        "patterns": ["Fluor","F","Cloro","Cl","Bromo","Br","Yodo","I","Astato","As","Azufre","S","Nitrogeno",
+            "N","Helio","He","Radon","Rn","Cripton","Kr","Xenon","Xe", "Argon","Fosforo","P","Selenio","Se",
+            "Oxigeno","O","Carbono","C","Boro","B","Neon","Silicio","Si","Telurio","Te","Neon","Ne"],
+        "answers":[]
+    },
+    {"keyword": "oxidos",
+        "patterns": ["Oxido Cuproso","Cu2O","Oxido Cuprico","CuO","Oxido Cobaltoso","Oxido Aurico","Oxido de Titanio","TiO2","Oxido de Zinc",
+            "Oxido Niquelico","Oxido de Plata","Ag2O","Oxido Mercurico","Oxido Cromoso","Oxido de Bario","BaO","Oxido Cromico","Oxido Plumboso","Oxido Permanganico",
+            "Oxido Ferroso","FeO","Oxido Ferrico","Fe2O3","Oxido de Calcio","CaO","Oxido de Litio","Li2O","Oxido Estañoso","SnO","Oxido Estañico","SnO2"],
+        "answers":[]
+    }
+
+]
+}
