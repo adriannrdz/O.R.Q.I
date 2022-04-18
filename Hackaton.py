@@ -1,3 +1,4 @@
+import streamlit as st
 import nltk 
 from nltk.stem.lancaster import LancasterStemmer 
 stemmer = LancasterStemmer()
@@ -9,7 +10,7 @@ import random
 import pickle
 import time
 import pandas as pd
-import streamlit as st
+
 
 datosexc=pd.read_excel('listaelem.xlsx')
 df=pd.DataFrame(datosexc)
