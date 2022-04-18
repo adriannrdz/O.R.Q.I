@@ -10,6 +10,7 @@ import random
 import pickle
 import time
 import pandas as pd
+import streamlit as st
 
 datosexc=pd.read_excel('listaelem.xlsx')
 df=pd.DataFrame(datosexc)
@@ -84,7 +85,7 @@ modelo.save("modelo.tflearn")
 def mainbot():
     while True:         
         #Apartado de instrucciones.
-        print("""   Buen dia, en el presente programa el usuario tendra la posibilidad de formular reacciones quimicas
+        st.text("""   Buen dia, en el presente programa el usuario tendra la posibilidad de formular reacciones quimicas
             1.- Si lo que intenta ingresar es un elemento de la tabla periodica, en los apartados de prefijos coloque la opcion ninguno.
             2.- Si lo que desea agregar es un compuesto, por favor ingrese dicho compuestos de acuerdo a la nomenclatura sistematica.
             Ejemplo. 
