@@ -6,9 +6,10 @@ name = "pypi"
 [packages]
 nltk = "*"
 tflearn = "*"
-numpy = "1.21.6"
+numpy = "*"
 tensorflow = "*"
 pandas = "*"
+openpyxl = "*"
 
 [dev-packages]
 
