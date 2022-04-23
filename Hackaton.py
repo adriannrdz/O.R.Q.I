@@ -17,7 +17,7 @@ datosexc=pd.read_excel('listaelem.xlsx')
 df=pd.DataFrame(datosexc)
 
     
-nltk.download('punkt')
+#nltk.download('punkt')
 
 with open("contenido.json", encoding='utf-8') as archivo: 
     datos =  json.load(archivo)
@@ -96,8 +96,7 @@ def mainbot():
             Prefijo 2= como es mono, colocamos el 1
             Elemento 2= Titanio """)
 
-        salbinaria=st.text_input("Es una sal binaria? S/N")
-               
+                       
         prefijo1=st.text_input("Inserte el numero correspondiente al prefijo de acuerdo a la nomenclatura sistematica")
         elemento= st.text_input("Ingrese el elemento: ")
         cubeta= [0 for _ in range(len(palabras))]
@@ -153,7 +152,9 @@ def mainbot():
 
         for tagaux in datos["contenido"]:
             if tagaux["tag"]== tag3:
-                respuesta3 = tagaux["respuesta"]  
+                respuesta3 = tagaux["respuesta"] 
+                
+         """
 
         prefijo4=st.text_input("Inserte el numero correspondiente al prefijo de acuerdo a la nomenclatura sistematica:")
         elemento4= st.text_input("Ingrese el cuarto elemento:")
@@ -192,8 +193,8 @@ def mainbot():
             for tagaux in datos["contenido"]:
                 if tagaux["tag"]== tag5:
                     respuesta5 = tagaux["respuesta"] 
-        
-
+        """
+        """
         st.text(resultados)        
         st.text("BOT: ",(respuesta))
         st.text(resultados2)
@@ -212,6 +213,7 @@ def mainbot():
         st.text(prefijo4) 
         if salbinaria == 'S':
             st.text(prefijo5) 
+        """
         
         def obtsimbolo(simb):
             simboloq=df[df['nombre']==simb]['simbolo']
@@ -237,18 +239,13 @@ def mainbot():
     
         print(lentrada)
         
-        lhidruros=[['metal'],['ninguno'], ['hidrogeno'],['ninguno']]
-        loxidosm=[['metal'],['ninguno'],['oxigeno'],['ninguno']]
+        lhidruros=[['metal'], ['hidrogeno'],['ninguno']]
+        loxidosm=[['metal'],['oxigeno'],['ninguno']]
         lhidroxidos=[['metal'],['oxigeno'],['agua'],['ninguno']]
-        lsalesbi=[['metal'],['ninguno'],['no metal'],['ninguno']]
-        lhidracidos=[['hidrogeno'],['ninguno'],['no metal'],['ninguno']]
-        lanhidridos=[['oxigeno'],['ninguno'],['no metal'],['ninguno']]
-        """
-        lacidosoxi=[['oxigeno'],['no metal'],['agua'],['ninguno']]
-        lsalesoxi=[['metal'],['hidroxido'],['oxigeno'],['no metal'],['agua']]  
-        """
-
-    
+        lsalesbi=[['metal'],['no metal'],['ninguno']]
+        lhidracidos=[['hidrogeno'],['no metal'],['ninguno']]
+        lanhidridos=[['oxigeno'],['no metal'],['ninguno']]
+            
         
         if lentrada==lhidruros:
             st.text("La reaccion quimica es:")
@@ -282,19 +279,6 @@ def mainbot():
             st.text("La reaccion quimica es:")
             time.sleep(1.5)
             st.text(f"O{prefijo3}{obtsimbolo(elemento3)}2")  #Esta ya esta bien
-
-        #Checar si agregamos estas (opcionales)
-        """        
-        elif lentrada==lacidosoxi:
-            print("La reaccion quimica es:")
-            time.sleep(1.5)
-            print(f"H{}")          
-
-        elif lentrada==lsalesoxi:
-            print("La reaccion quimica es:")
-            time.sleep(1.5)
-            print(f"{obtsimbolo(elemento)}{prefijo3}{obtsimbolo(elemento3)}{prefijo1}") 
-        """    
 
 mainbot()  
 
