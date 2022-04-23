@@ -79,7 +79,7 @@ red= tflearn.fully_connected(red, len(salida[0]), activation="softmax")
 red = tflearn.regression(red)
 
 modelo = tflearn.DNN(red)
-modelo.fit(entrenamiento, salida, n_epoch=1000, batch_size=10, show_metric=True)
+modelo.fit(entrenamiento, salida, n_epoch=500, batch_size=10, show_metric=True)
 modelo.save("modelo.tflearn")
 
 #Funcion principal del bot
