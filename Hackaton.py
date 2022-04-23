@@ -73,13 +73,13 @@ except:
 tensorflow.compat.v1.reset_default_graph()
 
 red = tflearn.input_data(shape=[None, len(entrenamiento[0])])
-red = tflearn.fully_connected(red, 100)
-red= tflearn.fully_connected(red, 100)
+red = tflearn.fully_connected(red, 10)
+red= tflearn.fully_connected(red, 10)
 red= tflearn.fully_connected(red, len(salida[0]), activation="softmax")
 red = tflearn.regression(red)
 
 modelo = tflearn.DNN(red)
-modelo.fit(entrenamiento, salida, n_epoch=2000, batch_size=50, show_metric=True)
+modelo.fit(entrenamiento, salida, n_epoch=1000, batch_size=10, show_metric=True)
 modelo.save("modelo.tflearn")
 
 #Funcion principal del bot
