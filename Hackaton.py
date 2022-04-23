@@ -17,7 +17,7 @@ datosexc=pd.read_excel('listaelem.xlsx')
 df=pd.DataFrame(datosexc)
 
     
-#nltk.download('punkt')
+nltk.download('punkt')
 
 with open("contenido.json", encoding='utf-8') as archivo: 
     datos =  json.load(archivo)
