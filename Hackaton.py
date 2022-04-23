@@ -153,76 +153,11 @@ def mainbot():
         for tagaux in datos["contenido"]:
             if tagaux["tag"]== tag3:
                 respuesta3 = tagaux["respuesta"] 
-                
-        """
-
-        prefijo4=st.text_input("Inserte el numero correspondiente al prefijo de acuerdo a la nomenclatura sistematica:")
-        elemento4= st.text_input("Ingrese el cuarto elemento:")
-        cubeta4= [0 for _ in range(len(palabras))]
-        entradaprocesada4= nltk.word_tokenize(elemento4)
-        entradaprocesada4 =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada4]
-        for palabraindividual4 in entradaprocesada4:
-            for i, palabra in enumerate(palabras):
-                if palabra == palabraindividual4:
-                    cubeta4[i] = 1
-        resultados4 = modelo.predict([numpy.array(cubeta4)])
-        resultadosindices4= numpy.argmax(resultados4)
-        tag4=tags[resultadosindices4]
-
-        for tagaux in datos["contenido"]:
-            if tagaux["tag"]== tag4:
-                respuesta4 = tagaux["respuesta"] 
-
-
-        #Apartado para la sales binarias
-        if salbinaria == 'S':
-
-            prefijo5=st.text_input("Inserte el numero correspondiente al prefijo de acuerdo a la nomenclatura sistematica:")
-            elemento5= st.text_input("Ingrese el quinto elemento:")
-            cubeta5= [0 for _ in range(len(palabras))]
-            entradaprocesada5= nltk.word_tokenize(elemento5)
-            entradaprocesada5 =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada5]
-            for palabraindividual5 in entradaprocesada5:
-                for i, palabra in enumerate(palabras):
-                    if palabra == palabraindividual5:
-                        cubeta5[i] = 1
-            resultados5 = modelo.predict([numpy.array(cubeta5)])
-            resultadosindices5= numpy.argmax(resultados5)
-            tag5=tags[resultadosindices5]
-
-            for tagaux in datos["contenido"]:
-                if tagaux["tag"]== tag5:
-                    respuesta5 = tagaux["respuesta"] 
-        """
-        """
-        st.text(resultados)        
-        st.text("BOT: ",(respuesta))
-        st.text(resultados2)
-        st.text("BOT: ",(respuesta2))
-        st.text(resultados3)
-        st.text("BOT: ",(respuesta3))
-        st.text(resultados4)
-        st.text("BOT: ",(respuesta4))
-        if salbinaria=='S':
-            st.text(resultados5)
-            st.text(respuesta5)
-        
-        st.text(prefijo1)
-        st.text(prefijo2)   
-        st.text(prefijo3)   
-        st.text(prefijo4) 
-        if salbinaria == 'S':
-            st.text(prefijo5) 
-        """
         
         def obtsimbolo(simb):
             simboloq=df[df['nombre']==simb]['simbolo']
             return simboloq
          
-
-        #Reglas de nomenclatura sistematica
-        
-        #Lista para comparar con las listas preestablecidas
         lentrada=[]
         for i in respuesta:
             lentrada.append(respuesta)
@@ -232,12 +167,6 @@ def mainbot():
         
         for i in respuesta3:
             lentrada.append(respuesta3)
-        
-        #for i in respuesta4:
-        #    lentrada.append(respuesta4)
-
-    
-        print(lentrada)
         
         lhidruros=[['metal'], ['hidrogeno'],['ninguno']]
         loxidosm=[['metal'],['oxigeno'],['ninguno']]
