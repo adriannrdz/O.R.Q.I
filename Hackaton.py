@@ -96,10 +96,10 @@ def mainbot():
             Prefijo 2= como es mono, colocamos el 1
             Elemento 2= Titanio """)
 
-        salbinaria=input("Es una sal binaria? S/N")
+        salbinaria=st.text_input("Es una sal binaria? S/N")
                
-        prefijo1=input("Inserte el numero correspondiente al prefijo de acuerdo a la nomenclatura sistematica")
-        elemento= input("Ingrese el elemento: ")
+        prefijo1=st.text_input("Inserte el numero correspondiente al prefijo de acuerdo a la nomenclatura sistematica")
+        elemento= st.text_input("Ingrese el elemento: ")
         cubeta= [0 for _ in range(len(palabras))]
         entradaprocesada= nltk.word_tokenize(elemento)
         entradaprocesada =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada]
@@ -115,8 +115,8 @@ def mainbot():
             if tagaux["tag"]== tag:
                 respuesta = tagaux["respuesta"]
         
-        prefijo2=input("Inserte el numero correspondiente al prefijo de acuerdo a la nomenclatura sistematica:")
-        elemento2= input("Ingrese el segundo elemento:")
+        prefijo2=st.text_input("Inserte el numero correspondiente al prefijo de acuerdo a la nomenclatura sistematica:")
+        elemento2= st.text_input("Ingrese el segundo elemento:")
         cubeta2= [0 for _ in range(len(palabras))]
         entradaprocesada2= nltk.word_tokenize(elemento2)
         entradaprocesada2 =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada2]
@@ -134,12 +134,12 @@ def mainbot():
 
         time.sleep(1.5)
 
-        print("Ahora seleccion los reactivos restantes")  
+        st.text("Ahora seleccion los reactivos restantes")  
 
         time.sleep(1.5)
 
-        prefijo3=input("Inserte el numero correspondiente al prefijo de acuerdo a la nomenclatura sistematica:  ")
-        elemento3= input("Ingrese el tercer elemento:")
+        prefijo3=st.text_input("Inserte el numero correspondiente al prefijo de acuerdo a la nomenclatura sistematica:  ")
+        elemento3= st.text_input("Ingrese el tercer elemento:")
         cubeta3= [0 for _ in range(len(palabras))]
         entradaprocesada3= nltk.word_tokenize(elemento3)
         entradaprocesada3 =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada3]
@@ -155,8 +155,8 @@ def mainbot():
             if tagaux["tag"]== tag3:
                 respuesta3 = tagaux["respuesta"]  
 
-        prefijo4=input("Inserte el numero correspondiente al prefijo de acuerdo a la nomenclatura sistematica:")
-        elemento4= input("Ingrese el cuarto elemento:")
+        prefijo4=st.text_input("Inserte el numero correspondiente al prefijo de acuerdo a la nomenclatura sistematica:")
+        elemento4= st.text_input("Ingrese el cuarto elemento:")
         cubeta4= [0 for _ in range(len(palabras))]
         entradaprocesada4= nltk.word_tokenize(elemento4)
         entradaprocesada4 =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada4]
@@ -176,8 +176,8 @@ def mainbot():
         #Apartado para la sales binarias
         if salbinaria == 'S':
 
-            prefijo5=input("Inserte el numero correspondiente al prefijo de acuerdo a la nomenclatura sistematica:")
-            elemento5= input("Ingrese el quinto elemento:")
+            prefijo5=st.text_input("Inserte el numero correspondiente al prefijo de acuerdo a la nomenclatura sistematica:")
+            elemento5= st.text_input("Ingrese el quinto elemento:")
             cubeta5= [0 for _ in range(len(palabras))]
             entradaprocesada5= nltk.word_tokenize(elemento5)
             entradaprocesada5 =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada5]
@@ -194,24 +194,24 @@ def mainbot():
                     respuesta5 = tagaux["respuesta"] 
         
 
-        print(resultados)        
-        print("BOT: ",(respuesta))
-        print (resultados2)
-        print("BOT: ",(respuesta2))
-        print(resultados3)
-        print("BOT: ",(respuesta3))
-        print (resultados4)
-        print("BOT: ",(respuesta4))
+        st.text(resultados)        
+        st.text("BOT: ",(respuesta))
+        st.text(resultados2)
+        st.text("BOT: ",(respuesta2))
+        st.text(resultados3)
+        st.text("BOT: ",(respuesta3))
+        st.text(resultados4)
+        st.text("BOT: ",(respuesta4))
         if salbinaria=='S':
-            print(resultados5)
-            print(respuesta5)
+            st.text(resultados5)
+            st.text(respuesta5)
         
-        print(prefijo1)
-        print(prefijo2)   
-        print(prefijo3)   
-        print(prefijo4) 
+        st.text(prefijo1)
+        st.text(prefijo2)   
+        st.text(prefijo3)   
+        st.text(prefijo4) 
         if salbinaria == 'S':
-            print(prefijo5) 
+            st.text(prefijo5) 
         
         def obtsimbolo(simb):
             simboloq=df[df['nombre']==simb]['simbolo']
@@ -251,37 +251,37 @@ def mainbot():
     
         
         if lentrada==lhidruros:
-            print("La reaccion quimica es:")
+            st.text("La reaccion quimica es:")
             time.sleep(1.5)
-            print(f"{obtsimbolo(elemento)}{prefijo3}{obtsimbolo(elemento3)}{prefijo1}")#Esta ya esta bien            
+            st.text(f"{obtsimbolo(elemento)}{prefijo3}{obtsimbolo(elemento3)}{prefijo1}")#Esta ya esta bien            
         
         elif lentrada==loxidosm:
-            print("La reaccion quimica es:")
+            st.text("La reaccion quimica es:")
             time.sleep(1.5)
-            print(f"{obtsimbolo(elemento)}{prefijo3}{obtsimbolo(elemento3)}{prefijo1}")#Esta ya esta bien 
+            st.text(f"{obtsimbolo(elemento)}{prefijo3}{obtsimbolo(elemento3)}{prefijo1}")#Esta ya esta bien 
 
         elif lentrada==lhidroxidos:
-            print("La reaccion quimica es:")
+            st.text("La reaccion quimica es:")
             time.sleep(1.5)
-            print(f"{obtsimbolo(elemento)}1OH{prefijo1}") #Esta ya esta bien
+            st.text(f"{obtsimbolo(elemento)}1OH{prefijo1}") #Esta ya esta bien
             
 
         elif lentrada==lsalesbi:
-            print("La reaccion quimica es:")
+            st.text("La reaccion quimica es:")
             time.sleep(1.5)
-            print(f"{obtsimbolo(elemento)}{prefijo3}{obtsimbolo(elemento3)}{prefijo1}") #Esta ya esta bien
+            st.text(f"{obtsimbolo(elemento)}{prefijo3}{obtsimbolo(elemento3)}{prefijo1}") #Esta ya esta bien
              
 
         elif lentrada==lhidracidos:
-            print("La reaccion quimica es:")
+            st.text("La reaccion quimica es:")
             time.sleep(1.5)
-            print(f"H{prefijo3}{obtsimbolo(elemento3)}1") #Esta ya esta bien
+            st.text(f"H{prefijo3}{obtsimbolo(elemento3)}1") #Esta ya esta bien
             
 
         elif lentrada==lanhidridos:
-            print("La reaccion quimica es:")
+            st.text("La reaccion quimica es:")
             time.sleep(1.5)
-            print(f"O{prefijo3}{obtsimbolo(elemento3)}2")  #Esta ya esta bien
+            st.text(f"O{prefijo3}{obtsimbolo(elemento3)}2")  #Esta ya esta bien
 
         #Checar si agregamos estas (opcionales)
         """        
