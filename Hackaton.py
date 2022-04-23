@@ -233,8 +233,8 @@ def mainbot():
         for i in respuesta3:
             lentrada.append(respuesta3)
         
-        for i in respuesta4:
-            lentrada.append(respuesta4)
+        #for i in respuesta4:
+        #    lentrada.append(respuesta4)
 
     
         print(lentrada)
