@@ -95,10 +95,14 @@ def mainbot():
             Elemento 1= oxigeno
             Prefijo 2= como es mono, colocamos el 1
             Elemento 2= Titanio """)
+        
+        count = 0
 
                        
-        prefijo1=st.text_input("Inserte el numero correspondiente al prefijo de acuerdo a la nomenclatura sistematica")
+        prefijo1=st.text_input(("Inserte el numero correspondiente al prefijo de acuerdo a la nomenclatura sistematica"), key = count)
+        count += 1
         elemento= st.text_input("Ingrese el elemento: ")
+        count += 1
         cubeta= [0 for _ in range(len(palabras))]
         entradaprocesada= nltk.word_tokenize(elemento)
         entradaprocesada =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada]
@@ -114,8 +118,10 @@ def mainbot():
             if tagaux["tag"]== tag:
                 respuesta = tagaux["respuesta"]
         
-        prefijo2=st.text_input("Inserte el numero correspondiente al prefijo de acuerdo a la nomenclatura sistematica:")
-        elemento2= st.text_input("Ingrese el segundo elemento:")
+        prefijo2=st.text_input(("Inserte el numero correspondiente al prefijo de acuerdo a la nomenclatura sistematica:"), key = count)
+        count += 1
+        elemento2= st.text_input(("Ingrese el segundo elemento:"), key = count)
+        count += 1
         cubeta2= [0 for _ in range(len(palabras))]
         entradaprocesada2= nltk.word_tokenize(elemento2)
         entradaprocesada2 =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada2]
@@ -137,8 +143,10 @@ def mainbot():
 
         time.sleep(1.5)
 
-        prefijo3=st.text_input("Inserte el numero correspondiente al prefijo de acuerdo a la nomenclatura sistematica:  ")
-        elemento3= st.text_input("Ingrese el tercer elemento:")
+        prefijo3=st.text_input(("Inserte el numero correspondiente al prefijo de acuerdo a la nomenclatura sistematica:  "), key = count)
+        count += 1
+        elemento3= st.text_input(("Ingrese el tercer elemento:"), key = count)
+        count += 1
         cubeta3= [0 for _ in range(len(palabras))]
         entradaprocesada3= nltk.word_tokenize(elemento3)
         entradaprocesada3 =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada3]
