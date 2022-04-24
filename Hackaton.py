@@ -190,7 +190,7 @@ def mainbot():
         elif lentrada==loxidosm:
             st.text("La reaccion quimica es:")
             time.sleep(1.5)
-            st.text(f"{obtsimbolo(elemento)}{prefijo3}{obtsimbolo(elemento2)}{prefijo1}")#Esta ya esta bien 
+            st.text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")#Esta ya esta bien 
 
         elif lentrada==lhidroxidos:
             st.text("La reaccion quimica es:")
