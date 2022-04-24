@@ -99,7 +99,7 @@ def mainbot():
         
         col1, col2 = st.columns(2)
                
-        prefijo1=st.text_input("Valencia 3"(col1))
+        prefijo1=st.text_input("Valencia 3")
         elemento= st.text_input("Ingrese el elemento: ")
         cubeta= [0 for _ in range(len(palabras))]
         entradaprocesada= nltk.word_tokenize(elemento)
