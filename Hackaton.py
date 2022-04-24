@@ -96,7 +96,10 @@ st.text("""   Buen dia, en el presente programa el usuario tendra la posibilidad
 #Funcion principal del bot
 def mainbot():
     while True:          
-                               
+        
+        col1, col2 = st.beta_columns(2)
+        
+        col1.success(        
         prefijo1=st.text_input("Valencia 3")
         elemento= st.text_input("Ingrese el elemento: ")
         cubeta= [0 for _ in range(len(palabras))]
@@ -155,7 +158,7 @@ def mainbot():
             dfSearchedElement = df['simbolo'].where(df['nombre']==simb)
             dfSearchedElement.dropna(inplace=True)
             return dfSearchedElement.squeeze()
-            
+        )  
            # return simboloq
          
         lentrada=[]
