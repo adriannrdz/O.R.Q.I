@@ -98,9 +98,8 @@ def mainbot():
     while True:          
         
         col1, col2 = st.beta_columns(2)
-        
-        col1.success(        
-        prefijo1=st.text_input("Valencia 3")
+               
+        prefijo1=st.text_input("Valencia 3", col1)
         elemento= st.text_input("Ingrese el elemento: ")
         cubeta= [0 for _ in range(len(palabras))]
         entradaprocesada= nltk.word_tokenize(elemento)
@@ -158,7 +157,7 @@ def mainbot():
             dfSearchedElement = df['simbolo'].where(df['nombre']==simb)
             dfSearchedElement.dropna(inplace=True)
             return dfSearchedElement.squeeze()
-        )  
+          
            # return simboloq
          
         lentrada=[]
