@@ -171,6 +171,8 @@ def mainbot():
         
         for i in respuesta3:
             lentrada.append(respuesta3)
+            
+        st.text(lentrada)
         
         lhidruros=[['metal'], ['hidrogeno'],['ninguno']]
         loxidosm=[['metal'],['oxigeno'],['ninguno']]
