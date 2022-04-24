@@ -97,7 +97,7 @@ st.text("""   Buen dia, en el presente programa el usuario tendra la posibilidad
 def mainbot():
     while True:          
         
-        col1, col2 = st.beta_columns(2)
+        col1, col2 = st.columns(2)
                
         prefijo1=col1.success(st.text_input("Valencia 3"))
         elemento= st.text_input("Ingrese el elemento: ")
