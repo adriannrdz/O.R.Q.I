@@ -82,10 +82,7 @@ modelo = tflearn.DNN(red)
 modelo.fit(entrenamiento, salida, n_epoch=1000, batch_size=50, show_metric=True)
 modelo.save("modelo.tflearn")
 
-#Funcion principal del bot
-def mainbot():
-    while True:         
-        #Apartado de instrucciones.
+#Apartado de instrucciones.
         st.text("""   Buen dia, en el presente programa el usuario tendra la posibilidad de formular reacciones quimicas
             1.- Si lo que intenta ingresar es un elemento de la tabla periodica, en los apartados de prefijos coloque la opcion ninguno.
             2.- Si lo que desea agregar es un compuesto, por favor ingrese dicho compuestos de acuerdo a la nomenclatura sistematica.
@@ -95,7 +92,10 @@ def mainbot():
             Elemento 1= oxigeno
             Prefijo 2= como es mono, colocamos el 1
             Elemento 2= Titanio """)
-        
+
+#Funcion principal del bot
+def mainbot():
+    while True:          
                                
         prefijo1=st.text_input("Valencia 3")
         elemento= st.text_input("Ingrese el elemento: ")
