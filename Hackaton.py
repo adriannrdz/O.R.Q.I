@@ -155,8 +155,12 @@ def mainbot():
                 respuesta3 = tagaux["respuesta"] 
         
         def obtsimbolo(simb):
-            simboloq=df[df['nombre']==simb]['simbolo']
-            return simboloq
+           # simboloq=df[df['nombre']==simb]['simbolo']
+            dfSearchedElement = df['simbolo'].where(df['nombre']==simb)
+            dfSearchedElement.dropna(inplace=True)
+            return dfSearchedElement.squeeze()
+            
+           # return simboloq
          
         lentrada=[]
         for i in respuesta:
@@ -179,12 +183,12 @@ def mainbot():
         if lentrada==lhidruros:
             st.text("La reaccion quimica es:")
             time.sleep(1.5)
-            st.text(f"{obtsimbolo(elemento)}{prefijo3}{obtsimbolo(elemento3)}{prefijo1}")#Esta ya esta bien            
+            st.text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")#Esta ya esta bien            
         
         elif lentrada==loxidosm:
             st.text("La reaccion quimica es:")
             time.sleep(1.5)
-            st.text(f"{obtsimbolo(elemento)}{prefijo3}{obtsimbolo(elemento3)}{prefijo1}")#Esta ya esta bien 
+            st.text(f"{obtsimbolo(elemento)}{prefijo3}{obtsimbolo(elemento2)}{prefijo1}")#Esta ya esta bien 
 
         elif lentrada==lhidroxidos:
             st.text("La reaccion quimica es:")
@@ -195,19 +199,19 @@ def mainbot():
         elif lentrada==lsalesbi:
             st.text("La reaccion quimica es:")
             time.sleep(1.5)
-            st.text(f"{obtsimbolo(elemento)}{prefijo3}{obtsimbolo(elemento3)}{prefijo1}") #Esta ya esta bien
+            st.text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}") #Esta ya esta bien
              
 
         elif lentrada==lhidracidos:
             st.text("La reaccion quimica es:")
             time.sleep(1.5)
-            st.text(f"H{prefijo3}{obtsimbolo(elemento3)}1") #Esta ya esta bien
+            st.text(f"H{prefijo3}{obtsimbolo(elemento2)}1") #Esta ya esta bien
             
 
         elif lentrada==lanhidridos:
             st.text("La reaccion quimica es:")
             time.sleep(1.5)
-            st.text(f"O{prefijo3}{obtsimbolo(elemento3)}2")  #Esta ya esta bien
+            st.text(f"O{prefijo2}{obtsimbolo(elemento2)}2")  #Esta ya esta bien
 
 mainbot()  
 
