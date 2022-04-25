@@ -96,7 +96,12 @@ st.text("""   Buen dia, en el presente programa el usuario tendra la posibilidad
 #Funcion principal del bot
 def mainbot():
     while True:  
-        
+        quest1=1
+        quest2 = 2
+        quest3 = 3
+        quest4= 4
+        quest5 = 5
+        quest6 = 6
                        
         prefijo1=st.text_input("Valencia 3", key =quest1)
         elemento= st.text_input("Ingrese el elemento: ", key=quest2)
