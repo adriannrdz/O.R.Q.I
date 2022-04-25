@@ -121,7 +121,6 @@ def mainbot():
                 respuesta = tagaux["respuesta"]
         
         prefijo2=st.text_input("Valencia 2:", key=quest3)
-        count += 1
         elemento2= st.text_input("Ingrese el segundo elemento:", key=quest4)
         cubeta2= [0 for _ in range(len(palabras))]
         entradaprocesada2= nltk.word_tokenize(elemento2)
@@ -141,9 +140,7 @@ def mainbot():
         st.text("Ahora seleccion los reactivos restantes")
 
         prefijo3=st.text_input("Valencia 3:  ", key=quest5)
-        count += 1
         elemento3= st.text_input("Ingrese el tercer elemento:", key=quest6)
-        count += 1
         cubeta3= [0 for _ in range(len(palabras))]
         entradaprocesada3= nltk.word_tokenize(elemento3)
         entradaprocesada3 =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada3]
