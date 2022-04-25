@@ -96,11 +96,9 @@ st.text("""   Buen dia, en el presente programa el usuario tendra la posibilidad
 #Funcion principal del bot
 def mainbot():
     while True:          
-        
-        col1, col2 = st.columns(2)
-               
-        prefijo1=st.text_input("Valencia 3")
-        elemento= st.text_input("Ingrese el elemento: ")
+                       
+        prefijo1[1]=st.text_input("Valencia 3", key = count)
+        elemento[2]= st.text_input("Ingrese el elemento: ", key= count)
         cubeta= [0 for _ in range(len(palabras))]
         entradaprocesada= nltk.word_tokenize(elemento)
         entradaprocesada =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada]
