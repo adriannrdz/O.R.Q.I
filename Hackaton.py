@@ -97,7 +97,7 @@ st.text("""   Buen dia, en el presente programa el usuario tendra la posibilidad
 def mainbot():
     while True:  
                        
-        prefijo1=st.selectbox("Valencia 3", (1,2,,3,4,5,6,7))
+        prefijo1=st.selectbox("Valencia 3", (1,2,3,4,5,6,7))
         elemento= st.selectbox("Ingrese el elemento: ", ("aluminio", "bario", "berilio", "bismuto", "cadmio","calcio", "cerio", "cromo", "cobalto", "cobre", "oro",
                 "iridio", "hierro", "plomo", "litio", "magnesio", "manganeso", "mercurio", "molibdeno", "níquel", "osmio", "paladio",
                 "platino", "potasio", "radio", "rodio", "plata", "sodio", "tantalio", "talio", "torio", "estaño", "titanio", "volframio",
