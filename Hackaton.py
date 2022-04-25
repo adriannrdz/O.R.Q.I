@@ -97,8 +97,8 @@ st.text("""   Buen dia, en el presente programa el usuario tendra la posibilidad
 def mainbot():
     while True:  
                        
-        prefijo1=st.text_input("Valencia 3", key = "asdf")
-        elemento= st.text_input("Ingrese el elemento: ", key="sadf")
+        prefijo1=st.text_input("Valencia 3", key = "1.asdf")
+        elemento= st.text_input("Ingrese el elemento: ", key="2.sadf")
         cubeta= [0 for _ in range(len(palabras))]
         entradaprocesada= nltk.word_tokenize(elemento)
         entradaprocesada =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada]
@@ -114,8 +114,8 @@ def mainbot():
             if tagaux["tag"]== tag:
                 respuesta = tagaux["respuesta"]
         
-        prefijo2=st.text_input("Valencia 2:", key="dasf")
-        elemento2= st.text_input("Ingrese el segundo elemento:", key="fasd")
+        prefijo2=st.text_input("Valencia 2:", key="3.dasf")
+        elemento2= st.text_input("Ingrese el segundo elemento:", key="4.fasd")
         cubeta2= [0 for _ in range(len(palabras))]
         entradaprocesada2= nltk.word_tokenize(elemento2)
         entradaprocesada2 =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada2]
@@ -133,8 +133,8 @@ def mainbot():
 
         st.text("Ahora seleccion los reactivos restantes")
 
-        prefijo3=st.text_input("Valencia 3:  ", key="dsaf")
-        elemento3= st.text_input("Ingrese el tercer elemento:", key="fdsa")
+        prefijo3=st.text_input("Valencia 3:  ", key="5.dsaf")
+        elemento3= st.text_input("Ingrese el tercer elemento:", key="6.fdsa")
         cubeta3= [0 for _ in range(len(palabras))]
         entradaprocesada3= nltk.word_tokenize(elemento3)
         entradaprocesada3 =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada3]
