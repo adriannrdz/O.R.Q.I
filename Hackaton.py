@@ -128,7 +128,7 @@ def mainbot():
                 respuesta = tagaux["respuesta"]
         
         prefijo2=col1.selectbox("Valencia 2:", (1,2,3,4,5,6,7,8,9), key = "scdprefix2")
-        elemento2= col.selectbox("Ingrese el segundo elemento:", ("hidrogeno", "oxigeno", "carbon","nitrogeno","fosforo","azufre","selenio","fluor","cloro","bromo","yodo","astato"), key = "optelement2")
+        elemento2= col1.selectbox("Ingrese el segundo elemento:", ("hidrogeno", "oxigeno", "carbon","nitrogeno","fosforo","azufre","selenio","fluor","cloro","bromo","yodo","astato"), key = "optelement2")
         cubeta2= [0 for _ in range(len(palabras))]
         entradaprocesada2= nltk.word_tokenize(elemento2)
         entradaprocesada2 =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada2]
