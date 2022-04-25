@@ -97,7 +97,7 @@ st.text("""   Buen dia, en el presente programa el usuario tendra la posibilidad
 def mainbot():
     while True:  
         
-        count = 0
+        count = 1
                        
         prefijo1=st.text_input("Valencia 3", key =count)
         count += 1
@@ -118,8 +118,10 @@ def mainbot():
             if tagaux["tag"]== tag:
                 respuesta = tagaux["respuesta"]
         
-        prefijo2=st.text_input("Valencia 2:")
-        elemento2= st.text_input("Ingrese el segundo elemento:")
+        prefijo2=st.text_input("Valencia 2:", key=count)
+        count += 1
+        elemento2= st.text_input("Ingrese el segundo elemento:", key=count)
+        count += 1
         cubeta2= [0 for _ in range(len(palabras))]
         entradaprocesada2= nltk.word_tokenize(elemento2)
         entradaprocesada2 =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada2]
@@ -137,8 +139,10 @@ def mainbot():
 
         st.text("Ahora seleccion los reactivos restantes")
 
-        prefijo3=st.text_input("Valencia 3:  ")
-        elemento3= st.text_input("Ingrese el tercer elemento:")
+        prefijo3=st.text_input("Valencia 3:  ", key=count)
+        count += 1
+        elemento3= st.text_input("Ingrese el tercer elemento:", key=count)
+        count += 1
         cubeta3= [0 for _ in range(len(palabras))]
         entradaprocesada3= nltk.word_tokenize(elemento3)
         entradaprocesada3 =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada3]
