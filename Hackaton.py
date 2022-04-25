@@ -162,6 +162,9 @@ def mainbot():
         for tagaux in datos["contenido"]:
             if tagaux["tag"]== tag3:
                 respuesta3 = tagaux["respuesta"] 
+                
+                
+        st.image('valencias.png')
         
         def obtsimbolo(simb):
            # simboloq=df[df['nombre']==simb]['simbolo']
