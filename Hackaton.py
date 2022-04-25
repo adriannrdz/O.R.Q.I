@@ -99,9 +99,8 @@ def mainbot():
     while True:  
         
         col1, col2 = st.columns(2)
-        prefijos={1,2,3,4,5,6,7}
-                       
-        prefijo1=col1.selectbox("Valencia 3", (1,2,3,4,5,6,7), prefijos.keys())
+                               
+        prefijo1=col1.selectbox("Valencia 3", (1,2,3,4,5,6,7))
                 
         elemento=col1.selectbox("Ingrese el elemento: ", ("aluminio", "bario", "berilio", "bismuto", "cadmio","calcio", "cerio", "cromo", "cobalto", "cobre", "oro",
                 "iridio", "hierro", "plomo", "litio", "magnesio", "manganeso", "mercurio", "molibdeno", "níquel", "osmio", "paladio",
