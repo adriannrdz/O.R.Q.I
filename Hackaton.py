@@ -193,35 +193,29 @@ def mainbot():
         
         if lentrada==lhidruros:
             col2.text("La reaccion quimica es:")
-            col2.sleep(1.5)
-            st.text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")#Esta ya esta bien            
+            col2.text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")#Esta ya esta bien            
         
         elif lentrada==loxidosm:
            col2.text("La reaccion quimica es:")
-            time.sleep(1.5)
             col2.text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")#Esta ya esta bien 
 
         elif lentrada==lhidroxidos:
             col2.text("La reaccion quimica es:")
-            time.sleep(1.5)
             col2.text(f"{obtsimbolo(elemento)}1OH{prefijo1}") #Esta ya esta bien
             
 
         elif lentrada==lsalesbi:
            col2.text("La reaccion quimica es:")
-            time.sleep(1.5)
             col2.text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}") #Esta ya esta bien
              
 
         elif lentrada==lhidracidos:
             col2.text("La reaccion quimica es:")
-            time.sleep(1.5)
             col2.text(f"H{prefijo3}{obtsimbolo(elemento2)}1") #Esta ya esta bien
             
 
         elif lentrada==lanhidridos:
            col2.text("La reaccion quimica es:")
-            time.sleep(1.5)
             col2.text(f"O{prefijo2}{obtsimbolo(elemento2)}2")  #Esta ya esta bien
         
         else:
