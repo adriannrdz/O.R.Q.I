@@ -97,7 +97,7 @@ st.text("""   Buen dia, en el presente programa el usuario tendra la posibilidad
 def mainbot():
     while True:  
                        
-        prefijo1=st.selectbox("Valencia 3", (1,2,3,4,5,6,7,8,9), key = 'fstprefix')
+        prefijo1=st.selectbox("Valencia 3", (1,2,3,4,5,6,7,8,9), key = "fstprefix1")
         elemento= st.selectbox("Ingrese el elemento: ", ("aluminio", "bario", "berilio", "bismuto", "cadmio","calcio", "cerio", "cromo", "cobalto", "cobre", "oro",
                 "iridio", "hierro", "plomo", "litio", "magnesio", "manganeso", "mercurio", "molibdeno", "níquel", "osmio", "paladio",
                 "platino", "potasio", "radio", "rodio", "plata", "sodio", "tantalio", "talio", "torio", "estaño", "titanio", "volframio",
@@ -107,7 +107,7 @@ def mainbot():
                 "hassium","meitnerio","darmstadtium","roentgenio","copernico","cerio","praseodimio","neodimio","prometeo","samario",
                 "europio","gadolinio","terbio","disprosio","holmio","erbio","tulio","iterbio","lutecio","torio","protactinio","uranio",
                 "neptunio","plutonio","americio","curio","berkelio","californio","einstenio","fermio","mendelevio","nobelio","lawrencium",
-                "carbon","nitrogeno","fosforo","azufre","selenio","fluor","cloro","bromo","yodo","astato","tennessine"), key = 'metales')
+                "carbon","nitrogeno","fosforo","azufre","selenio","fluor","cloro","bromo","yodo","astato","tennessine"), key = "optelement1")
         cubeta= [0 for _ in range(len(palabras))]
         entradaprocesada= nltk.word_tokenize(elemento)
         entradaprocesada =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada]
@@ -123,8 +123,8 @@ def mainbot():
             if tagaux["tag"]== tag:
                 respuesta = tagaux["respuesta"]
         
-        prefijo2=st.selectbox("Valencia 2:", (1,2,3,4,5,6,7,8,9), key = 'scdprefix')
-        elemento2= st.selectbox("Ingrese el segundo elemento:", ("hidrogeno", "oxigeno", "carbon","nitrogeno","fosforo","azufre","selenio","fluor","cloro","bromo","yodo","astato"), key = 'no metales')
+        prefijo2=st.selectbox("Valencia 2:", (1,2,3,4,5,6,7,8,9), key = "scdprefix2")
+        elemento2= st.selectbox("Ingrese el segundo elemento:", ("hidrogeno", "oxigeno", "carbon","nitrogeno","fosforo","azufre","selenio","fluor","cloro","bromo","yodo","astato"), key = "optelement2")
         cubeta2= [0 for _ in range(len(palabras))]
         entradaprocesada2= nltk.word_tokenize(elemento2)
         entradaprocesada2 =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada2]
@@ -142,8 +142,8 @@ def mainbot():
 
         st.text("Ahora seleccion los reactivos restantes")
 
-        prefijo3=st.selectbox("Valencia 3:  ", (1,2,3,4,5,6,7,8,9), key = 'thrprefix')
-        elemento3= st.selectbox("Ingrese el tercer elemento:", ('agua', 'ninguno'), key = 'extra')
+        prefijo3=st.selectbox("Valencia 3:  ", (1,2,3,4,5,6,7,8,9), key = "thrprefix3")
+        elemento3= st.selectbox("Ingrese el tercer elemento:", ('agua', 'ninguno'), key = "optelement3")
         cubeta3= [0 for _ in range(len(palabras))]
         entradaprocesada3= nltk.word_tokenize(elemento3)
         entradaprocesada3 =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada3]
