@@ -192,11 +192,12 @@ def mainbot():
             
         
         if lentrada==lhidruros:
+            
             col2.text("La reaccion quimica es:")
             col2.text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")#Esta ya esta bien            
         
         elif lentrada==loxidosm:
-           col2.text("La reaccion quimica es:")
+            col2.text("La reaccion quimica es:")
             col2.text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")#Esta ya esta bien 
 
         elif lentrada==lhidroxidos:
@@ -205,7 +206,7 @@ def mainbot():
             
 
         elif lentrada==lsalesbi:
-           col2.text("La reaccion quimica es:")
+            col2.text("La reaccion quimica es:")
             col2.text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}") #Esta ya esta bien
              
 
@@ -215,7 +216,7 @@ def mainbot():
             
 
         elif lentrada==lanhidridos:
-           col2.text("La reaccion quimica es:")
+            col2.text("La reaccion quimica es:")
             col2.text(f"O{prefijo2}{obtsimbolo(elemento2)}2")  #Esta ya esta bien
         
         else:
