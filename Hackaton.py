@@ -97,9 +97,12 @@ st.text("""   Buen dia, en el presente programa el usuario tendra la posibilidad
 #Funcion principal del bot
 def mainbot():
     while True:  
+        
+        col1, col2 = st.columns(2)
+        
                        
-        prefijo1=st.selectbox("Valencia 3", (1,2,3,4,5,6,7))
-        elemento= st.selectbox("Ingrese el elemento: ", ("aluminio", "bario", "berilio", "bismuto", "cadmio","calcio", "cerio", "cromo", "cobalto", "cobre", "oro",
+        prefijo1=col1.selectbox("Valencia 3", (1,2,3,4,5,6,7))
+        elemento=col1.selectbox("Ingrese el elemento: ", ("aluminio", "bario", "berilio", "bismuto", "cadmio","calcio", "cerio", "cromo", "cobalto", "cobre", "oro",
                 "iridio", "hierro", "plomo", "litio", "magnesio", "manganeso", "mercurio", "molibdeno", "níquel", "osmio", "paladio",
                 "platino", "potasio", "radio", "rodio", "plata", "sodio", "tantalio", "talio", "torio", "estaño", "titanio", "volframio",
                 "uranio", "vanadio","cinc","escandio","titanio","vanadio","cromo","manganeso","hierro","cobalto","niquel","cobre","zinc",
@@ -124,8 +127,8 @@ def mainbot():
             if tagaux["tag"]== tag:
                 respuesta = tagaux["respuesta"]
         
-        prefijo2=st.selectbox("Valencia 2:", (1,2,3,4,5,6,7,8,9), key = "scdprefix2")
-        elemento2= st.selectbox("Ingrese el segundo elemento:", ("hidrogeno", "oxigeno", "carbon","nitrogeno","fosforo","azufre","selenio","fluor","cloro","bromo","yodo","astato"), key = "optelement2")
+        prefijo2=col1.selectbox("Valencia 2:", (1,2,3,4,5,6,7,8,9), key = "scdprefix2")
+        elemento2= col.selectbox("Ingrese el segundo elemento:", ("hidrogeno", "oxigeno", "carbon","nitrogeno","fosforo","azufre","selenio","fluor","cloro","bromo","yodo","astato"), key = "optelement2")
         cubeta2= [0 for _ in range(len(palabras))]
         entradaprocesada2= nltk.word_tokenize(elemento2)
         entradaprocesada2 =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada2]
@@ -143,8 +146,8 @@ def mainbot():
 
         st.text("Ahora seleccion los reactivos restantes")
 
-        prefijo3=st.selectbox("Valencia 3:  ", (1,2,3,4,5,6,7,8,9), key = "thrprefix3")
-        elemento3= st.selectbox("Ingrese el tercer elemento:", ('agua', 'ninguno'), key = "optelement3")
+        prefijo3=col1.selectbox("Valencia 3:  ", (1,2,3,4,5,6,7,8,9), key = "thrprefix3")
+        elemento3= col1.selectbox("Ingrese el tercer elemento:", ('agua', 'ninguno'), key = "optelement3")
         cubeta3= [0 for _ in range(len(palabras))]
         entradaprocesada3= nltk.word_tokenize(elemento3)
         entradaprocesada3 =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada3]
@@ -189,39 +192,39 @@ def mainbot():
             
         
         if lentrada==lhidruros:
-            st.text("La reaccion quimica es:")
-            time.sleep(1.5)
+            col2.text("La reaccion quimica es:")
+            col2.sleep(1.5)
             st.text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")#Esta ya esta bien            
         
         elif lentrada==loxidosm:
-            st.text("La reaccion quimica es:")
+           col2.text("La reaccion quimica es:")
             time.sleep(1.5)
-            st.text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")#Esta ya esta bien 
+            col2.text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")#Esta ya esta bien 
 
         elif lentrada==lhidroxidos:
-            st.text("La reaccion quimica es:")
+            col2.text("La reaccion quimica es:")
             time.sleep(1.5)
-            st.text(f"{obtsimbolo(elemento)}1OH{prefijo1}") #Esta ya esta bien
+            col2.text(f"{obtsimbolo(elemento)}1OH{prefijo1}") #Esta ya esta bien
             
 
         elif lentrada==lsalesbi:
-            st.text("La reaccion quimica es:")
+           col2.text("La reaccion quimica es:")
             time.sleep(1.5)
-            st.text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}") #Esta ya esta bien
+            col2.text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}") #Esta ya esta bien
              
 
         elif lentrada==lhidracidos:
-            st.text("La reaccion quimica es:")
+            col2.text("La reaccion quimica es:")
             time.sleep(1.5)
-            st.text(f"H{prefijo3}{obtsimbolo(elemento2)}1") #Esta ya esta bien
+            col2.text(f"H{prefijo3}{obtsimbolo(elemento2)}1") #Esta ya esta bien
             
 
         elif lentrada==lanhidridos:
-            st.text("La reaccion quimica es:")
+           col2.text("La reaccion quimica es:")
             time.sleep(1.5)
-            st.text(f"O{prefijo2}{obtsimbolo(elemento2)}2")  #Esta ya esta bien
+            col2.text(f"O{prefijo2}{obtsimbolo(elemento2)}2")  #Esta ya esta bien
         
         else:
-            st.text("La reaccion no esta disponible")
+            col2.text("La reaccion no esta disponible")
 mainbot()  
 
