@@ -147,7 +147,7 @@ def mainbot():
         st.text("Ahora seleccion los reactivos restantes")
 
         prefijo3=col1.selectbox("Valencia 3:  ", (1,2,3,4,5,6,7,8,9), key = "thrprefix3")
-        elemento3= col1.selectbox("Ingrese el tercer elemento:", ('agua', 'ninguno'), key = "optelement3")
+        elemento3= col1.selectbox("Ingrese el tercer elemento:", ('ninguno', 'agua'), key = "optelement3")
         cubeta3= [0 for _ in range(len(palabras))]
         entradaprocesada3= nltk.word_tokenize(elemento3)
         entradaprocesada3 =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada3]
