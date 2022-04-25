@@ -97,8 +97,17 @@ st.text("""   Buen dia, en el presente programa el usuario tendra la posibilidad
 def mainbot():
     while True:  
                        
-        prefijo1=st.text_input("Valencia 3", key = "1.asdf")
-        elemento= st.text_input("Ingrese el elemento: ", key="2.sadf")
+        prefijo1=st.selectbox("Valencia 3", (1,2,3,4,5,6,7,8,9))
+        elemento= st.selectbox("Ingrese el elemento: ", ("aluminio", "bario", "berilio", "bismuto", "cadmio","calcio", "cerio", "cromo", "cobalto", "cobre", "oro",
+                "iridio", "hierro", "plomo", "litio", "magnesio", "manganeso", "mercurio", "molibdeno", "níquel", "osmio", "paladio",
+                "platino", "potasio", "radio", "rodio", "plata", "sodio", "tantalio", "talio", "torio", "estaño", "titanio", "volframio",
+                "uranio", "vanadio","cinc","escandio","titanio","vanadio","cromo","manganeso","hierro","cobalto","niquel","cobre","zinc",
+                "itrio","circonio","niobio","molibdeno","tecnecio","rutenio","rodio","paladio","plata","cadmio","lantano","hafnio","tantalio",
+                "tungsteno","renio","osmio","iridio","platino","oro","mercurio","actinio","rutherfordio","dubnium","seaborgio","bohrium",
+                "hassium","meitnerio","darmstadtium","roentgenio","copernico","cerio","praseodimio","neodimio","prometeo","samario",
+                "europio","gadolinio","terbio","disprosio","holmio","erbio","tulio","iterbio","lutecio","torio","protactinio","uranio",
+                "neptunio","plutonio","americio","curio","berkelio","californio","einstenio","fermio","mendelevio","nobelio","lawrencium",
+                "carbon","nitrogeno","fosforo","azufre","selenio","fluor","cloro","bromo","yodo","astato","tennessine"))
         cubeta= [0 for _ in range(len(palabras))]
         entradaprocesada= nltk.word_tokenize(elemento)
         entradaprocesada =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada]
@@ -114,8 +123,8 @@ def mainbot():
             if tagaux["tag"]== tag:
                 respuesta = tagaux["respuesta"]
         
-        prefijo2=st.text_input("Valencia 2:", key="3.dasf")
-        elemento2= st.text_input("Ingrese el segundo elemento:", key="4.fasd")
+        prefijo2=st.selectbox("Valencia 2:", (1,2,3,4,5,6,7,8,9))
+        elemento2= st.selectbox("Ingrese el segundo elemento:", ("hidrogeno", "oxigeno", "carbon","nitrogeno","fosforo","azufre","selenio","fluor","cloro","bromo","yodo","astato"))
         cubeta2= [0 for _ in range(len(palabras))]
         entradaprocesada2= nltk.word_tokenize(elemento2)
         entradaprocesada2 =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada2]
@@ -133,8 +142,8 @@ def mainbot():
 
         st.text("Ahora seleccion los reactivos restantes")
 
-        prefijo3=st.text_input("Valencia 3:  ", key="5.dsaf")
-        elemento3= st.text_input("Ingrese el tercer elemento:", key="6.fdsa")
+        prefijo3=st.selectbox("Valencia 3:  ", (1,2,3,4,5,6,7,8,9))
+        elemento3= st.selectbox("Ingrese el tercer elemento:", ('agua', 'ninguno'))
         cubeta3= [0 for _ in range(len(palabras))]
         entradaprocesada3= nltk.word_tokenize(elemento3)
         entradaprocesada3 =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada3]
@@ -172,10 +181,10 @@ def mainbot():
         
         lhidruros=[['metal'], ['hidrogeno'],['ninguno']]
         loxidosm=[['metal'],['oxigeno'],['ninguno']]
-        lhidroxidos=[['metal'],['oxigeno'],['agua'],['ninguno']]
+        lhidroxidos=[['metal'],['oxigeno'],['agua']]
         lsalesbi=[['metal'],['no metal'],['ninguno']]
-        lhidracidos=[['hidrogeno'],['no metal'],['ninguno']]
-        lanhidridos=[['oxigeno'],['no metal'],['ninguno']]
+        lhidracidos=[['no metal'],['hidrogeno'],['ninguno']]
+        lanhidridos=[['no metal'],['oxigeno'],['ninguno']]
             
         
         if lentrada==lhidruros:
@@ -210,6 +219,8 @@ def mainbot():
             st.text("La reaccion quimica es:")
             time.sleep(1.5)
             st.text(f"O{prefijo2}{obtsimbolo(elemento2)}2")  #Esta ya esta bien
-
+        
+        else:
+            st.text("La reaccion no esta disponible")
 mainbot()  
 
