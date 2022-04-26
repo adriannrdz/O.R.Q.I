@@ -328,7 +328,7 @@ def mainbot():
             else:
                 cols[6].text("La reaccion no esta disponible")    
                 
-            mt3, val, mt4 = st.columns([4,5,3])
+            mt3, val, mt4 = st.columns([2,5,2])
             
             with mt3:
                 st.text("")
