@@ -344,9 +344,16 @@ def mainbot():
             with mt4:
                 st.text("")
                 
+            st.subheader("Probabilidades:")
+            st.text("""
+            Las cantidades que se muestran a continuacion representan las probabilidaddes que determina el programa con la finalidad de determinar
+            el tipo de elemento que se asigno en la parte superior de la pagina:  """)                
             st.text(lentrada)
+            st.text("Primer elemento")
             st.text(resultados)
+            st.text("Segundo elemento")
             st.text(resultados2)
+            st.text("Tercer elemento")
             st.text(resultados3)
             
             
