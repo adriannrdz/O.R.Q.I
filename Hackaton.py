@@ -236,7 +236,8 @@ def mainbot():
 
             elif lentrada==loxidosm:
                 cols[6].text("La reaccion quimica es:")
-                cols[6].text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
+                roxido = (f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
+                cols[6].markdown(f'<p class="big-font2">{roxido}</p>', unsafe_allow_html=True)
                 st.subheader("Oxidos Metalicos:")
                 st.text("""
                 - Son combinaciones binarias de un metal con el oxígeno, en las que el oxígeno tiene número de oxidación (-2.)
@@ -254,7 +255,8 @@ def mainbot():
 
             elif lentrada==lhidroxidos:
                 cols[6].text("La reaccion quimica es:")
-                cols[6].text(f"{obtsimbolo(elemento)}1OH{prefijo1}")
+                rhidroxido= (f"{obtsimbolo(elemento)}1OH{prefijo1}")
+                cols[6].markdown(f'<p class="big-font2">{rhidroxido}</p>', unsafe_allow_html=True)
                 st.subheader("Hidroxidos:")
                 st.text("""
                 - Los hidróxidos son un tipo de compuesto químico que está formado a partir de la unión de un elemento de tipo metálico o catiónico con un elemento que pertenece al grupo de los hidróxidos, o aniones.
@@ -269,7 +271,8 @@ def mainbot():
 
             elif lentrada==lsalesbi:
                 cols[6].text("La reaccion quimica es:")
-                cols[6].text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
+                rsalesbi =(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
+                cols[6].markdown(f'<p class="big-font2">{rsalesbi}</p>', unsafe_allow_html=True)
                 st.subheader("Sales Binarias:")
                 st.text("""
                 - Una sal binaria es una combinación que se hace entre un metal y un no metal en su estructura y que poseen además una fórmula química general como MmXn, donde M será el elemento metálico mientras que X el no metálico.
@@ -288,7 +291,8 @@ def mainbot():
 
             elif lentrada==lhidracidos:
                 cols[6].text("La reaccion quimica es:")
-                cols[6].text(f"H{prefijo3}{obtsimbolo(elemento2)}1")
+                rhidracido= (f"H{prefijo3}{obtsimbolo(elemento2)}1")
+                cols[6].markdown(f'<p class="big-font2">{rhidracido}</p>', unsafe_allow_html=True)
                 st.subheader("Sales Hidracidos:")
                 st.text("""
                 -También son conocidos como ácidos hidrácidos, sales binarias o hídricos ácidos, están hechos por dos compuestos binarios ácidos los cuales deben ser un hidrógeno
@@ -310,7 +314,8 @@ def mainbot():
 
             elif lentrada==lanhidridos:
                 cols[6].text("La reaccion quimica es:")
-                cols[6].text(f"O{prefijo2}{obtsimbolo(elemento2)}2")
+                ranhidrido = (f"O{prefijo2}{obtsimbolo(elemento2)}2")
+                cols[6].markdown(f'<p class="big-font2">{ranhidrido}</p>', unsafe_allow_html=True)
                 st.subheader("Anhidridos:")
                 st.text("""
                 -En química podemos definir los anhídridos como un compuestos químicos de tipo binario que surgen al juntar un No Metal con Oxígeno,
