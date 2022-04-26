@@ -204,7 +204,7 @@ def mainbot():
             lhidracidos=[['no metal'],['hidrogeno'],['ninguno']]
             lanhidridos=[['no metal'],['oxigeno'],['ninguno']]
             
-            
+            cols[6].text("")
             cols[6].image("arrow.jpg")
             
             st.markdown("""
