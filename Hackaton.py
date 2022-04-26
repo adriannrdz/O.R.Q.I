@@ -198,12 +198,24 @@ def mainbot():
             lhidracidos=[['no metal'],['hidrogeno'],['ninguno']]
             lanhidridos=[['no metal'],['oxigeno'],['ninguno']]
             
+            st.markdown("""
+                    <style>
+                    .big-font {
+                        font-size:140px !important;
+                    }
+                    </style>
+                    """, unsafe_allow_html=True)
+
+                    
+            
             
 
             if lentrada==lhidruros:
 
                 cols[6].text("La reaccion quimica es:")
-                cols[6].text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
+                #cols[6].text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
+                rhidruro = (f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
+                cols[6].markdown(st.markdown(f'<p class="big-font">{rhidruro}</p>', unsafe_allow_html=True))
                 st.subheader("Hidruros:")
                 st.text("""
                 - Los hidruros de los metales alcalinos (grupo I), alcalinotérreos (grupo II) y de algunos otros elementos del sistema periódico se forman directamente de los elementos a temperaturas elevadas.
@@ -241,10 +253,12 @@ def mainbot():
                 cols[6].text(f"{obtsimbolo(elemento)}1OH{prefijo1}")
                 st.subheader("Hidroxidos:")
                 st.text("""
-                -Los hidróxidos son un tipo de compuesto químico que está formado a partir de la unión de un elemento de tipo metálico o catiónico con un elemento que pertenece al grupo de los hidróxidos, o aniones.
-                Se caracterizan por ser compuestos inorgánicos ternarios porque tienen en su molécula de hidrógeno, una molécula de oxígeno y un elemento de tipo metálico.
-                Pueden desasociarse cuando se disuelven en agua. Tienen un carácter básico bastante fuerte porque el grupo hidroxilo tiene la capacidad de captar protones. Pueden hacer que el color del papel
-                tornasol de un tono rojo a uno azul. Tienen la capacidad de reaccionar con los ácidos y producir de esta manera una sal y agua. Cuando hacer algún tipo de reacción puede liberar energía.
+                - Los hidróxidos son un tipo de compuesto químico que está formado a partir de la unión de un elemento de tipo metálico o catiónico con un elemento que pertenece al grupo de los hidróxidos, o aniones.
+                - Se caracterizan por ser compuestos inorgánicos ternarios porque tienen en su molécula de hidrógeno, una molécula de oxígeno y un elemento de tipo metálico.
+                - Pueden desasociarse cuando se disuelven en agua. Tienen un carácter básico bastante fuerte porque el grupo hidroxilo tiene la capacidad de captar protones.
+                - Pueden hacer que el color del papel tornasol de un tono rojo a uno azul.
+                - Tienen la capacidad de reaccionar con los ácidos y producir de esta manera una sal y agua.
+                - Cuando hacer algún tipo de reacción puede liberar energía.
                             """)
 
 
@@ -273,11 +287,19 @@ def mainbot():
                 cols[6].text(f"H{prefijo3}{obtsimbolo(elemento2)}1")
                 st.subheader("Sales Hidracidos:")
                 st.text("""
-                También son conocidos como ácidos hidrácidos, sales binarias o hídricos ácidos, están hechos por dos compuestos binarios ácidos los cuales deben ser un hidrógeno (del grupo halógeno o antígeno en la tabla periódica) y un no metal, sin presencia de oxígeno.
-                Cuando se disuelven en agua son solubles. No poseen oxígeno en su composición. Liberan usualmente un muy denso humo blanco. Cuando se encuentran en su estado natural son gaseosos y para nombrarlos se utiliza el nombre del no metal con la terminación uro y seguido del nombre Hidrógeno.
-                Se obtienen también por disolución acuosa. Son perfectos cuando se utilizan como conductor de energía eléctrica. Con respecto a su aspecto éstos son incoloros, son soluciones transparentes.
-                También cuando entran en contacto con agua originan soluciones ácidas. Solo existen sietes ácidos hidrácidos que forman solo con los no metales de Cl, S, I, F, Se, Te.
-                Sus puntos de ebullición son superiores a la de los anhídridos, por ejemplo, el Cloruro de Hidrógeno hierve a -85Co pero el Ácido Clorhídrico hierve a -48Co.""")
+                -También son conocidos como ácidos hidrácidos, sales binarias o hídricos ácidos, están hechos por dos compuestos binarios ácidos los cuales deben ser un hidrógeno
+                (del grupo halógeno o antígeno en la tabla periódica) y un no metal, sin presencia de oxígeno.
+                -Cuando se disuelven en agua son solubles.
+                -No poseen oxígeno en su composición.
+                -Liberan usualmente un muy denso humo blanco.
+                -Cuando se encuentran en su estado natural son gaseosos y para nombrarlos se utiliza el nombre del no metal con la terminación uro y seguido del nombre Hidrógeno.
+                -Se obtienen también por disolución acuosa.
+                -Son perfectos cuando se utilizan como conductor de energía eléctrica.
+                -Con respecto a su aspecto éstos son incoloros, son soluciones transparentes.
+                -También cuando entran en contacto con agua originan soluciones ácidas.
+                -Solo existen sietes ácidos hidrácidos que forman solo con los no metales de Cl, S, I, F, Se, Te.
+                -Sus puntos de ebullición son superiores a la de los anhídridos, por ejemplo, el Cloruro de Hidrógeno hierve a -85Co pero el Ácido Clorhídrico hierve a -48Co.
+                """)
 
                 
 
@@ -287,10 +309,14 @@ def mainbot():
                 cols[6].text(f"O{prefijo2}{obtsimbolo(elemento2)}2")
                 st.subheader("Anhidridos:")
                 st.text("""
-                En química podemos definir los anhídridos como un compuestos químicos de tipo binario que surgen al juntar un No Metal con Oxígeno, también son llamados como Óxidos No Metálicos u Óxidos Ácidos, cuya fórmula general es (RCO)2º. Y son productos de la condensación de 2 moléculas de ácidos carboxílicos. 
-                La fórmula de los anhídridos es del tipo X2On (donde X es un elemento no metálico y O es oxígeno) Ejemplos: SeO, So3, CO2. Poseen la característica de ser especialmente reactivos. Se pueden manejar en muchas áreas, lo habitual, donde son más vistos y usados es en la fabricación de medicamentos.
-                Como por ejemplo en el ámbito medico existe uno muy usado llamado Ácido Acetilsalicílico un fármaco que es muy utilizado. Como ya se ha mencionado vienen a ser fruto de la deshidratación de dos moléculas, pero también existen casos donde pudiese ser una, en el caso intramolecular, de ácido carboxílico.
-                También son llamados anhídridos carboxílicos.
+                -En química podemos definir los anhídridos como un compuestos químicos de tipo binario que surgen al juntar un No Metal con Oxígeno,
+                también son llamados como Óxidos No Metálicos u Óxidos Ácidos, cuya fórmula general es (RCO)2º.
+                -Son productos de la condensación de 2 moléculas de ácidos carboxílicos. 
+                -La fórmula de los anhídridos es del tipo X2On (donde X es un elemento no metálico y O es oxígeno) Ejemplos: SeO, So3, CO2. Poseen la característica de ser especialmente reactivos.
+                -Se pueden manejar en muchas áreas, lo habitual, donde son más vistos y usados es en la fabricación de medicamentos.
+                -Como por ejemplo en el ámbito medico existe uno muy usado llamado Ácido Acetilsalicílico un fármaco que es muy utilizado.
+                -Como ya se ha mencionado vienen a ser fruto de la deshidratación de dos moléculas, pero también existen casos donde pudiese ser una, en el caso intramolecular, de ácido carboxílico.
+                -También son llamados anhídridos carboxílicos.
                 """)
 
                
