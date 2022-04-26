@@ -83,6 +83,13 @@ modelo.fit(entrenamiento, salida, n_epoch=1000, batch_size=50, show_metric=True)
 modelo.save("modelo.tflearn")
 
 #Apartado de instrucciones.
+st.markdown("""
+                    <style>
+                    .big-font {
+                        font-size:75px !important;
+                    }
+                    </style>
+                    """, unsafe_allow_html=True)
 
 st.set_page_config(layout="wide")
 mt1, header, titulo, mt2 = st.columns([3,2,2,3])
@@ -94,7 +101,7 @@ with header:
     st.image("logo.jpg", width = 300)
     
 with titulo:
-    st.header("Obtencion de Reacciones Quimicas.")
+    st..markdown('<p class="big-font"> Obtencion de Reacciones Quimicas. </p>', unsafe_allow_html=True)
 
 with mt2:
     st.text("")    
@@ -200,7 +207,7 @@ def mainbot():
             
             st.markdown("""
                     <style>
-                    .big-font {
+                    .big-font2 {
                         font-size:45px !important;
                     }
                     </style>
@@ -213,7 +220,7 @@ def mainbot():
                 cols[6].text("La reaccion quimica es:")
                 #cols[6].text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
                 rhidruro = (f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
-                cols[6].markdown(f'<p class="big-font">{rhidruro}</p>', unsafe_allow_html=True)
+                cols[6].markdown(f'<p class="big-font2">{rhidruro}</p>', unsafe_allow_html=True)
                 st.subheader("Hidruros:")
                 st.text("""
                 - Los hidruros de los metales alcalinos (grupo I), alcalinotérreos (grupo II) y de algunos otros elementos del sistema periódico se forman directamente de los elementos a temperaturas elevadas.
