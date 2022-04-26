@@ -85,7 +85,7 @@ modelo.save("modelo.tflearn")
 #Apartado de instrucciones.
 
 st.set_page_config(layout="wide")
-logoi, hea = st.columns([1,7])
+logoi, hea = st.columns([3,7])
 
 logoi.image("logo.jpg", width = 300)
 
