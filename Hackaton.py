@@ -87,7 +87,7 @@ modelo.save("modelo.tflearn")
 st.set_page_config(layout="wide")
 mt1,logoi, hea = st.columns([4,3,3])
 
-with:
+with
     mt1 = st.text(" ")   
 
 logoi.image("logo.jpg", width = 300)
