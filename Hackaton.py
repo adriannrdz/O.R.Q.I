@@ -221,6 +221,7 @@ def mainbot():
 
                 #cols[6].text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
                 rhidruro = (f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
+                cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidruro}</p>', unsafe_allow_html=True)
                 st.subheader("Hidruros:")
                 st.text("""
@@ -238,6 +239,7 @@ def mainbot():
 
             elif lentrada==loxidosm:
                 roxido = (f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
+                cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{roxido}</p>', unsafe_allow_html=True)
                 st.subheader("Oxidos Metalicos:")
                 st.text("""
@@ -256,6 +258,7 @@ def mainbot():
 
             elif lentrada==lhidroxidos:
                 rhidroxido= (f"{obtsimbolo(elemento)}1OH{prefijo1}")
+                cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidroxido}</p>', unsafe_allow_html=True)
                 st.subheader("Hidroxidos:")
                 st.text("""
@@ -271,6 +274,7 @@ def mainbot():
 
             elif lentrada==lsalesbi:
                 rsalesbi =(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
+                cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rsalesbi}</p>', unsafe_allow_html=True)
                 st.subheader("Sales Binarias:")
                 st.text("""
@@ -290,6 +294,7 @@ def mainbot():
 
             elif lentrada==lhidracidos:
                 rhidracido= (f"H{prefijo3}{obtsimbolo(elemento2)}1")
+                cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidracido}</p>', unsafe_allow_html=True)
                 st.subheader("Sales Hidracidos:")
                 st.text("""
@@ -312,6 +317,7 @@ def mainbot():
 
             elif lentrada==lanhidridos:
                 ranhidrido = (f"O{prefijo2}{obtsimbolo(elemento2)}2")
+                cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{ranhidrido}</p>', unsafe_allow_html=True)
                 st.subheader("Anhidridos:")
                 st.text("""
