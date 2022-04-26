@@ -159,7 +159,7 @@ def mainbot():
                     respuesta2 = tagaux["respuesta"]
 
 
-            elemento3= cols[4].selectbox("Ingrese el elemento:", ('Elemento 3','ninguno', 'agua'), key = "optelement3")
+            elemento3= cols[4].selectbox("Ingrese el elemento:", ('ninguno', 'agua'), key = "optelement3")
             prefijo3=cols[5].selectbox("Valencia 3",(-3,-2,-1,1,2,3,4,5,6,7,8,9), key = "_prefijo3")
             cubeta3= [0 for _ in range(len(palabras))]
             entradaprocesada3= nltk.word_tokenize(elemento3)
