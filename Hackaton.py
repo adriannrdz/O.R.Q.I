@@ -235,6 +235,6 @@ def mainbot():
                 cols[3].text("La reaccion no esta disponible")
                 cols[3].text("F")
     except Exception as er: 
-        print("error: "+ er)
+        print("error: ", er)
 mainbot()  
 
