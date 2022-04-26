@@ -83,6 +83,7 @@ modelo.fit(entrenamiento, salida, n_epoch=1000, batch_size=50, show_metric=True)
 modelo.save("modelo.tflearn")
 
 #Apartado de instrucciones.
+st.image('logo.jpeg')
 st.title("Obtencion de Reacciones Quimicas.")
 st.text("""   Buen dia, en el presente programa el usuario tendra la posibilidad de formular reacciones quimicas
     1.- Si lo que intenta ingresar es un elemento de la tabla periodica, en los apartados de prefijos coloque la opcion ninguno.
