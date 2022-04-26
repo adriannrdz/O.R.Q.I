@@ -204,34 +204,34 @@ def mainbot():
         
         if lentrada==lhidruros:
             
-            col4.text("La reaccion quimica es:")
-            col4.text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")#Esta ya esta bien            
+            cols[3].text("La reaccion quimica es:")
+            cols[3].text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")#Esta ya esta bien            
         
         elif lentrada==loxidosm:
-            col4.text("La reaccion quimica es:")
-            col4.text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")#Esta ya esta bien 
+            cols[3].text("La reaccion quimica es:")
+            cols[3].text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")#Esta ya esta bien 
 
         elif lentrada==lhidroxidos:
-            col4.text("La reaccion quimica es:")
-            col4.text(f"{obtsimbolo(elemento)}1OH{prefijo1}") #Esta ya esta bien
+            cols[3].text("La reaccion quimica es:")
+            cols[3].text(f"{obtsimbolo(elemento)}1OH{prefijo1}") #Esta ya esta bien
             
 
         elif lentrada==lsalesbi:
-            col4.text("La reaccion quimica es:")
-            col4.text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}") #Esta ya esta bien
+            cols[3].text("La reaccion quimica es:")
+            cols[3].text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}") #Esta ya esta bien
              
 
         elif lentrada==lhidracidos:
-            col4.text("La reaccion quimica es:")
-            col4.text(f"H{prefijo3}{obtsimbolo(elemento2)}1") #Esta ya esta bien
+            cols[3].text("La reaccion quimica es:")
+            cols[3].text(f"H{prefijo3}{obtsimbolo(elemento2)}1") #Esta ya esta bien
             
 
         elif lentrada==lanhidridos:
-            col4.text("La reaccion quimica es:")
-            col4.text(f"O{prefijo2}{obtsimbolo(elemento2)}2")  #Esta ya esta bien
+            cols[3].text("La reaccion quimica es:")
+            cols[3].text(f"O{prefijo2}{obtsimbolo(elemento2)}2")  #Esta ya esta bien
         
         else:
-            col4.text("La reaccion no esta disponible")
-            col4.text("F")
+            cols[3].text("La reaccion no esta disponible")
+            cols[3].text("F")
 mainbot()  
 
