@@ -269,14 +269,13 @@ def mainbot():
                             Como por ejemplo en el ámbito medico existe uno muy usado llamado Ácido Acetilsalicílico un fármaco que es muy utilizado. Como ya se ha mencionado vienen a ser fruto de la deshidratación de dos moléculas, pero también existen casos donde pudiese ser una, en el caso intramolecular, de ácido carboxílico.
                             También son llamados anhídridos carboxílicos.""")
 
-                
+               
 
             else:
-                cols[6].text("La reaccion no esta disponible")
+                cols[6].text("La reaccion no esta disponible")               
                 
-                
-                
-            st.image('valencias.png')
+            st.image('valencias.png')    
+            
                 
     except Exception as er: 
         print("error: ", er)
