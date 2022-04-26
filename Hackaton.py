@@ -339,6 +339,7 @@ def mainbot():
                 st.text("")
                 
             with val:
+                st.subheader("Tabla de Valencias:")
                 st.image('valencias.png')
                 
             with mt4:
