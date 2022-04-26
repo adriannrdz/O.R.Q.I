@@ -88,7 +88,7 @@ mt1, header, titulo, mt2 = st.columns([3,2,2,3])
 st.markdown("""
                     <style>
                     .big-font {
-                        font-size:75px !important;
+                        font-size:30px !important;
                     }
                     </style>
                     """, unsafe_allow_html=True)
