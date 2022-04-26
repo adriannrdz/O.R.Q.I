@@ -165,8 +165,9 @@ def mainbot():
             if tagaux["tag"]== tag3:
                 respuesta3 = tagaux["respuesta"] 
                 
-                
-        st.image('valencias.png')
+        col5, col6 = st.columns(2)        
+        col5.image('valencias.png')
+        col5.text("hola que onda pana gg ya mero terminan echenle muchas ganas")
         
         def obtsimbolo(simb):
            # simboloq=df[df['nombre']==simb]['simbolo']
