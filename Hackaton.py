@@ -84,7 +84,7 @@ modelo.save("modelo.tflearn")
 
 #Apartado de instrucciones.
 st.set_page_config(layout="wide")
-mt1, header, mt2 = st.columns([3,5,3])
+mt1, header, mt2 = st.columns([4,5,3])
 st.markdown("""
                     <style>
                     .big-font {
@@ -112,7 +112,7 @@ def mainbot():
         while True:  
 
             #col1, col2, col3, col4 = st.columns([2,2,2,4]) 
-            cols= st.columns([2,1,2,1,2,1,4]) 
+            cols= st.columns([1,1,1,1,1,1,4]) 
 
 
             elemento=cols[0].selectbox("Ingrese el elemento: ", ("Elemento 1","aluminio", "bario", "berilio", "bismuto", "cadmio","calcio", "cerio", "cromo", "cobalto", "cobre", "oro",
@@ -326,9 +326,19 @@ def mainbot():
                
 
             else:
-                cols[6].text("La reaccion no esta disponible")               
+                cols[6].text("La reaccion no esta disponible")    
                 
-            st.image('valencias.png') 
+            mt3, val, mt4 = st.columns([4,5,3])
+            
+            with mt3:
+                st.text("")
+                
+            with val:
+                st.image('valencias.png')
+                
+            with mt4:
+                st.text("")
+                
             st.text(lentrada)
             st.text(resultados)
             st.text(resultados2)
