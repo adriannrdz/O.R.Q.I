@@ -225,7 +225,7 @@ def mainbot():
                     """, unsafe_allow_html=True)
             
             if prefijo1m == '1':
-                rhidruro = (f"{obtsimbolo(elemento){obtsimbolo(elemento2)}")
+                rhidruro = (f"{obtsimbolo(elemento)}{obtsimbolo(elemento2)}")
             else:
                 rhidruro = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
 
