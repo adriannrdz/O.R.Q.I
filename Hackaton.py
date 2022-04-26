@@ -141,7 +141,7 @@ def mainbot():
                 if tagaux["tag"]== tag:
                     respuesta = tagaux["respuesta"]
 
-            elemento2= cols[2].selectbox("Ingrese el elemento:", ("Elemento 2","hidrogeno", "oxigeno", "carbon","nitrogeno","fosforo","azufre","selenio","fluor","cloro","bromo","yodo","astato"), key = "optelement2")
+            elemento2= cols[2].selectbox("Ingrese el elemento:", ("Elemento 2","hidrogeno", "oxigeno", "carbono","nitrogeno","fosforo","azufre","selenio","fluor","cloro","bromo","yodo","astato"), key = "optelement2")
             prefijo2=cols[3].selectbox("Valencia 2",(-3,-2,-1,1,2,3,4,5,6,7,8,9), key = "_prefijo2")
             cubeta2= [0 for _ in range(len(palabras))]
             entradaprocesada2= nltk.word_tokenize(elemento2)
@@ -351,8 +351,10 @@ def mainbot():
             st.subheader("Probabilidades:")
             st.text("""
             Las cantidades que se muestran a continuacion representan las probabilidaddes que determina el programa con la finalidad de establecer
-            el tipo de elemento que se asigno en la parte superior de la pagina:  """)                
-            st.text(lentrada)
+            el tipo de elemento que se asigno en la parte superior de la pagina:
+            El orden de los numeros representan: (Agua, Hidroxido, Metal, No metal y Oxigeno, respectivamente)""") 
+            
+            #st.text(lentrada)
             st.text("Primer elemento")
             st.text(resultados)
             st.text("Segundo elemento")
