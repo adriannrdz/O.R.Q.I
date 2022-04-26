@@ -354,7 +354,7 @@ def mainbot():
             el tipo de elemento que se asigno en la parte superior de la pagina:
             El orden de los numeros representan: (Agua, Hidroxido, Metal, No metal y Oxigeno, respectivamente)""") 
             
-            #st.text(lentrada)
+            st.text(lentrada)
             st.text("Primer elemento")
             st.text(resultados)
             st.text("Segundo elemento")
