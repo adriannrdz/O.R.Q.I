@@ -83,6 +83,8 @@ modelo.fit(entrenamiento, salida, n_epoch=1000, batch_size=50, show_metric=True)
 modelo.save("modelo.tflearn")
 
 #Apartado de instrucciones.
+st.set_page_config(layout="wide")
+mt1, header, titulo, mt2 = st.columns([3,2,2,3])
 st.markdown("""
                     <style>
                     .big-font {
@@ -90,9 +92,6 @@ st.markdown("""
                     }
                     </style>
                     """, unsafe_allow_html=True)
-
-st.set_page_config(layout="wide")
-mt1, header, titulo, mt2 = st.columns([3,2,2,3])
 
 with mt1:
     st.text("")
