@@ -208,8 +208,8 @@ def mainbot():
                 cols[6].text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")#Esta ya esta bien            
 
             elif lentrada==loxidosm:
-                cols[6].text("La reaccion quimica es:")
-                cols[6].text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")#Esta ya esta bien 
+                cols[6].text.text_area("La reaccion quimica es:")
+                cols[6].text.text_area(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")#Esta ya esta bien 
 
             elif lentrada==lhidroxidos:
                 cols[6].text("La reaccion quimica es:")
@@ -227,8 +227,8 @@ def mainbot():
 
 
             elif lentrada==lanhidridos:
-                cols[6].text("La reaccion quimica es:")
-                cols[6].text(f"O{prefijo2}{obtsimbolo(elemento2)}2")  #Esta ya esta bien
+                cols[6].text.text_area("La reaccion quimica es:")
+                cols[6].text.text_area(f"O{prefijo2}{obtsimbolo(elemento2)}2")  #Esta ya esta bien
 
             else:
                 cols[6].text("La reaccion no esta disponible")
