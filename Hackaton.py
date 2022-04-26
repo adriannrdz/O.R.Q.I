@@ -87,16 +87,15 @@ modelo.save("modelo.tflearn")
 st.set_page_config(layout="wide")
 mt1,logoi, hea = st.columns([4,3,3])
 
-with
-    mt1 = st.text(" ")   
+with mt1
+st.text("")   
 
 logoi.image("logo.jpg", width = 300)
 
-hea.text(" ")
-hea.text(" ")
-hea.text(" ")
-hea.text(" ")
 
+for a in range(6):
+    hea.text("")
+    
 hea.header("Obtencion de Reacciones Quimicas.")
 
 #Funcion principal del bot
