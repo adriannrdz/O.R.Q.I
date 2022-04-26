@@ -100,7 +100,7 @@ st.header("Obtencion de Reacciones Quimicas.")
 def mainbot():
     while True:  
         
-        col1, col2, col3, col4 = st.columns([1,1,1,3])                               
+        col1, col2, col3, col4 = st.columns([2,2,2,4])                               
         
                 
         elemento=col1.selectbox("Ingrese el elemento: ", ("aluminio", "bario", "berilio", "bismuto", "cadmio","calcio", "cerio", "cromo", "cobalto", "cobre", "oro",
