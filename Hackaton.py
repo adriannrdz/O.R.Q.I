@@ -85,7 +85,7 @@ modelo.save("modelo.tflearn")
 #Apartado de instrucciones.
 
 st.set_page_config(layout="wide")
-mt1, header, titulo, mt2 = st.columns([3,2,4,3])
+mt1, header, titulo, mt2 = st.columns([3,2,2,3])
 
 with mt1:
     st.text("")
@@ -201,7 +201,7 @@ def mainbot():
             st.markdown("""
                     <style>
                     .big-font {
-                        font-size:75px !important;
+                        font-size:30px !important;
                     }
                     </style>
                     """, unsafe_allow_html=True)                 
