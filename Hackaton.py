@@ -101,10 +101,11 @@ st.header("Obtencion de Reacciones Quimicas.")
 def mainbot():
     while True:  
         
-        col1, col2, col3, col4 = st.columns([2,2,2,4])                               
+        #col1, col2, col3, col4 = st.columns([2,2,2,4]) 
+        cols= st.columns([2,2,2,4]) 
         
                 
-        elemento=col1.selectbox("Ingrese el elemento: ", ("Elemento 1","aluminio", "bario", "berilio", "bismuto", "cadmio","calcio", "cerio", "cromo", "cobalto", "cobre", "oro",
+        elemento=cols[0].selectbox("Ingrese el elemento: ", ("Elemento 1","aluminio", "bario", "berilio", "bismuto", "cadmio","calcio", "cerio", "cromo", "cobalto", "cobre", "oro",
                 "iridio", "hierro", "plomo", "litio", "magnesio", "manganeso", "mercurio", "molibdeno", "níquel", "osmio", "paladio",
                 "platino", "potasio", "radio", "rodio", "plata", "sodio", "tantalio", "talio", "torio", "estaño", "titanio", "volframio",
                 "uranio", "vanadio","cinc","escandio","titanio","vanadio","cromo","manganeso","hierro","cobalto","niquel","cobre","zinc",
@@ -114,7 +115,7 @@ def mainbot():
                 "europio","gadolinio","terbio","disprosio","holmio","erbio","tulio","iterbio","lutecio","torio","protactinio","uranio",
                 "neptunio","plutonio","americio","curio","berkelio","californio","einstenio","fermio","mendelevio","nobelio","lawrencium",
                 "carbon","nitrogeno","fosforo","azufre","selenio","fluor","cloro","bromo","yodo","astato","tennessine"), key = "optelement1")
-        prefijo1=col1.selectbox("Valencia 1", (-3,-2,-1,1,2,3,4,5,6,7,8,9))
+        prefijo1=cols[0].selectbox("Valencia 1", (-3,-2,-1,1,2,3,4,5,6,7,8,9), key= "_prefijo1")
         cubeta= [0 for _ in range(len(palabras))]
         entradaprocesada= nltk.word_tokenize(elemento)
         entradaprocesada =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada]
@@ -130,8 +131,8 @@ def mainbot():
             if tagaux["tag"]== tag:
                 respuesta = tagaux["respuesta"]
         
-        elemento2= col2.selectbox("Ingrese el elemento:", ("Elemento 2","hidrogeno", "oxigeno", "carbon","nitrogeno","fosforo","azufre","selenio","fluor","cloro","bromo","yodo","astato"), key = "optelement2")
-        prefijo2=col2.selectbox("Valencia 2",(-3,-2,-1,1,2,3,4,5,6,7,8,9))
+        elemento2= cols[1].selectbox("Ingrese el elemento:", ("Elemento 2","hidrogeno", "oxigeno", "carbon","nitrogeno","fosforo","azufre","selenio","fluor","cloro","bromo","yodo","astato"), key = "optelement2")
+        prefijo2=cols[1].selectbox("Valencia 2",(-3,-2,-1,1,2,3,4,5,6,7,8,9), key = "_prefijo2")
         cubeta2= [0 for _ in range(len(palabras))]
         entradaprocesada2= nltk.word_tokenize(elemento2)
         entradaprocesada2 =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada2]
@@ -148,8 +149,8 @@ def mainbot():
                 respuesta2 = tagaux["respuesta"]
 
 
-        elemento3= col3.selectbox("Ingrese el elemento:", ('Elemento 3','ninguno', 'agua'), key = "optelement3")
-        prefijo3=col3.selectbox("Valencia 3",(-3,-2,-1,1,2,3,4,5,6,7,8,9))
+        elemento3= cols[2].selectbox("Ingrese el elemento:", ('Elemento 3','ninguno', 'agua'), key = "optelement3")
+        prefijo3=cols[2].selectbox("Valencia 3",(-3,-2,-1,1,2,3,4,5,6,7,8,9), key = "_prefijo3")
         cubeta3= [0 for _ in range(len(palabras))]
         entradaprocesada3= nltk.word_tokenize(elemento3)
         entradaprocesada3 =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada3]
