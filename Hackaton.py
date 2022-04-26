@@ -85,7 +85,7 @@ modelo.save("modelo.tflearn")
 #Apartado de instrucciones.
 
 st.set_page_config(layout="wide")
-mt1, header, titulo, mt2 = st.columns([3,2,2,3])
+mt1, header, titulo, mt2 = st.columns([3,1,1,3])
 
 with mt1:
     st.text("")
@@ -206,11 +206,15 @@ def mainbot():
                 cols[6].text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
                 st.subheader("Hidruros:")
                 st.text("""
-                Los hidruros de los metales alcalinos (grupo I), alcalinotérreos (grupo II) y de algunos otros elementos del sistema periódico se forman directamente de los elementos a temperaturas elevadas. Otros pueden ser formados por intercambio del anión.
-                Algunos hidruros de los elementos nobles se pueden formar también aprovechando el hidrógeno del metanol.
-                Por lo general los hidruros son compuestos estequiométricos que presentan propiedades metálicas como por ejemplo la conductividad. Tienen una gran velocidad de difusión del hidrógeno por medio del sólido cuando se someten a temperatura elevadas.
-                Los hidruros salinos por lo general se encuentran en estado sólido y son de color blanco o gris. Este tipo de hidruro se puede obtener por medio de reacciones directas del metal con el hidrógeno.
-                Elementos como el fósforo, arsénico y sus compuestos son considerados tóxicos. Tienen agentes reductores bastante efectivos y no reaccionan con el agua o con los ácidos catalogados como no oxidantes.
+                - Los hidruros de los metales alcalinos (grupo I), alcalinotérreos (grupo II) y de algunos otros elementos del sistema periódico se forman directamente de los elementos a temperaturas elevadas.
+                - Otros pueden ser formados por intercambio del anión.
+                - Algunos hidruros de los elementos nobles se pueden formar también aprovechando el hidrógeno del metanol.
+                - Por lo general los hidruros son compuestos estequiométricos que presentan propiedades metálicas como por ejemplo la conductividad.
+                - Tienen una gran velocidad de difusión del hidrógeno por medio del sólido cuando se someten a temperatura elevadas.
+                - Los hidruros salinos por lo general se encuentran en estado sólido y son de color blanco o gris.
+                - Este tipo de hidruro se puede obtener por medio de reacciones directas del metal con el hidrógeno.
+                - Elementos como el fósforo, arsénico y sus compuestos son considerados tóxicos.
+                - Tienen agentes reductores bastante efectivos y no reaccionan con el agua o con los ácidos catalogados como no oxidantes.
                 """)
                                        
 
@@ -219,12 +223,16 @@ def mainbot():
                 cols[6].text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
                 st.subheader("Oxidos Metalicos:")
                 st.text("""
-                Son combinaciones binarias de un metal con el oxígeno, en las que el oxígeno tiene número de oxidación (-2.)
-                Poseen basicidad la cual es la capacidad que tiene una sustancia de ser ácido neutralizante cuando se encuentra en una solución de tipo acuosa.
-                Tiene anfoterismo, en este aspecto se debe recordar que no todos los óxidos son iguales por lo que mientras esté ubicado más hacia la izquierda, el metal será más básico que el óxido.
-                Por lo general, tienden a ser sólidos. Tienen un punto de fusión relativamente alto.
-                Son cristalinos en su gran mayoría y, además, son medianamente solubles en agua. Son buenos conductores de la electricidad. Pueden estar presentes en los tres diferentes estados de agregación
-                de la materia. Son compuestos de tipo inorgánico. El proceso para que se obtengan depende en gran manera de la naturaleza del metal o de la reactividad y de las condiciones físicas que le rodean.
+                - Son combinaciones binarias de un metal con el oxígeno, en las que el oxígeno tiene número de oxidación (-2.)
+                - Poseen basicidad la cual es la capacidad que tiene una sustancia de ser ácido neutralizante cuando se encuentra en una solución de tipo acuosa.
+                - Tiene anfoterismo, en este aspecto se debe recordar que no todos los óxidos son iguales por lo que mientras esté ubicado más hacia la izquierda, el metal será más básico que el óxido.
+                - Por lo general, tienden a ser sólidos.
+                - Tienen un punto de fusión relativamente alto.
+                - Son cristalinos en su gran mayoría y, además, son medianamente solubles en agua.
+                - Son buenos conductores de la electricidad.
+                - Pueden estar presentes en los tres diferentes estados de agregación de la materia.
+                - Son compuestos de tipo inorgánico.
+                - El proceso para que se obtengan depende en gran manera de la naturaleza del metal o de la reactividad y de las condiciones físicas que le rodean.
                            """)
 
 
@@ -233,7 +241,7 @@ def mainbot():
                 cols[6].text(f"{obtsimbolo(elemento)}1OH{prefijo1}")
                 st.subheader("Hidroxidos:")
                 st.text("""
-                Los hidróxidos son un tipo de compuesto químico que está formado a partir de la unión de un elemento de tipo metálico o catiónico con un elemento que pertenece al grupo de los hidróxidos, o aniones.
+                -Los hidróxidos son un tipo de compuesto químico que está formado a partir de la unión de un elemento de tipo metálico o catiónico con un elemento que pertenece al grupo de los hidróxidos, o aniones.
                 Se caracterizan por ser compuestos inorgánicos ternarios porque tienen en su molécula de hidrógeno, una molécula de oxígeno y un elemento de tipo metálico.
                 Pueden desasociarse cuando se disuelven en agua. Tienen un carácter básico bastante fuerte porque el grupo hidroxilo tiene la capacidad de captar protones. Pueden hacer que el color del papel
                 tornasol de un tono rojo a uno azul. Tienen la capacidad de reaccionar con los ácidos y producir de esta manera una sal y agua. Cuando hacer algún tipo de reacción puede liberar energía.
@@ -246,10 +254,16 @@ def mainbot():
                 cols[6].text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
                 st.subheader("Sales Binarias:")
                 st.text("""
-                Una sal binaria es una combinación que se hace entre un metal y un no metal en su estructura y que poseen además una fórmula química general como MmXn, donde M será el elemento metálico mientras que X el no metálico.
-                Tienen cierta semejanza con la sal de cocina. Son también conocidas con el nombre de sales neutras. Tienen una consistencia sólida, son muy cristalinas y por lo general su color es blanco. Posee un sabor salado.
-                Gran parte de las sales binarias son solubles cuando entran en contacto con el agua. En las sales binarias el elemento no metálico siempre actuará con su valencia fija frente al hidrógeno. Es uno de los tres tipos de
-                sales que se pueden encontrar en la naturaleza. El no metal que forma parte de las sales binarias siempre utilizará su menor valencia. Son consideradas como parte fundamental de la química, principalmente en el campo educativo.
+                - Una sal binaria es una combinación que se hace entre un metal y un no metal en su estructura y que poseen además una fórmula química general como MmXn, donde M será el elemento metálico mientras que X el no metálico.
+                - Tienen cierta semejanza con la sal de cocina.
+                - Son también conocidas con el nombre de sales neutras.
+                - Tienen una consistencia sólida, son muy cristalinas y por lo general su color es blanco.
+                - Posee un sabor salado.
+                - Gran parte de las sales binarias son solubles cuando entran en contacto con el agua.
+                - En las sales binarias el elemento no metálico siempre actuará con su valencia fija frente al hidrógeno.
+                - Es uno de los tres tipos de sales que se pueden encontrar en la naturaleza.
+                - El no metal que forma parte de las sales binarias siempre utilizará su menor valencia.
+                - Son consideradas como parte fundamental de la química, principalmente en el campo educativo.
                             """)
 
 
