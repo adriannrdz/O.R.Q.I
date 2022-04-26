@@ -201,7 +201,7 @@ def mainbot():
             st.markdown("""
                     <style>
                     .big-font {
-                        font-size:140px !important;
+                        font-size:75px !important;
                     }
                     </style>
                     """, unsafe_allow_html=True)                 
