@@ -196,8 +196,6 @@ def mainbot():
                 lentrada.append(respuesta3)
                 
             #Filtro valor absoluto:
-            if prefijo1 ="-1" or "1":
-                vprefijo =
             
             vprefijo1= int(prefijo1)
             vprefijo2= int(prefijo2)
