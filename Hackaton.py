@@ -91,8 +91,8 @@ with mt1:
     st.text("")
 
 with header:
-st.image("logo.jpg", width = 300)
-st.header("Obtencion de Reacciones Quimicas.")
+    st.image("logo.jpg", width = 300)
+    st.header("Obtencion de Reacciones Quimicas.")
 
 with mt2:
     st.text("")    
