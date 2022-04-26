@@ -91,7 +91,7 @@ with mt1:
     st.write("")
 
 with logo:
-    st.video("logo.mp4")
+    st.image("logo.jpg", width = 240)
 
 with mt2:
     st.write("")
