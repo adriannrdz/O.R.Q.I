@@ -165,7 +165,7 @@ def mainbot():
             if tagaux["tag"]== tag3:
                 respuesta3 = tagaux["respuesta"] 
                 
-        col5, col6 = st.columns(2)        
+        col5, col6 = st.columns([6,4])        
         col5.image('valencias.png')
         col6.text("hola que onda pana gg ya mero terminan echenle muchas ganas")
         
