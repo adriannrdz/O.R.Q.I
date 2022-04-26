@@ -83,9 +83,6 @@ modelo.fit(entrenamiento, salida, n_epoch=1000, batch_size=50, show_metric=True)
 modelo.save("modelo.tflearn")
 
 #Apartado de instrucciones.
-video_file = open('logo.mp4', 'rb')
-logo = video_file.read()
-
 
 st.set_page_config(layout="wide")
 mt1, logo, mt2 = st.columns([5,6,1])
@@ -94,7 +91,7 @@ with mt1:
     st.write("")
 
 with logo:
-    st.video(logo)
+    st.video("logo.mp4")
 
 with mt2:
     st.write("")
