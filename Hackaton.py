@@ -255,7 +255,7 @@ def mainbot():
                 - Son compuestos de tipo inorgánico.
                 - El proceso para que se obtengan depende en gran manera de la naturaleza del metal o de la reactividad y de las condiciones físicas que le rodean.
                            """)
-                st.image("oxidos.jpg")
+                st.image("oxidos.jpg", width = 350)
 
 
             elif lentrada==lhidroxidos:
