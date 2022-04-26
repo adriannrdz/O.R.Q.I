@@ -125,7 +125,7 @@ def mainbot():
                     "europio","gadolinio","terbio","disprosio","holmio","erbio","tulio","iterbio","lutecio","torio","protactinio","uranio",
                     "neptunio","plutonio","americio","curio","berkelio","californio","einstenio","fermio","mendelevio","nobelio","lawrencium",
                     "carbon","nitrogeno","fosforo","azufre","selenio","fluor","cloro","bromo","yodo","astato","tennessine"), key = "optelement1")
-            prefijo1=cols[1].selectbox("Valencia 1", (-3,-2,-1,1,2,3,4,5,6,7,8,9), key= "_prefijo1")
+            prefijo1=int(cols[1].selectbox("Valencia 1", (-3,-2,-1,1,2,3,4,5,6,7,8,9), key= "_prefijo1"))
             cubeta= [0 for _ in range(len(palabras))]
             entradaprocesada= nltk.word_tokenize(elemento)
             entradaprocesada =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada]
@@ -141,8 +141,8 @@ def mainbot():
                 if tagaux["tag"]== tag:
                     respuesta = tagaux["respuesta"]
 
-            elemento2= cols[2].selectbox("Ingrese el elemento:", ("Elemento 2","hidrogeno", "oxigeno", "carbono","nitrogeno","fosforo","azufre","selenio","fluor","cloro","bromo","yodo","astato"), key = "optelement2")
-            prefijo2=cols[3].selectbox("Valencia 2",(-3,-2,-1,1,2,3,4,5,6,7,8,9), key = "_prefijo2")
+            elemento2=cols[2].selectbox("Ingrese el elemento:", ("Elemento 2","hidrogeno", "oxigeno", "carbono","nitrogeno","fosforo","azufre","selenio","fluor","cloro","bromo","yodo","astato"), key = "optelement2")
+            prefijo2=int(cols[3].selectbox("Valencia 2",(-3,-2,-1,1,2,3,4,5,6,7,8,9), key = "_prefijo2"))
             cubeta2= [0 for _ in range(len(palabras))]
             entradaprocesada2= nltk.word_tokenize(elemento2)
             entradaprocesada2 =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada2]
@@ -159,8 +159,8 @@ def mainbot():
                     respuesta2 = tagaux["respuesta"]
 
 
-            elemento3= cols[4].selectbox("Ingrese el elemento:", ('ninguno', 'agua'), key = "optelement3")
-            prefijo3=cols[5].selectbox("Valencia 3",(-3,-2,-1,1,2,3,4,5,6,7,8,9), key = "_prefijo3")
+            elemento3=cols[4].selectbox("Ingrese el elemento:", ('ninguno', 'agua'), key = "optelement3")
+            prefijo3=int(cols[5].selectbox("Valencia 3",(-3,-2,-1,1,2,3,4,5,6,7,8,9), key = "_prefijo3"))
             cubeta3= [0 for _ in range(len(palabras))]
             entradaprocesada3= nltk.word_tokenize(elemento3)
             entradaprocesada3 =[stemmer.stem(palabra.lower()) for palabra in entradaprocesada3]
@@ -194,8 +194,17 @@ def mainbot():
 
             for i in respuesta3:
                 lentrada.append(respuesta3)
+                
+            #Filtro valor absoluto:
+            vprefijo1= int(prefijo1)
+            vprefijo2= int(prefijo2)
+            vprefijo3= int(prefijo3)
+            
+            prefijo1m = abs(vprefijo1)
+            prefijo2m = abs(vprefijo2)
+            prefijo3m = abs(vprefijo3)
 
-
+            
 
             lhidruros=[['metal'], ['hidrogeno'],['ninguno']]
             loxidosm=[['metal'],['oxigeno'],['ninguno']]
@@ -220,7 +229,7 @@ def mainbot():
             if lentrada==lhidruros:
 
                 #cols[6].text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
-                rhidruro = (f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
+                rhidruro = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidruro}</p>', unsafe_allow_html=True)
                 st.subheader("Hidruros:")
@@ -235,11 +244,11 @@ def mainbot():
                 - Elementos como el fósforo, arsénico y sus compuestos son considerados tóxicos.
                 - Tienen agentes reductores bastante efectivos y no reaccionan con el agua o con los ácidos catalogados como no oxidantes.
                 """)
-                st.image("hidruros.jpg")
+                st.image("hidruros.jpg", width = 350)
                                        
 
             elif lentrada==loxidosm:
-                roxido = (f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
+                roxido = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{roxido}</p>', unsafe_allow_html=True)
                 st.subheader("Oxidos Metalicos:")
@@ -259,7 +268,7 @@ def mainbot():
 
 
             elif lentrada==lhidroxidos:
-                rhidroxido= (f"{obtsimbolo(elemento)}1OH{prefijo1}")
+                rhidroxido= (f"{obtsimbolo(elemento)}1OH{prefijo1m}")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidroxido}</p>', unsafe_allow_html=True)
                 st.subheader("Hidroxidos:")
@@ -271,12 +280,12 @@ def mainbot():
                 - Tienen la capacidad de reaccionar con los ácidos y producir de esta manera una sal y agua.
                 - Cuando hacer algún tipo de reacción puede liberar energía.
                             """)
-                st.image("hidroxidos.jpg")
+                st.image("hidroxidos.jpg", width = 350)
 
 
 
             elif lentrada==lsalesbi:
-                rsalesbi =(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
+                rsalesbi =(f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rsalesbi}</p>', unsafe_allow_html=True)
                 st.subheader("Sales Binarias:")
@@ -292,12 +301,12 @@ def mainbot():
                 - El no metal que forma parte de las sales binarias siempre utilizará su menor valencia.
                 - Son consideradas como parte fundamental de la química, principalmente en el campo educativo.
                             """)
-                st.image("salesbi.jpg")
+                st.image("salesbi.jpg", width = 350)
 
 
 
             elif lentrada==lhidracidos:
-                rhidracido= (f"H{prefijo2}{obtsimbolo(elemento2)}1")
+                rhidracido= (f"H{prefijo2m}{obtsimbolo(elemento2m)}1")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidracido}</p>', unsafe_allow_html=True)
                 st.subheader("Sales Hidracidos:")
@@ -315,13 +324,13 @@ def mainbot():
                 -Solo existen sietes ácidos hidrácidos que forman solo con los no metales de Cl, S, I, F, Se, Te.
                 -Sus puntos de ebullición son superiores a la de los anhídridos, por ejemplo, el Cloruro de Hidrógeno hierve a -85Co pero el Ácido Clorhídrico hierve a -48Co.
                 """)
-                st.image("hidracidos.jpg")
+                st.image("hidracidos.jpg", width = 350)
 
                 
 
 
             elif lentrada==lanhidridos:
-                ranhidrido = (f"O{prefijo1}{obtsimbolo(elemento)}2")
+                ranhidrido = (f"O{prefijo1m}{obtsimbolo(elemento)}2")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{ranhidrido}</p>', unsafe_allow_html=True)
                 st.subheader("Anhidridos:")
@@ -335,7 +344,7 @@ def mainbot():
                 -Como ya se ha mencionado vienen a ser fruto de la deshidratación de dos moléculas, pero también existen casos donde pudiese ser una, en el caso intramolecular, de ácido carboxílico.
                 -También son llamados anhídridos carboxílicos.
                 """)
-                st.image("anhidridos.jpg")
+                st.image("anhidridos.jpg", width = 350)
 
                
 
