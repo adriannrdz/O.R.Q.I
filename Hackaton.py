@@ -196,6 +196,9 @@ def mainbot():
                 lentrada.append(respuesta3)
                 
             #Filtro valor absoluto:
+            if prefijo1 ="-1" or "1":
+                vprefijo =
+            
             vprefijo1= int(prefijo1)
             vprefijo2= int(prefijo2)
             vprefijo3= int(prefijo3)
@@ -203,7 +206,6 @@ def mainbot():
             prefijo1m = abs(vprefijo1)
             prefijo2m = abs(vprefijo2)
             prefijo3m = abs(vprefijo3)
-
             
 
             lhidruros=[['metal'], ['hidrogeno'],['ninguno']]
@@ -224,12 +226,37 @@ def mainbot():
                     </style>
                     """, unsafe_allow_html=True)
             
+            if prefijo1m = 1:
+                rhidruro = (f"{obtsimbolo(elemento){obtsimbolo(elemento2)}")
+            else:
+                rhidruro = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
+
+            if prefijo1m = 1:
+                roxido = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}")
+            else:
+                roxido = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
+            
+            if prefijo1m =1:
+                rhidroxido= (f"{obtsimbolo(elemento)}OH")
+            else:
+                rhidroxido= (f"{obtsimbolo(elemento)}1OH{prefijo1m}")
+
+            if prefijo1m =1:
+                rhidracido= (f"H{obtsimbolo(elemento2m)}")
+            else:
+                rhidracido= (f"H{prefijo2m}{obtsimbolo(elemento2m)}1")
+
+            if prefijo1m = 1:
+                ranhidrido = (f"O{obtsimbolo(elemento)}2")
+            else:
+                ranhidrido = (f"O{prefijo1m}{obtsimbolo(elemento)}2")                 
+                    
+                
+            
             
 
             if lentrada==lhidruros:
-
                 #cols[6].text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
-                rhidruro = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidruro}</p>', unsafe_allow_html=True)
                 st.subheader("Hidruros:")
@@ -244,11 +271,10 @@ def mainbot():
                 - Elementos como el fósforo, arsénico y sus compuestos son considerados tóxicos.
                 - Tienen agentes reductores bastante efectivos y no reaccionan con el agua o con los ácidos catalogados como no oxidantes.
                 """)
-                st.image("hidruros.jpg", width = 350)
+                st.image("hidruros.jpg", width = 400)
                                        
 
             elif lentrada==loxidosm:
-                roxido = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{roxido}</p>', unsafe_allow_html=True)
                 st.subheader("Oxidos Metalicos:")
@@ -264,11 +290,10 @@ def mainbot():
                 - Son compuestos de tipo inorgánico.
                 - El proceso para que se obtengan depende en gran manera de la naturaleza del metal o de la reactividad y de las condiciones físicas que le rodean.
                            """)
-                st.image("oxidos.jpg", width = 350)
+                st.image("oxidos.jpg", width = 400)
 
 
             elif lentrada==lhidroxidos:
-                rhidroxido= (f"{obtsimbolo(elemento)}1OH{prefijo1m}")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidroxido}</p>', unsafe_allow_html=True)
                 st.subheader("Hidroxidos:")
@@ -280,7 +305,7 @@ def mainbot():
                 - Tienen la capacidad de reaccionar con los ácidos y producir de esta manera una sal y agua.
                 - Cuando hacer algún tipo de reacción puede liberar energía.
                             """)
-                st.image("hidroxidos.jpg", width = 350)
+                st.image("hidroxidos.jpg", width = 400)
 
 
 
@@ -301,12 +326,11 @@ def mainbot():
                 - El no metal que forma parte de las sales binarias siempre utilizará su menor valencia.
                 - Son consideradas como parte fundamental de la química, principalmente en el campo educativo.
                             """)
-                st.image("salesbi.jpg", width = 350)
+                st.image("salesbi.jpg", width = 400)
 
 
 
             elif lentrada==lhidracidos:
-                rhidracido= (f"H{prefijo2m}{obtsimbolo(elemento2m)}1")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidracido}</p>', unsafe_allow_html=True)
                 st.subheader("Sales Hidracidos:")
@@ -324,13 +348,12 @@ def mainbot():
                 -Solo existen sietes ácidos hidrácidos que forman solo con los no metales de Cl, S, I, F, Se, Te.
                 -Sus puntos de ebullición son superiores a la de los anhídridos, por ejemplo, el Cloruro de Hidrógeno hierve a -85Co pero el Ácido Clorhídrico hierve a -48Co.
                 """)
-                st.image("hidracidos.jpg", width = 350)
+                st.image("hidracidos.jpg", width = 400)
 
                 
 
 
             elif lentrada==lanhidridos:
-                ranhidrido = (f"O{prefijo1m}{obtsimbolo(elemento)}2")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{ranhidrido}</p>', unsafe_allow_html=True)
                 st.subheader("Anhidridos:")
