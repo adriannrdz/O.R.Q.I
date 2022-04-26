@@ -94,16 +94,7 @@ with logo:
 with mt2:
     st.write("")
 
-st.title("Obtencion de Reacciones Quimicas.")
-st.text("""   Buen dia, en el presente programa el usuario tendra la posibilidad de formular reacciones quimicas
-    1.- Si lo que intenta ingresar es un elemento de la tabla periodica, en los apartados de prefijos coloque la opcion ninguno.
-    2.- Si lo que desea agregar es un compuesto, por favor ingrese dicho compuestos de acuerdo a la nomenclatura sistematica.
-    Ejemplo. 
-    Compuesto a ingresar: Dioxido de Titanio. (TiO2)
-    Prefijo 1= como es di colocamos el numero 2
-    Elemento 1= oxigeno
-    Prefijo 2= como es mono, colocamos el 1
-    Elemento 2= Titanio """)
+st.header("Obtencion de Reacciones Quimicas.")
 
 #Funcion principal del bot
 def mainbot():
