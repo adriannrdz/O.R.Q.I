@@ -84,7 +84,7 @@ modelo.save("modelo.tflearn")
 
 #Apartado de instrucciones.
 st.set_page_config(layout="wide")
-mt1, header, mt2 = st.columns([4,5,3])
+mt1, header, mt2 = st.columns([5,5,3])
 st.markdown("""
                     <style>
                     .big-font {
@@ -219,7 +219,6 @@ def mainbot():
 
             if lentrada==lhidruros:
 
-                cols[7].text("La reaccion quimica es:")
                 #cols[6].text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
                 rhidruro = (f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
                 cols[7].markdown(f'<p class="big-font2">{rhidruro}</p>', unsafe_allow_html=True)
@@ -238,7 +237,6 @@ def mainbot():
                                        
 
             elif lentrada==loxidosm:
-                cols[7].text("La reaccion quimica es:")
                 roxido = (f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
                 cols[7].markdown(f'<p class="big-font2">{roxido}</p>', unsafe_allow_html=True)
                 st.subheader("Oxidos Metalicos:")
@@ -257,7 +255,6 @@ def mainbot():
 
 
             elif lentrada==lhidroxidos:
-                cols[7].text("La reaccion quimica es:")
                 rhidroxido= (f"{obtsimbolo(elemento)}1OH{prefijo1}")
                 cols[7].markdown(f'<p class="big-font2">{rhidroxido}</p>', unsafe_allow_html=True)
                 st.subheader("Hidroxidos:")
@@ -273,7 +270,6 @@ def mainbot():
 
 
             elif lentrada==lsalesbi:
-                cols[7].text("La reaccion quimica es:")
                 rsalesbi =(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
                 cols[7].markdown(f'<p class="big-font2">{rsalesbi}</p>', unsafe_allow_html=True)
                 st.subheader("Sales Binarias:")
@@ -293,7 +289,6 @@ def mainbot():
 
 
             elif lentrada==lhidracidos:
-                cols[7].text("La reaccion quimica es:")
                 rhidracido= (f"H{prefijo3}{obtsimbolo(elemento2)}1")
                 cols[7].markdown(f'<p class="big-font2">{rhidracido}</p>', unsafe_allow_html=True)
                 st.subheader("Sales Hidracidos:")
@@ -316,7 +311,6 @@ def mainbot():
 
 
             elif lentrada==lanhidridos:
-                cols[7].text("La reaccion quimica es:")
                 ranhidrido = (f"O{prefijo2}{obtsimbolo(elemento2)}2")
                 cols[7].markdown(f'<p class="big-font2">{ranhidrido}</p>', unsafe_allow_html=True)
                 st.subheader("Anhidridos:")
