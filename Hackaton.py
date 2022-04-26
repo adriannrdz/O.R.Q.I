@@ -83,6 +83,7 @@ modelo.fit(entrenamiento, salida, n_epoch=1000, batch_size=50, show_metric=True)
 modelo.save("modelo.tflearn")
 
 #Apartado de instrucciones.
+st.set_page_config(layout="wide")
 mt1, logo, mt2 = st.columns([3,6,1])
 
 with mt1:
