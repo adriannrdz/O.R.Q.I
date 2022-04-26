@@ -85,7 +85,7 @@ modelo.save("modelo.tflearn")
 #Apartado de instrucciones.
 
 st.set_page_config(layout="wide")
-mt1, header, titulo, mt2 = st.columns([3,1,1,3])
+mt1, header, titulo, mt2 = st.columns([3,2,4,3])
 
 with mt1:
     st.text("")
@@ -204,9 +204,7 @@ def mainbot():
                         font-size:140px !important;
                     }
                     </style>
-                    """, unsafe_allow_html=True)
-
-                    
+                    """, unsafe_allow_html=True)                 
             
             
 
@@ -215,7 +213,7 @@ def mainbot():
                 cols[6].text("La reaccion quimica es:")
                 #cols[6].text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
                 rhidruro = (f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
-                cols[6].markdown(st.markdown(f'<p class="big-font">{rhidruro}</p>', unsafe_allow_html=True))
+                cols[6].markdown(f'<p class="big-font">{rhidruro}</p>', unsafe_allow_html=True)
                 st.subheader("Hidruros:")
                 st.text("""
                 - Los hidruros de los metales alcalinos (grupo I), alcalinotérreos (grupo II) y de algunos otros elementos del sistema periódico se forman directamente de los elementos a temperaturas elevadas.
