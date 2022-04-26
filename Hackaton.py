@@ -85,18 +85,11 @@ modelo.save("modelo.tflearn")
 #Apartado de instrucciones.
 
 st.set_page_config(layout="wide")
-mt1, logo, mt2 = st.columns([5,6,1])
+logoi, hea = st.columns([5,7])
 
-with mt1:
-    st.write("")
+logoi.image("logo.jpg", width = 300)
 
-with logo:
-    st.image("logo.jpg", width = 300)
-
-with mt2:
-    st.write("")
-
-st.header("Obtencion de Reacciones Quimicas.")
+hea.header("Obtencion de Reacciones Quimicas.")
 
 #Funcion principal del bot
 def mainbot():
