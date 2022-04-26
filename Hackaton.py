@@ -89,7 +89,7 @@ logoi, hea = st.columns([1,7])
 
 logoi.image("logo.jpg", width = 300)
 
-hea.text("\n\n\n ")
+hea.text(" "\n\n)
 
 hea.header("Obtencion de Reacciones Quimicas.")
 
