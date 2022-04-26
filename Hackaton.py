@@ -83,13 +83,13 @@ modelo.fit(entrenamiento, salida, n_epoch=1000, batch_size=50, show_metric=True)
 modelo.save("modelo.tflearn")
 
 #Apartado de instrucciones.
-mt1, logo, mt2 = st.beta_columns([1,6,1])
+mt1, logo, mt2 = st.columns([1,6,1])
 
 with mt1:
     st.write("")
 
 with logo:
-    st.image("logo.jpeg")
+    st.image("logo.jpeg", width=20)
 
 with mt2:
     st.write("")
