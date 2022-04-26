@@ -101,7 +101,7 @@ with header:
     st.image("logo.jpg", width = 300)
     
 with titulo:
-    st..markdown('<p class="big-font"> Obtencion de Reacciones Quimicas. </p>', unsafe_allow_html=True)
+    st.markdown('<p class="big-font"> Obtencion de Reacciones Quimicas. </p>', unsafe_allow_html=True)
 
 with mt2:
     st.text("")    
