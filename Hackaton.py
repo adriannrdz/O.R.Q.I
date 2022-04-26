@@ -224,27 +224,27 @@ def mainbot():
                     </style>
                     """, unsafe_allow_html=True)
             
-            if prefijo1m = '1':
+            if prefijo1m == '1':
                 rhidruro = (f"{obtsimbolo(elemento){obtsimbolo(elemento2)}")
             else:
                 rhidruro = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
 
-            if prefijo1m = '1':
+            if prefijo1m == '1':
                 roxido = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}")
             else:
                 roxido = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
             
-            if prefijo1m ='1':
+            if prefijo1m =='1':
                 rhidroxido= (f"{obtsimbolo(elemento)}OH")
             else:
                 rhidroxido= (f"{obtsimbolo(elemento)}1OH{prefijo1m}")
 
-            if prefijo1m ='1':
+            if prefijo1m =='1':
                 rhidracido= (f"H{obtsimbolo(elemento2m)}")
             else:
                 rhidracido= (f"H{prefijo2m}{obtsimbolo(elemento2m)}1")
 
-            if prefijo1m = '1':
+            if prefijo1m == '1':
                 ranhidrido = (f"O{obtsimbolo(elemento)}2")
             else:
                 ranhidrido = (f"O{prefijo1m}{obtsimbolo(elemento)}2")                 
