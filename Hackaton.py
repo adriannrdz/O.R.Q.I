@@ -89,7 +89,7 @@ with mt1:
     st.write("")
 
 with logo:
-    st.image("logo.jpeg", width=20)
+    st.image("logo.jpeg", width=120)
 
 with mt2:
     st.write("")
