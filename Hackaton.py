@@ -83,6 +83,16 @@ modelo.fit(entrenamiento, salida, n_epoch=1000, batch_size=50, show_metric=True)
 modelo.save("modelo.tflearn")
 
 #Apartado de instrucciones.
+st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: url("https://p4.wallpaperbetter.com/wallpaper/656/293/175/4k-galaxy-space-wallpaper-preview.jpg")
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 st.set_page_config(layout="wide")
 mt1, logo, mt2 = st.columns([5,6,1])
 
@@ -170,7 +180,6 @@ def mainbot():
 
             col5, col6 = st.columns([6,4])        
             col5.image('valencias.png')
-            col6.text("hola que onda pana gg ya mero terminan echenle muchas ganas")
 
             def obtsimbolo(simb):
                # simboloq=df[df['nombre']==simb]['simbolo']
