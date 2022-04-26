@@ -85,13 +85,15 @@ modelo.save("modelo.tflearn")
 #Apartado de instrucciones.
 
 st.set_page_config(layout="wide")
-mt1, header, mt2 = st.columns([3,6,3])
+mt1, header, titulo, mt2 = st.columns([3,6,5,3])
 
 with mt1:
     st.text("")
 
 with header:
     st.image("logo.jpg", width = 300)
+    
+with titulo:
     st.header("Obtencion de Reacciones Quimicas.")
 
 with mt2:
