@@ -103,7 +103,7 @@ def mainbot():
         while True:  
 
             #col1, col2, col3, col4 = st.columns([2,2,2,4]) 
-            cols= st.columns([2,2,2,2,2,2,4]) 
+            cols= st.columns([2,1,2,1,2,1,4]) 
 
 
             elemento=cols[0].selectbox("Ingrese el elemento: ", ("Elemento 1","aluminio", "bario", "berilio", "bismuto", "cadmio","calcio", "cerio", "cromo", "cobalto", "cobre", "oro",
