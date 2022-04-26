@@ -84,7 +84,7 @@ modelo.save("modelo.tflearn")
 
 #Apartado de instrucciones.
 st.set_page_config(layout="wide")
-mt1, logo, mt2 = st.columns([3,6,1])
+mt1, logo, mt2 = st.columns([5,6,1])
 
 with mt1:
     st.write("")
