@@ -213,7 +213,9 @@ def mainbot():
                         font-size:45px !important;
                     }
                     </style>
-                    """, unsafe_allow_html=True)                 
+                    """, unsafe_allow_html=True)
+            
+            mt15, rea, mt6 = st.columns([5,5,3])
             
             
 
@@ -235,7 +237,7 @@ def mainbot():
                 - Elementos como el fósforo, arsénico y sus compuestos son considerados tóxicos.
                 - Tienen agentes reductores bastante efectivos y no reaccionan con el agua o con los ácidos catalogados como no oxidantes.
                 """)
-                header.image("hidruros.jpg")
+                rea.image("hidruros.jpg")
                                        
 
             elif lentrada==loxidosm:
@@ -255,7 +257,7 @@ def mainbot():
                 - Son compuestos de tipo inorgánico.
                 - El proceso para que se obtengan depende en gran manera de la naturaleza del metal o de la reactividad y de las condiciones físicas que le rodean.
                            """)
-                header.image("oxidos.jpg")
+                rea.image("oxidos.jpg")
 
 
             elif lentrada==lhidroxidos:
@@ -271,7 +273,7 @@ def mainbot():
                 - Tienen la capacidad de reaccionar con los ácidos y producir de esta manera una sal y agua.
                 - Cuando hacer algún tipo de reacción puede liberar energía.
                             """)
-                header.image("hidroxidos.jpg")
+                rea.image("hidroxidos.jpg")
 
 
 
@@ -292,7 +294,7 @@ def mainbot():
                 - El no metal que forma parte de las sales binarias siempre utilizará su menor valencia.
                 - Son consideradas como parte fundamental de la química, principalmente en el campo educativo.
                             """)
-                header.image("salesbi.jpg")
+                rea.image("salesbi.jpg")
 
 
 
@@ -315,7 +317,7 @@ def mainbot():
                 -Solo existen sietes ácidos hidrácidos que forman solo con los no metales de Cl, S, I, F, Se, Te.
                 -Sus puntos de ebullición son superiores a la de los anhídridos, por ejemplo, el Cloruro de Hidrógeno hierve a -85Co pero el Ácido Clorhídrico hierve a -48Co.
                 """)
-                header.image("hidracidos.jpg")
+                rea.image("hidracidos.jpg")
 
                 
 
@@ -335,7 +337,7 @@ def mainbot():
                 -Como ya se ha mencionado vienen a ser fruto de la deshidratación de dos moléculas, pero también existen casos donde pudiese ser una, en el caso intramolecular, de ácido carboxílico.
                 -También son llamados anhídridos carboxílicos.
                 """)
-                header.image("anhidridos.jpg")
+                rea.image("anhidridos.jpg")
 
                
 
