@@ -97,14 +97,20 @@ with mt1:
     st.text("")
 
 with header:
-    st.image("logo.jpg", width = 300)
-    st.markdown('<p class="big-font"> Obtencion de Reacciones Quimicas. </p>', unsafe_allow_html=True)
+    st.image("logo.jpg", width = 300)    
     
-
-
 with mt2:
     st.text("")    
-   
+    
+mt6, titlep, mt7 = st.columns([4,5,3])
+with mt6:
+    st.text("")
+    
+with titlep:
+    st.markdown('<p class="big-font"> Obtencion de Reacciones Quimicas. </p>', unsafe_allow_html=True)
+    
+with mt7:
+    st.text("")   
 
 #Funcion principal del bot
 def mainbot():
