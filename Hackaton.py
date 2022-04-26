@@ -89,6 +89,8 @@ logoi, hea = st.columns([1,7])
 
 logoi.image("logo.jpg", width = 300)
 
+hea.text(" ")
+
 hea.header("Obtencion de Reacciones Quimicas.")
 
 #Funcion principal del bot
