@@ -224,37 +224,10 @@ def mainbot():
                     </style>
                     """, unsafe_allow_html=True)
             
-            if prefijo1m == '1':
-                rhidruro = (f"{obtsimbolo(elemento)}{obtsimbolo(elemento2)}")
-            else:
-                rhidruro = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
-
-            if prefijo1m == '1':
-                roxido = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}")
-            else:
-                roxido = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
-            
-            if prefijo1m =='1':
-                rhidroxido= (f"{obtsimbolo(elemento)}OH")
-            else:
-                rhidroxido= (f"{obtsimbolo(elemento)}1OH{prefijo1m}")
-
-            if prefijo1m =='1':
-                rhidracido= (f"H{obtsimbolo(elemento2m)}")
-            else:
-                rhidracido= (f"H{prefijo2m}{obtsimbolo(elemento2m)}1")
-
-            if prefijo1m == '1':
-                ranhidrido = (f"O{obtsimbolo(elemento)}2")
-            else:
-                ranhidrido = (f"O{prefijo1m}{obtsimbolo(elemento)}2")                 
-                    
-                
-            
-            
 
             if lentrada==lhidruros:
                 #cols[6].text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
+                rhidruro = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidruro}</p>', unsafe_allow_html=True)
                 st.subheader("Hidruros:")
@@ -273,6 +246,7 @@ def mainbot():
                                        
 
             elif lentrada==loxidosm:
+                roxido = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{roxido}</p>', unsafe_allow_html=True)
                 st.subheader("Oxidos Metalicos:")
@@ -292,6 +266,7 @@ def mainbot():
 
 
             elif lentrada==lhidroxidos:
+                rhidroxido= (f"{obtsimbolo(elemento)}1OH{prefijo1m}")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidroxido}</p>', unsafe_allow_html=True)
                 st.subheader("Hidroxidos:")
@@ -329,6 +304,7 @@ def mainbot():
 
 
             elif lentrada==lhidracidos:
+                rhidracido= (f"H{prefijo2m}{obtsimbolo(elemento2m)}1")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidracido}</p>', unsafe_allow_html=True)
                 st.subheader("Sales Hidracidos:")
@@ -352,6 +328,7 @@ def mainbot():
 
 
             elif lentrada==lanhidridos:
+                ranhidrido = (f"O{prefijo1m}{obtsimbolo(elemento)}2")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{ranhidrido}</p>', unsafe_allow_html=True)
                 st.subheader("Anhidridos:")
