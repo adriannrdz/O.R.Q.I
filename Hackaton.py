@@ -91,8 +91,8 @@ with mt1:
     st.text("")
 
 with header:
-logoi.image("logo.jpg", width = 300)
-hea.header("Obtencion de Reacciones Quimicas.")
+st.image("logo.jpg", width = 300)
+st.header("Obtencion de Reacciones Quimicas.")
 
 with mt2:
     st.text("")    
@@ -167,10 +167,7 @@ def mainbot():
             for tagaux in datos["contenido"]:
                 if tagaux["tag"]== tag3:
                     respuesta3 = tagaux["respuesta"]
-
-
-            col5, col6 = st.columns([6,4])        
-            col5.image('valencias.png')
+        
 
             def obtsimbolo(simb):
                # simboloq=df[df['nombre']==simb]['simbolo']
@@ -276,6 +273,10 @@ def mainbot():
 
             else:
                 cols[6].text("La reaccion no esta disponible")
+                
+                
+                
+            st.image('valencias.png')
                 
     except Exception as er: 
         print("error: ", er)
