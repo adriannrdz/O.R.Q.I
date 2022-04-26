@@ -164,7 +164,8 @@ def mainbot():
 
         for tagaux in datos["contenido"]:
             if tagaux["tag"]== tag3:
-                respuesta3 = tagaux["respuesta"] 
+                respuesta3 = tagaux["respuesta"]
+                
                 
         col5, col6 = st.columns([6,4])        
         col5.image('valencias.png')
@@ -189,6 +190,9 @@ def mainbot():
             lentrada.append(respuesta3)
             
         st.text(lentrada)
+        st.text(resultados)
+        st.text(resultados2)
+        st.text(resultados3)
         
         lhidruros=[['metal'], ['hidrogeno'],['ninguno']]
         loxidosm=[['metal'],['oxigeno'],['ninguno']]
