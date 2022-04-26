@@ -346,7 +346,7 @@ def mainbot():
                 
             st.subheader("Probabilidades:")
             st.text("""
-            Las cantidades que se muestran a continuacion representan las probabilidaddes que determina el programa con la finalidad de determinar
+            Las cantidades que se muestran a continuacion representan las probabilidaddes que determina el programa con la finalidad de establecer
             el tipo de elemento que se asigno en la parte superior de la pagina:  """)                
             st.text(lentrada)
             st.text("Primer elemento")
