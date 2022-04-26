@@ -84,7 +84,7 @@ modelo.save("modelo.tflearn")
 
 #Apartado de instrucciones.
 st.set_page_config(layout="wide")
-mt1, header, titulo, mt2 = st.columns([3,2,2,3])
+mt1, header, mt2 = st.columns([3,5,3])
 st.markdown("""
                     <style>
                     .big-font {
@@ -98,9 +98,9 @@ with mt1:
 
 with header:
     st.image("logo.jpg", width = 300)
-    
-with titulo:
     st.markdown('<p class="big-font"> Obtencion de Reacciones Quimicas. </p>', unsafe_allow_html=True)
+    
+
 
 with mt2:
     st.text("")    
