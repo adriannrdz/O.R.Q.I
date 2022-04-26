@@ -201,7 +201,7 @@ def mainbot():
             lhidracidos=[['no metal'],['hidrogeno'],['ninguno']]
             lanhidridos=[['no metal'],['oxigeno'],['ninguno']]
             
-            areareaccion = cols[6].text_area("Reaccion quimica.")
+            
 
             if lentrada==lhidruros:
 
@@ -209,8 +209,8 @@ def mainbot():
                 cols[6].text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")#Esta ya esta bien            
 
             elif lentrada==loxidosm:
-                areareaccion.text("La reaccion quimica es:")
-                areareaccion.text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")#Esta ya esta bien 
+                cols[6].text("La reaccion quimica es:")
+                cols[6].text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")#Esta ya esta bien 
 
             elif lentrada==lhidroxidos:
                 cols[6].text("La reaccion quimica es:")
