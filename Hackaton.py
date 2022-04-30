@@ -310,7 +310,7 @@ def mainbot():
 
 
             elif lentrada==lhidracidos:
-                rhidracido= (f"H{prefijo2m}{obtsimbolo(elemento2m)}1")
+                rhidracido= (f"H{prefijo2m}{obtsimbolo(elemento2)}1")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidracido}</p>', unsafe_allow_html=True)
                 st.subheader("Sales Hidracidos:")
