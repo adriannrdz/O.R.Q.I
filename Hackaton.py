@@ -258,7 +258,7 @@ def mainbot():
                         prefijopar1, prefijopar2 = valpar(prefijo1m, prefijo2m)                        
                         rhidruro = (f"{obtsimbolo(elemento)}{prefijopar2}{obtsimbolo(elemento2)}{prefijopar1}")
                         
-                    if prefijo1m < prefijo2m
+                    if prefijo1m < prefijo2m:
                         prefijopar1, prefijopar2= valparinv(prefijo1m, prefijo2m)
                         rhidruro = (f"{obtsimbolo(elemento)}{prefijopar2}{obtsimbolo(elemento2)}{prefijopar1}")                   
                     
