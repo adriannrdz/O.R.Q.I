@@ -252,18 +252,9 @@ def mainbot():
                     """, unsafe_allow_html=True)
             
 
-            if lentrada==lhidruros:
-                if numpar(prefijo1m) and numpar(prefijo2m) == 0:
-                    if prefijo1m > prefijo2m:
-                        prefijopar1, prefijopar2 = valpar(prefijo1m, prefijo2m)                        
-                        rhidruro = (f"{obtsimbolo(elemento)}{prefijopar2}{obtsimbolo(elemento2)}{prefijopar1}")
-                        
-                    if prefijo1m < prefijo2m:
-                        prefijopar1, prefijopar2= valparinv(prefijo1m, prefijo2m)
-                        rhidruro = (f"{obtsimbolo(elemento)}{prefijopar2}{obtsimbolo(elemento2)}{prefijopar1}")                   
+            if lentrada==lhidruros:                           
                     
-                else:
-                    rhidruro = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
+                rhidruro = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
                     
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidruro}</p>', unsafe_allow_html=True)
@@ -283,7 +274,16 @@ def mainbot():
                                        
 
             elif lentrada==loxidosm:
-                roxido = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
+                if (numpar(prefijo1m) and numpar(prefijo2m) == 0) and (prefijo1m > prefijo2m):
+                        prefijopar1, prefijopar2 = valpar(prefijo1m, prefijo2m)                        
+                        roxido = (f"{obtsimbolo(elemento)}{prefijopar2}{obtsimbolo(elemento2)}{prefijopar1}")
+                        
+                if (numpar(prefijo1m) and numpar(prefijo2m) == 0) and (prefijo1m < prefijo2m):
+                        prefijopar1, prefijopar2= valparinv(prefijo1m, prefijo2m)
+                        roxido = (f"{obtsimbolo(elemento)}{prefijopar2}{obtsimbolo(elemento2)}{prefijopar1}")
+                        
+                else:                       
+                    roxido = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{roxido}</p>', unsafe_allow_html=True)
                 st.subheader("Oxidos Metalicos:")
