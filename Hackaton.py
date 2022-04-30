@@ -334,7 +334,7 @@ def mainbot():
 
 
             elif lentrada==lanhidridos:
-                ranhidrido = (f"O{prefijo1m}{obtsimbolo(elemento)}2")
+                ranhidrido = (f"{obtsimbolo(elemento)}2O{prefijo1m}")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{ranhidrido}</p>', unsafe_allow_html=True)
                 st.subheader("Anhidridos:")
