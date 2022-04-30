@@ -202,14 +202,35 @@ def mainbot():
                 lentrada.append(respuesta3)
                 
             #Filtro valor absoluto:
-            
+                        
             vprefijo1= int(prefijo1)
             vprefijo2= int(prefijo2)
             vprefijo3= int(prefijo3)
             
+            
             prefijo1m = abs(vprefijo1)
             prefijo2m = abs(vprefijo2)
             prefijo3m = abs(vprefijo3)
+            
+            def numpar(val):
+                valp= val%2
+                return valp
+            
+            def valpar(val1,val2):
+                global prefijopar1, prefijopar2
+                valres=val2/val1
+                valfin=val2/valres
+                prefijopar1=val1/valfin
+                prefijopar2=val2/valfin
+                return prefijopar1, prefijopar2
+                
+            def valparinv(val1,val2):
+                global prefijopar1, prefijopar2
+                valres=val1/val2
+                valfin=val1/valres
+                prefijopar1=val1/valfin
+                prefijopar2=val2/valfin
+                return prefijopar1, prefijopar2
             
 
             lhidruros=[['metal'], ['hidrogeno'],['ninguno']]
@@ -232,8 +253,18 @@ def mainbot():
             
 
             if lentrada==lhidruros:
-                #cols[6].text(f"{obtsimbolo(elemento)}{prefijo2}{obtsimbolo(elemento2)}{prefijo1}")
-                rhidruro = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
+                if numpar(prefijo1m) and numpar(prefijo2m) == 0:
+                    if prefijo1m > prefijo2m:
+                        prefijopar1, prefijopar2 = valpar(prefijo1m, prefijo2m)                        
+                        rhidruro = (f"{obtsimbolo(elemento)}{prefijopar2}{obtsimbolo(elemento2)}{prefijopar1}")
+                        
+                    if prefijo1m < prefijo2m
+                        prefijopar1, prefijopar2= valparinv(prefijo1m, prefijo2m)
+                        rhidruro = (f"{obtsimbolo(elemento)}{prefijopar2}{obtsimbolo(elemento2)}{prefijopar1}")                   
+                    
+                else:
+                    rhidruro = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
+                    
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidruro}</p>', unsafe_allow_html=True)
                 st.subheader("Hidruros:")
