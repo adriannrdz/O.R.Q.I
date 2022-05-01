@@ -352,7 +352,7 @@ def mainbot():
                 if prefijo1m == 1:
                         del prefijo1m
                         prefijo1m= ""
-                rhidroxido= (f"{obtsimbolo(elemento)}OH{prefijo1m}")
+                rhidroxido= (f"{obtsimbolo(elemento)}(OH){prefijo1m}")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidroxido}</p>', unsafe_allow_html=True)
                 st.subheader("Hidroxidos:")
