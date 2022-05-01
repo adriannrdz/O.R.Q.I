@@ -106,7 +106,7 @@ st.markdown(
 
         html, body, [class*="css"]  {
         font-family: 'Roboto Slab';
-        font-size: 20px;
+        font-size: 15px;
         }
         </style>
 
