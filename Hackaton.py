@@ -551,6 +551,39 @@ def mainbot():
                 
             st.text("")
             st.text("")
+            
+            
+            with st.expander("Acerca De"):
+                st.write(f"""
+                La aplicacion "Aqui va el nombre" es capaz de determinar reacciones quimicas inorganicas como se muestra a continuacion:
+                
+                Hidruros:
+                
+                Metal + Hidrogeno + Ninguno -----> Reaccion Hidruro
+                
+                Oxido Metalicos:
+                
+                Metal + Oxigeno + Ninguno -----> Reaccion Oxido Metálico
+                
+                Hidroxido:
+                
+                Metal + Oxigeno + Agua -----> Reaccion Hidroxido
+                
+                Sales Binarias:
+                
+                Metal + No metal + Ninguno -----> Reaccion Sal Binaria
+                
+                Hidracidos:
+                
+                No metal + Hidrogeno + Ninguno -----> Reaccion Hidracido
+                
+                Anhidridos:
+                
+                No metal + Oxigeno + Ninguno -----> Reaccion Anhidrido
+                
+                
+                
+                """)
                 
             with st.expander("Reaccion Quimica"):
                 st.write(f"""
