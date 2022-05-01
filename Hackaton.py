@@ -205,12 +205,20 @@ def mainbot():
                         
             vprefijo1= int(prefijo1)
             vprefijo2= int(prefijo2)
-            vprefijo3= int(prefijo3)
-            
+            vprefijo3= int(prefijo3)            
             
             prefijo1m = abs(vprefijo1)
             prefijo2m = abs(vprefijo2)
             prefijo3m = abs(vprefijo3)
+            
+            if vprefijo1 == 1:
+                prefijo1m= ""
+
+            if vprefijo2 == 1:
+                prefijo2m= ""
+
+            if vprefijo3 == 1:
+                prefijo3m= ""
             
             def numpar(val):
                 valp= val%2
@@ -232,6 +240,11 @@ def mainbot():
                 prefijopar2=val2/valfin
                 return prefijopar1, prefijopar2
             
+            def nulo(val1):
+                if val1 ==1:
+                    val1 == ""
+                    return val1
+            
 
             lhidruros=[['metal'], ['hidrogeno'],['ninguno']]
             loxidosm=[['metal'],['oxigeno'],['ninguno']]
@@ -252,7 +265,7 @@ def mainbot():
                     """, unsafe_allow_html=True)
             
 
-            if lentrada==lhidruros:                           
+            if lentrada==lhidruros:
                 rhidruro = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
                     
                 cols[7].text("")
