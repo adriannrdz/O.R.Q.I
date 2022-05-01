@@ -314,7 +314,7 @@ def mainbot():
 
 
             elif lentrada==lhidroxidos:
-                rhidroxido= (f"{obtsimbolo(elemento)}1OH{prefijo1m}")
+                rhidroxido= (f"{obtsimbolo(elemento)}OH{prefijo1m}")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidroxido}</p>', unsafe_allow_html=True)
                 st.subheader("Hidroxidos:")
@@ -331,7 +331,28 @@ def mainbot():
 
 
             elif lentrada==lsalesbi:
-                rsalesbi =(f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
+                resta= numpar(prefijo1m)- numpar(prefijo2m)                
+                if (resta== 0) and (prefijo1m > prefijo2m):
+                    prefijopar1, prefijopar2 = valparinv(prefijo1m, prefijo2m)
+                    prepar1int = int(prefijopar1)
+                    prepar2int = int(prefijopar2)
+                    rsalesbi =(f"{obtsimbolo(elemento)}{prepar2int}{obtsimbolo(elemento2)}{prepar1int}")
+                        
+                elif (resta == 0) and (prefijo1m < prefijo2m):
+                    prefijopar1, prefijopar2= valpar(prefijo1m, prefijo2m)
+                    prepar1int = int(prefijopar1)
+                    prepar2int = int(prefijopar2)
+                    rsalesbi =(f"{obtsimbolo(elemento)}{prepar2int}{obtsimbolo(elemento2)}{prepar1int}")
+                        
+                elif (resta== 0) and (prefijo1m == prefijo2m):
+                    prefijopar1, prefijopar2 = valparinv(prefijo1m, prefijo2m)
+                    prepar1int = int(prefijopar1)
+                    prepar2int = int(prefijopar2)
+                    rsalesbi =(f"{obtsimbolo(elemento)}{prepar2int}{obtsimbolo(elemento2)}{prepar1int}")                        
+                        
+                else:                       
+                    rsalesbi =(f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
+                
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rsalesbi}</p>', unsafe_allow_html=True)
                 st.subheader("Sales Binarias:")
@@ -352,10 +373,10 @@ def mainbot():
 
 
             elif lentrada==lhidracidos:
-                rhidracido= (f"H{prefijo1m}{obtsimbolo(elemento)}1")
+                rhidracido= (f"H{prefijo1m}{obtsimbolo(elemento)}")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidracido}</p>', unsafe_allow_html=True)
-                st.subheader("Sales Hidracidos:")
+                st.subheader("Hidracidos:")
                 st.text("""
                 -También son conocidos como ácidos hidrácidos, sales binarias o hídricos ácidos, están hechos por dos compuestos binarios ácidos los cuales deben ser un hidrógeno
                 (del grupo halógeno o antígeno en la tabla periódica) y un no metal, sin presencia de oxígeno.
@@ -376,7 +397,28 @@ def mainbot():
 
 
             elif lentrada==lanhidridos:
-                ranhidrido = (f"{obtsimbolo(elemento)}2O{prefijo1m}")
+                resta= numpar(prefijo1m)- numpar(prefijo2m)                
+                if (resta== 0) and (prefijo1m > prefijo2m):
+                    prefijopar1, prefijopar2 = valparinv(prefijo1m, prefijo2m)
+                    prepar1int = int(prefijopar1)
+                    prepar2int = int(prefijopar2)
+                    ranhidrido = (f"{obtsimbolo(elemento)}{prepar2int}O{prepar1int}")
+                        
+                elif (resta == 0) and (prefijo1m < prefijo2m):
+                    prefijopar1, prefijopar2= valpar(prefijo1m, prefijo2m)
+                    prepar1int = int(prefijopar1)
+                    prepar2int = int(prefijopar2)
+                    ranhidrido = (f"{obtsimbolo(elemento)}{prepar2int}O{prepar1int}")
+                        
+                elif (resta== 0) and (prefijo1m == prefijo2m):
+                    prefijopar1, prefijopar2 = valparinv(prefijo1m, prefijo2m)
+                    prepar1int = int(prefijopar1)
+                    prepar2int = int(prefijopar2)
+                    ranhidrido = (f"{obtsimbolo(elemento)}{prepar2int}O{prepar1int}")                        
+                        
+                else:                       
+                    ranhidrido = (f"{obtsimbolo(elemento)}{prefijo2m}O{prefijo1m}")
+                
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{ranhidrido}</p>', unsafe_allow_html=True)
                 st.subheader("Anhidridos:")
