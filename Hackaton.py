@@ -278,13 +278,13 @@ def mainbot():
                     prefijopar1, prefijopar2 = valparinv(prefijo1m, prefijo2m)
                     prepar1int = int(prefijopar1)
                     prepar2int = int(prefijopar2)
-                    if prefijo1m == 1:
-                        del prefijo1m
-                        prefijo1m= ""
+                    if prepar1int == 1:
+                        del prepar1int
+                        prepar1int= ""
 
-                    if prefijo2m == 1:
-                        del prefijo2m
-                        prefijo2m= ""
+                    if prepar2int == 1:
+                        del prepar2int
+                        prepar2int= ""
                     roxido = (f"{obtsimbolo(elemento)}{prepar2int}{obtsimbolo(elemento2)}{prepar1int}")
                         
                 elif (resta == 0) and (prefijo1m < prefijo2m):
