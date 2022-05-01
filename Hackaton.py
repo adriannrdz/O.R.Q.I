@@ -548,6 +548,10 @@ def mainbot():
             with mt4:
                 st.text("")
                 
+                
+            st.text("")
+            st.text("")
+                
             with st.expander("Reaccion Quimica"):
                 st.write(f"""
             Las reacciones químicas (también llamadas cambios químicos o fenómenos químicos) son procesos termodinámicos de transformación de la materia. En estas reacciones intervienen dos o más sustancias (reactivos o reactantes), que cambian significativamente en el proceso, y pueden consumir o liberar energía para generar dos o más sustancias llamadas productos.
@@ -566,6 +570,7 @@ def mainbot():
             aA + bB ----> cC + dD
 
             Donde:
+            
             •	A y B son los reactivos.
             
             •	C y D son los productos.
