@@ -85,7 +85,8 @@ modelo.save("modelo.tflearn")
 #Apartado de instrucciones.
 st.set_page_config(layout="wide")
 mt1, header, mt2 = st.columns([5,5,3])
-st.markdown(
+
+"""st.markdown(
             """
             <style>
     @font-face {
@@ -104,7 +105,7 @@ st.markdown(
 
         """,
             unsafe_allow_html=True,
-            )
+            )"""
         
 st.markdown("""
                     <style>
@@ -114,26 +115,7 @@ st.markdown("""
                     </style>
                     """, unsafe_allow_html=True)
 
-#st.markdown(
-#            """
- #           <style>
-#    @font-face {
-#      font-family:'Montserrat Alternates', sans-serif;
-#      font-style: normal;
-#      font-weight: 400;
-#      src: url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
- #     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-#    }
 
-#        html, body, [class*="css"]  {
- #       font-family: 'Montserrat Alternates', sans-serif;
-#        font-size: 15px;
- #       }
- #       </style>
-
-#        """,
-#            unsafe_allow_html=True,
-#        )
 
 with mt1:
     st.text("")
