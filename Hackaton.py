@@ -211,6 +211,8 @@ def mainbot():
             prefijo2m = abs(vprefijo2)
             prefijo3m = abs(vprefijo3)
             
+            """
+            
             if vprefijo1 == 1:
                 prefijo1m= ""
 
@@ -218,7 +220,7 @@ def mainbot():
                 prefijo2m= ""
 
             if vprefijo3 == 1:
-                prefijo3m= ""
+                prefijo3m= """""
             
             def numpar(val):
                 valp= val%2
