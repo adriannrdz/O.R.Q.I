@@ -211,7 +211,7 @@ def mainbot():
             prefijo2m = abs(vprefijo2)
             prefijo3m = abs(vprefijo3)
             
-            """
+            
             
             if vprefijo1 == 1:
                 prefijo1m= ""
@@ -220,7 +220,7 @@ def mainbot():
                 prefijo2m= ""
 
             if vprefijo3 == 1:
-                prefijo3m= """""
+                prefijo3m= ""
             
             def numpar(val):
                 valp= val%2
@@ -241,11 +241,6 @@ def mainbot():
                 prefijopar1=val1/valfin
                 prefijopar2=val2/valfin
                 return prefijopar1, prefijopar2
-            
-            def nulo(val1):
-                if val1 ==1:
-                    val1 == ""
-                    return val1
             
 
             lhidruros=[['metal'], ['hidrogeno'],['ninguno']]
