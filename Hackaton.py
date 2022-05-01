@@ -211,18 +211,7 @@ def mainbot():
             prefijo2m = abs(vprefijo2)
             prefijo3m = abs(vprefijo3)
             
-            if prefijo1m == 1:
-                del prefijo1m
-                prefijo1m= ""
-
-            if prefijo2m == 1:
-                del prefijo2m
-                prefijo2m= ""
-
-            if prefijo3m == 1:
-                del prefijo3m
-                prefijo3m= ""
-            
+                       
             def numpar(val):
                 valp= val%2
                 return valp
@@ -289,21 +278,49 @@ def mainbot():
                     prefijopar1, prefijopar2 = valparinv(prefijo1m, prefijo2m)
                     prepar1int = int(prefijopar1)
                     prepar2int = int(prefijopar2)
+                    if prefijo1m == 1:
+                        del prefijo1m
+                        prefijo1m= ""
+
+                    if prefijo2m == 1:
+                        del prefijo2m
+                        prefijo2m= ""
                     roxido = (f"{obtsimbolo(elemento)}{prepar2int}{obtsimbolo(elemento2)}{prepar1int}")
                         
                 elif (resta == 0) and (prefijo1m < prefijo2m):
                     prefijopar1, prefijopar2= valpar(prefijo1m, prefijo2m)
                     prepar1int = int(prefijopar1)
                     prepar2int = int(prefijopar2)
+                    if prefijo1m == 1:
+                        del prefijo1m
+                        prefijo1m= ""
+
+                    if prefijo2m == 1:
+                        del prefijo2m
+                        prefijo2m= ""
                     roxido = (f"{obtsimbolo(elemento)}{prepar2int}{obtsimbolo(elemento2)}{prepar1int}")
                         
                 elif (resta== 0) and (prefijo1m == prefijo2m):
                     prefijopar1, prefijopar2 = valparinv(prefijo1m, prefijo2m)
                     prepar1int = int(prefijopar1)
                     prepar2int = int(prefijopar2)
+                    if prefijo1m == 1:
+                        del prefijo1m
+                        prefijo1m= ""
+
+                    if prefijo2m == 1:
+                        del prefijo2m
+                        prefijo2m= ""
                     roxido = (f"{obtsimbolo(elemento)}{prepar2int}{obtsimbolo(elemento2)}{prepar1int}")                        
                         
-                else:                       
+                else:
+                    if prefijo1m == 1:
+                        del prefijo1m
+                        prefijo1m= ""
+
+                    if prefijo2m == 1:
+                        del prefijo2m
+                        prefijo2m= ""
                     roxido = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
                     
                 cols[7].text("")
