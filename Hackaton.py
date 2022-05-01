@@ -257,9 +257,9 @@ def mainbot():
                         del prefijo1m
                         prefijo1m= ""
 
-                    if prefijo2m == 1:
-                        del prefijo2m
-                        prefijo2m= ""
+                if prefijo2m == 1:
+                    del prefijo2m
+                    prefijo2m= ""
                 rhidruro = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
                     
                 cols[7].text("")
