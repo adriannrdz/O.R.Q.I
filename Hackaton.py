@@ -274,11 +274,14 @@ def mainbot():
 
             elif lentrada==loxidosm:
                 resta= numpar(prefijo1m)- numpar(prefijo2m)
+                print(resta)
+                print(prefijo1m)
+                print(prefijo2m)
                 if (resta== 0) and (prefijo1m > prefijo2m):
                         prefijopar1, prefijopar2 = valparinv(prefijo1m, prefijo2m)                        
                         roxido = (f"{obtsimbolo(elemento)}{prefijopar2}{obtsimbolo(elemento2)}{prefijopar1}")
                         
-                if (resta == 0) and (prefijo1m < prefijo2m):
+                elif (resta == 0) and (prefijo1m < prefijo2m):
                         prefijopar1, prefijopar2= valpar(prefijo1m, prefijo2m)
                         prepar1int = int(prefijopar1)
                         prepar2int = int(prefijopar2)
