@@ -106,7 +106,7 @@ st.markdown(
 
         html, body, [class*="css"]  {
         font-family: 'Montserrat Alternates', sans-serif;
-        font-size: 17px;
+        font-size: 15px;
         }
         </style>
 
