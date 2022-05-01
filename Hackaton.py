@@ -253,6 +253,13 @@ def mainbot():
             
 
             if lentrada==lhidruros:
+                if prefijo1m == 1:
+                        del prefijo1m
+                        prefijo1m= ""
+
+                    if prefijo2m == 1:
+                        del prefijo2m
+                        prefijo2m= ""
                 rhidruro = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
                     
                 cols[7].text("")
@@ -314,13 +321,13 @@ def mainbot():
                     roxido = (f"{obtsimbolo(elemento)}{prepar2int}{obtsimbolo(elemento2)}{prepar1int}")                        
                         
                 else:
-                    if prepar1int == 1:
-                        del prepar1int
-                        prepar1int= ""
+                    if prefijo1m == 1:
+                        del prefijo1m
+                        prefijo1m= ""
 
-                    if prepar2int == 1:
-                        del prepar2int
-                        prepar2int= ""
+                    if prefijo2m == 1:
+                        del prefijo2m
+                        prefijo2m= ""
                     roxido = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
                     
                 cols[7].text("")
@@ -342,6 +349,9 @@ def mainbot():
 
 
             elif lentrada==lhidroxidos:
+                if prefijo1m == 1:
+                        del prefijo1m
+                        prefijo1m= ""
                 rhidroxido= (f"{obtsimbolo(elemento)}OH{prefijo1m}")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidroxido}</p>', unsafe_allow_html=True)
@@ -364,21 +374,49 @@ def mainbot():
                     prefijopar1, prefijopar2 = valparinv(prefijo1m, prefijo2m)
                     prepar1int = int(prefijopar1)
                     prepar2int = int(prefijopar2)
+                    if prepar1int == 1:
+                        del prepar1int
+                        prepar1int= ""
+
+                    if prepar2int == 1:
+                        del prepar2int
+                        prepar2int= ""
                     rsalesbi =(f"{obtsimbolo(elemento)}{prepar2int}{obtsimbolo(elemento2)}{prepar1int}")
                         
                 elif (resta == 0) and (prefijo1m < prefijo2m):
                     prefijopar1, prefijopar2= valpar(prefijo1m, prefijo2m)
                     prepar1int = int(prefijopar1)
                     prepar2int = int(prefijopar2)
+                    if prepar1int == 1:
+                        del prepar1int
+                        prepar1int= ""
+
+                    if prepar2int == 1:
+                        del prepar2int
+                        prepar2int= ""
                     rsalesbi =(f"{obtsimbolo(elemento)}{prepar2int}{obtsimbolo(elemento2)}{prepar1int}")
                         
                 elif (resta== 0) and (prefijo1m == prefijo2m):
                     prefijopar1, prefijopar2 = valparinv(prefijo1m, prefijo2m)
                     prepar1int = int(prefijopar1)
                     prepar2int = int(prefijopar2)
+                    if prepar1int == 1:
+                        del prepar1int
+                        prepar1int= ""
+
+                    if prepar2int == 1:
+                        del prepar2int
+                        prepar2int= ""
                     rsalesbi =(f"{obtsimbolo(elemento)}{prepar2int}{obtsimbolo(elemento2)}{prepar1int}")                        
                         
-                else:                       
+                else:
+                    if prefijo1m == 1:
+                        del prefijo1m
+                        prefijo1m= ""
+
+                    if prefijo2m == 1:
+                        del prefijo2m
+                        prefijo2m= ""
                     rsalesbi =(f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
                 
                 cols[7].text("")
@@ -401,6 +439,9 @@ def mainbot():
 
 
             elif lentrada==lhidracidos:
+                if prefijo1m == 1:
+                        del prefijo1m
+                        prefijo1m= ""
                 rhidracido= (f"H{prefijo1m}{obtsimbolo(elemento)}")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidracido}</p>', unsafe_allow_html=True)
@@ -430,21 +471,49 @@ def mainbot():
                     prefijopar1, prefijopar2 = valparinv(prefijo1m, prefijo2m)
                     prepar1int = int(prefijopar1)
                     prepar2int = int(prefijopar2)
+                    if prepar1int == 1:
+                        del prepar1int
+                        prepar1int= ""
+
+                    if prepar2int == 1:
+                        del prepar2int
+                        prepar2int= ""
                     ranhidrido = (f"{obtsimbolo(elemento)}{prepar2int}O{prepar1int}")
                         
                 elif (resta == 0) and (prefijo1m < prefijo2m):
                     prefijopar1, prefijopar2= valpar(prefijo1m, prefijo2m)
                     prepar1int = int(prefijopar1)
                     prepar2int = int(prefijopar2)
+                    if prepar1int == 1:
+                        del prepar1int
+                        prepar1int= ""
+
+                    if prepar2int == 1:
+                        del prepar2int
+                        prepar2int= ""
                     ranhidrido = (f"{obtsimbolo(elemento)}{prepar2int}O{prepar1int}")
                         
                 elif (resta== 0) and (prefijo1m == prefijo2m):
                     prefijopar1, prefijopar2 = valparinv(prefijo1m, prefijo2m)
                     prepar1int = int(prefijopar1)
                     prepar2int = int(prefijopar2)
+                    if prepar1int == 1:
+                        del prepar1int
+                        prepar1int= ""
+
+                    if prepar2int == 1:
+                        del prepar2int
+                        prepar2int= ""
                     ranhidrido = (f"{obtsimbolo(elemento)}{prepar2int}O{prepar1int}")                        
                         
-                else:                       
+                else:
+                    if prefijo1m == 1:
+                        del prefijo1m
+                        prefijo1m= ""
+
+                    if prefijo2m == 1:
+                        del prefijo2m
+                        prefijo2m= ""
                     ranhidrido = (f"{obtsimbolo(elemento)}{prefijo2m}O{prefijo1m}")
                 
                 cols[7].text("")
