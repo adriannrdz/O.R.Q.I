@@ -276,6 +276,8 @@ def mainbot():
                     
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidruro}</p>', unsafe_allow_html=True)
+                nomen1 = (f"{obtprefijo(prefijo1)}hidruro de {obtprefijo(prefijo2)}{elemento}")
+                st.markdown(f'<p class="big-font2">{nomen1}</p>', unsafe_allow_html=True)
                 st.subheader("Hidruros:")
                 st.text("""
                 - Los hidruros de los metales alcalinos (grupo I), alcalinotérreos (grupo II) y de algunos otros elementos del sistema periódico se forman directamente de los elementos a temperaturas elevadas.
@@ -344,8 +346,8 @@ def mainbot():
                     
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{roxido}</p>', unsafe_allow_html=True)
-                nomen1 = (f"{obtprefijo(prefijo1)}oxido de {obtprefijo(prefijo2)}{elemento}")
-                st.markdown(f'<p class="big-font2">{nomen1}</p>', unsafe_allow_html=True)
+                nomen2 = (f"{obtprefijo(prefijo1)}xido de {obtprefijo(prefijo2)}{elemento}")
+                st.markdown(f'<p class="big-font2">{nomen2}</p>', unsafe_allow_html=True)
                 st.subheader("Oxidos Metalicos:")
                 st.text("""
                 - Son combinaciones binarias de un metal con el oxígeno, en las que el oxígeno tiene número de oxidación (-2.)
