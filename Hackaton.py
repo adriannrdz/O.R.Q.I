@@ -198,9 +198,11 @@ def mainbot():
             
             def obtprefijo(simb):
                # simboloq=df[df['nombre']==simb]['simbolo']
-                dfSearchedElement = df['prefijo'].where(df['numero']==simb)
-                dfSearchedElement.dropna(inplace=True)
-                return dfSearchedElement.squeeze()
+                df2SearchedElement = df2['prefijo'].where(df2['numero']==simb)
+                df2SearchedElement.dropna(inplace=True)
+                return df2SearchedElement.squeeze()
+            
+            nomen1 =(f"{obtprefijo(prefijo1m)}{elemento2}{obtprefijo(prefijo2m)}{elemento}")
 
             lentrada=[]
             for i in respuesta:
@@ -342,7 +344,6 @@ def mainbot():
                     roxido = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
                     
                 cols[7].text("")
-                nomen1 =(f"{obtprefijo(prefijo1m)}{elemento2}{obtprefijo(prefijo2m)}{elemento}")
                 cols[7].markdown(f'<p class="big-font2">{roxido}</p>', unsafe_allow_html=True)
                 st.subheader("Oxidos Metalicos:")
                 st.markdown(f'<p class="big-font2">{nomen1}</p>', unsafe_allow_html=True)
