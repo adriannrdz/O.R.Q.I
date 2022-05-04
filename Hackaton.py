@@ -277,7 +277,7 @@ def mainbot():
                     </style>
                     """, unsafe_allow_html=True)
             
-           hidruros=(""" 
+           hidrurostxt=("""
             - Los hidruros de los metales alcalinos (grupo I), alcalinotérreos (grupo II) y de algunos otros elementos del sistema periódico se forman directamente de los elementos a temperaturas elevadas.
             - Otros pueden ser formados por intercambio del anión.
             - Algunos hidruros de los elementos nobles se pueden formar también aprovechando el hidrógeno del metanol.
@@ -286,7 +286,8 @@ def mainbot():
             - Los hidruros salinos por lo general se encuentran en estado sólido y son de color blanco o gris.
             - Este tipo de hidruro se puede obtener por medio de reacciones directas del metal con el hidrógeno.
             - Elementos como el fósforo, arsénico y sus compuestos son considerados tóxicos.
-            - Tienen agentes reductores bastante efectivos y no reaccionan con el agua o con los ácidos catalogados como no oxidantes.""")
+            - Tienen agentes reductores bastante efectivos y no reaccionan con el agua o con los ácidos catalogados como no oxidantes.
+                    """)
 
             oxidostxt = ("""
             - Son combinaciones binarias de un metal con el oxígeno, en las que el oxígeno tiene número de oxidación (-2.)
