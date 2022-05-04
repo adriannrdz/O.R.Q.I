@@ -198,7 +198,7 @@ def mainbot():
             
             def obtprefijo(simb):
                # simboloq=df[df['nombre']==simb]['simbolo']
-                df2SearchedElement = df2['prefijo'].where(df2['numero']==simb)
+                df2SearchedElement = df2['Prefijo'].where(df2['Numero']==simb)
                 df2SearchedElement.dropna(inplace=True)
                 return df2SearchedElement.squeeze()
             
@@ -344,6 +344,7 @@ def mainbot():
                     
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{roxido}</p>', unsafe_allow_html=True)
+                nomen1 = (f"{obtprefijo(prefijo1m)}oxido de {obtprefijo(prefijo2m)}{elemento}")
                 st.subheader("Oxidos Metalicos:")
                 st.text("""
                 - Son combinaciones binarias de un metal con el oxígeno, en las que el oxígeno tiene número de oxidación (-2.)
