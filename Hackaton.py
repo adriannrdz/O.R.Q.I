@@ -272,7 +272,7 @@ def mainbot():
             st.markdown("""
                     <style>
                     .text {
-                        font-size:45px !important;
+                        font-size:20px !important;
                     }
                     </style>
                     """, unsafe_allow_html=True)
