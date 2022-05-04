@@ -273,7 +273,7 @@ def mainbot():
                             """
                             <style>
                     @font-face {
-                      font-family: 'Montserrat Alternates';
+                      font-family: 'Montserrat Alternates', sans-serif;
                       font-style: normal;
                       font-weight: 400;
                       src: url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
