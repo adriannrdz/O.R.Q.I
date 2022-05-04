@@ -202,6 +202,12 @@ def mainbot():
                 df2SearchedElement.dropna(inplace=True)
                 return df2SearchedElement.squeeze()
             
+            def obtraiz(simb):
+               # simboloq=df[df['nombre']==simb]['simbolo']
+                dfSearchedElement = df['raiz'].where(df['nombre']==simb)
+                dfSearchedElement.dropna(inplace=True)
+                return dfSearchedElement.squeeze()
+            
             
             lentrada=[]
             for i in respuesta:
@@ -346,7 +352,7 @@ def mainbot():
                     
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{roxido}</p>', unsafe_allow_html=True)
-                nomen2 = (f"{obtprefijo(prefijo1)}xido de {obtprefijo(prefijo2)}{elemento}")
+                nomen2 = (f"{obtprefijo(prefijo1)}-oxido de {obtprefijo(prefijo2)}{elemento}")
                 st.markdown(f'<p class="big-font2">{nomen2}</p>', unsafe_allow_html=True)
                 st.subheader("Oxidos Metalicos:")
                 st.text("""
@@ -371,6 +377,8 @@ def mainbot():
                 rhidroxido= (f"{obtsimbolo(elemento)}(OH){prefijo1m}")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidroxido}</p>', unsafe_allow_html=True)
+                nomen3 = (f"{obtprefijo(prefijo1)}hidroxido de {obtprefijo(prefijo2)}{elemento}")
+                st.markdown(f'<p class="big-font2">{nomen3}</p>', unsafe_allow_html=True)
                 st.subheader("Hidroxidos:")
                 st.text("""
                 - Los hidróxidos son un tipo de compuesto químico que está formado a partir de la unión de un elemento de tipo metálico o catiónico con un elemento que pertenece al grupo de los hidróxidos, o aniones.
@@ -437,6 +445,8 @@ def mainbot():
                 
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rsalesbi}</p>', unsafe_allow_html=True)
+                nomen4 = (f"{obtprefijo(prefijo1)}{obtraiz(elemento2)}uro de {obtprefijo(prefijo2)}{elemento}")
+                st.markdown(f'<p class="big-font2">{nomen4}</p>', unsafe_allow_html=True)
                 st.subheader("Sales Binarias:")
                 st.text("""
                 - Una sal binaria es una combinación que se hace entre un metal y un no metal en su estructura y que poseen además una fórmula química general como MmXn, donde M será el elemento metálico mientras que X el no metálico.
@@ -461,6 +471,8 @@ def mainbot():
                 rhidracido= (f"H{prefijo1m}{obtsimbolo(elemento)}")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidracido}</p>', unsafe_allow_html=True)
+                nomen5 = (f"{obtraiz(elemento2)}uro de {obtprefijo(prefijo2)}hidrogeno")
+                st.markdown(f'<p class="big-font2">{nomen5}</p>', unsafe_allow_html=True)
                 st.subheader("Hidracidos:")
                 st.text("""
                 -También son conocidos como ácidos hidrácidos, sales binarias o hídricos ácidos, están hechos por dos compuestos binarios ácidos los cuales deben ser un hidrógeno
@@ -534,6 +546,8 @@ def mainbot():
                 
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{ranhidrido}</p>', unsafe_allow_html=True)
+                nomen5 = (f"{obtprefijo(prefijo1)}-oxido de {obtprefijo(prefijo2)}{elemento}")
+                st.markdown(f'<p class="big-font2">{nomen5}</p>', unsafe_allow_html=True)
                 st.subheader("Anhidridos:")
                 st.text("""
                 -En química podemos definir los anhídridos como un compuestos químicos de tipo binario que surgen al juntar un No Metal con Oxígeno,
