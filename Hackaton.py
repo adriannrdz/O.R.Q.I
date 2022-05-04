@@ -345,6 +345,7 @@ def mainbot():
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{roxido}</p>', unsafe_allow_html=True)
                 nomen1 = (f"{obtprefijo(prefijo1m)}oxido de {obtprefijo(prefijo2m)}{elemento}")
+                st.markdown(f'<p class="big-font2">{nomen1}</p>', unsafe_allow_html=True)
                 st.subheader("Oxidos Metalicos:")
                 st.text("""
                 - Son combinaciones binarias de un metal con el oxígeno, en las que el oxígeno tiene número de oxidación (-2.)
