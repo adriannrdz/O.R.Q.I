@@ -459,7 +459,6 @@ def mainbot():
                 - Es uno de los tres tipos de sales que se pueden encontrar en la naturaleza.
                 - El no metal que forma parte de las sales binarias siempre utilizará su menor valencia.
                 - Son consideradas como parte fundamental de la química, principalmente en el campo educativo.""")
-                st.markdown(f'<p class="text">{salesbitxt}</p>', unsafe_allow_html=True)
                 st.image("salesbi.jpg", width = 500)
 
 
@@ -488,7 +487,6 @@ def mainbot():
                 -Solo existen sietes ácidos hidrácidos que forman solo con los no metales de Cl, S, I, F, Se, Te.
                 -Sus puntos de ebullición son superiores a la de los anhídridos, por ejemplo, el Cloruro de Hidrógeno hierve a -85Co pero el Ácido Clorhídrico hierve a -48Co.
                         """)
-                st.markdown(f'<p class="text">{hidracidostxt}</p>', unsafe_allow_html=True)
                 st.image("hidracidos.jpg", width = 500)
 
                 
@@ -560,8 +558,6 @@ def mainbot():
                 -Como ya se ha mencionado vienen a ser fruto de la deshidratación de dos moléculas, pero también existen casos donde pudiese ser una, en el caso intramolecular, de ácido carboxílico.
                 -También son llamados anhídridos carboxílicos.
                 """)
-                
-                st.markdown(f'<p class="text">{anhidridostxt}</p>', unsafe_allow_html=True)
                 st.image("anhidridos.jpg", width = 500)
 
                
