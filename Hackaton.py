@@ -16,6 +16,9 @@ import pandas as pd
 datosexc=pd.read_excel('listaelem.xlsx')
 df=pd.DataFrame(datosexc)
 
+datosexc2=pd.read_excel('prefijos.xlsx')
+df2=pd.DataFrame(datosexc2)
+
     
 nltk.download('punkt')
 
@@ -82,30 +85,10 @@ modelo = tflearn.DNN(red)
 modelo.fit(entrenamiento, salida, n_epoch=1000, batch_size=50, show_metric=True)
 modelo.save("modelo.tflearn")
 
-#Apartado de instrucciones.
+#Apartado de pagina web.
 st.set_page_config(layout="wide")
 mt1, header, mt2 = st.columns([5,5,3])
-
-#st.markdown(
-#            """
-#            <style>
-#    @font-face {
-#      font-family:'Montserrat Alternates', sans-serif;
-#      font-style: normal;
-#      font-weight: 400;
-#      src: url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
- #     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  #  }
-#       html, body, [class*="css"]  {
-#        font-family: 'Montserrat Alternates', sans-serif;
-#        font-size: 15px;
-#        }
-#        </style>
-
-#        """,
-#            unsafe_allow_html=True,
-#            )
-            
+       
         
 st.markdown("""
                     <style>
@@ -212,8 +195,12 @@ def mainbot():
                 dfSearchedElement = df['simbolo'].where(df['nombre']==simb)
                 dfSearchedElement.dropna(inplace=True)
                 return dfSearchedElement.squeeze()
-
-               # return simboloq
+            
+            def obtprefijo(simb):
+               # simboloq=df[df['nombre']==simb]['simbolo']
+                dfSearchedElement = df['prefijo'].where(df['numero']==simb)
+                dfSearchedElement.dropna(inplace=True)
+                return dfSearchedElement.squeeze()
 
             lentrada=[]
             for i in respuesta:
@@ -355,8 +342,10 @@ def mainbot():
                     roxido = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
                     
                 cols[7].text("")
+                nomen1 =(f"{obtprefijo(prefijo1m)}{elemento2}{obtprefijo(prefijo2m)}{elemento}")
                 cols[7].markdown(f'<p class="big-font2">{roxido}</p>', unsafe_allow_html=True)
                 st.subheader("Oxidos Metalicos:")
+                st.markdown(f'<p class="big-font2">{nomen1}</p>', unsafe_allow_html=True)
                 st.text("""
                 - Son combinaciones binarias de un metal con el oxígeno, en las que el oxígeno tiene número de oxidación (-2.)
                 - Poseen basicidad la cual es la capacidad que tiene una sustancia de ser ácido neutralizante cuando se encuentra en una solución de tipo acuosa.
@@ -579,7 +568,7 @@ def mainbot():
             
             with st.expander("Acerca De"):
                 st.write(f"""
-                La aplicacion "Aqui va el nombre" es capaz de determinar reacciones quimicas inorganicas como se muestra a continuacion:
+                La aplicacion es capaz de determinar reacciones quimicas inorganicas como se muestra a continuacion:
                 
                 Hidruros:
                 
