@@ -277,81 +277,6 @@ def mainbot():
                     </style>
                     """, unsafe_allow_html=True)
             
-           hidrurostxt=("""
-                        - Los hidruros de los metales alcalinos (grupo I), alcalinotérreos (grupo II) y de algunos otros elementos del sistema periódico se forman directamente de los elementos a temperaturas elevadas.
-                        - Otros pueden ser formados por intercambio del anión.
-                        - Algunos hidruros de los elementos nobles se pueden formar también aprovechando el hidrógeno del metanol.
-                        - Por lo general los hidruros son compuestos estequiométricos que presentan propiedades metálicas como por ejemplo la conductividad.
-                        - Tienen una gran velocidad de difusión del hidrógeno por medio del sólido cuando se someten a temperatura elevadas.
-                        - Los hidruros salinos por lo general se encuentran en estado sólido y son de color blanco o gris.
-                        - Este tipo de hidruro se puede obtener por medio de reacciones directas del metal con el hidrógeno.
-                        - Elementos como el fósforo, arsénico y sus compuestos son considerados tóxicos.
-                        - Tienen agentes reductores bastante efectivos y no reaccionan con el agua o con los ácidos catalogados como no oxidantes.
-                            """)
-
-            oxidostxt = ("""
-                        - Son combinaciones binarias de un metal con el oxígeno, en las que el oxígeno tiene número de oxidación (-2.)
-                        - Poseen basicidad la cual es la capacidad que tiene una sustancia de ser ácido neutralizante cuando se encuentra en una solución de tipo acuosa.
-                        - Tiene anfoterismo, en este aspecto se debe recordar que no todos los óxidos son iguales por lo que mientras esté ubicado más hacia la izquierda, el metal será más básico que el óxido.
-                        - Por lo general, tienden a ser sólidos.
-                        - Tienen un punto de fusión relativamente alto.
-                        - Son cristalinos en su gran mayoría y, además, son medianamente solubles en agua.
-                        - Son buenos conductores de la electricidad.
-                        - Pueden estar presentes en los tres diferentes estados de agregación de la materia.
-                        - Son compuestos de tipo inorgánico.
-                        - El proceso para que se obtengan depende en gran manera de la naturaleza del metal o de la reactividad y de las condiciones físicas que le rodean.
-                       """)
-
-            hidroxidostxt =("""
-                        - Los hidróxidos son un tipo de compuesto químico que está formado a partir de la unión de un elemento de tipo metálico o catiónico con un elemento que pertenece al grupo de los hidróxidos, o aniones.
-                        - Se caracterizan por ser compuestos inorgánicos ternarios porque tienen en su molécula de hidrógeno, una molécula de oxígeno y un elemento de tipo metálico.
-                        - Pueden desasociarse cuando se disuelven en agua. Tienen un carácter básico bastante fuerte porque el grupo hidroxilo tiene la capacidad de captar protones.
-                        - Pueden hacer que el color del papel tornasol de un tono rojo a uno azul.
-                        - Tienen la capacidad de reaccionar con los ácidos y producir de esta manera una sal y agua.
-                        - Cuando hacer algún tipo de reacción puede liberar energía.
-                                """)
-
-            salesbitxt = ("""
-                        - Una sal binaria es una combinación que se hace entre un metal y un no metal en su estructura y que poseen además una fórmula química general como MmXn, donde M será el elemento metálico mientras que X el no metálico.
-                        - Tienen cierta semejanza con la sal de cocina.
-                        - Son también conocidas con el nombre de sales neutras.
-                        - Tienen una consistencia sólida, son muy cristalinas y por lo general su color es blanco.
-                        - Posee un sabor salado.
-                        - Gran parte de las sales binarias son solubles cuando entran en contacto con el agua.
-                        - En las sales binarias el elemento no metálico siempre actuará con su valencia fija frente al hidrógeno.
-                        - Es uno de los tres tipos de sales que se pueden encontrar en la naturaleza.
-                        - El no metal que forma parte de las sales binarias siempre utilizará su menor valencia.
-                        - Son consideradas como parte fundamental de la química, principalmente en el campo educativo.
-                        """)
-
-            hidracidostxt=("""
-                        -También son conocidos como ácidos hidrácidos, sales binarias o hídricos ácidos, están hechos por dos compuestos binarios ácidos los cuales deben ser un hidrógeno
-                        (del grupo halógeno o antígeno en la tabla periódica) y un no metal, sin presencia de oxígeno.
-                        -Cuando se disuelven en agua son solubles.
-                        -No poseen oxígeno en su composición.
-                        -Liberan usualmente un muy denso humo blanco.
-                        -Cuando se encuentran en su estado natural son gaseosos y para nombrarlos se utiliza el nombre del no metal con la terminación uro y seguido del nombre Hidrógeno.
-                        -Se obtienen también por disolución acuosa.
-                        -Son perfectos cuando se utilizan como conductor de energía eléctrica.
-                        -Con respecto a su aspecto éstos son incoloros, son soluciones transparentes.
-                        -También cuando entran en contacto con agua originan soluciones ácidas.
-                        -Solo existen sietes ácidos hidrácidos que forman solo con los no metales de Cl, S, I, F, Se, Te.
-                        -Sus puntos de ebullición son superiores a la de los anhídridos, por ejemplo, el Cloruro de Hidrógeno hierve a -85Co pero el Ácido Clorhídrico hierve a -48Co.
-                                """)
-
-            anhidridostxt=("""
-                        -En química podemos definir los anhídridos como un compuestos químicos de tipo binario que surgen al juntar un No Metal con Oxígeno,
-                        también son llamados como Óxidos No Metálicos u Óxidos Ácidos, cuya fórmula general es (RCO)2º.
-                        -Son productos de la condensación de 2 moléculas de ácidos carboxílicos. 
-                        -La fórmula de los anhídridos es del tipo X2On (donde X es un elemento no metálico y O es oxígeno) Ejemplos: SeO, So3, CO2. Poseen la característica de ser especialmente reactivos.
-                        -Se pueden manejar en muchas áreas, lo habitual, donde son más vistos y usados es en la fabricación de medicamentos.
-                        -Como por ejemplo en el ámbito medico existe uno muy usado llamado Ácido Acetilsalicílico un fármaco que es muy utilizado.
-                        -Como ya se ha mencionado vienen a ser fruto de la deshidratación de dos moléculas, pero también existen casos donde pudiese ser una, en el caso intramolecular, de ácido carboxílico.
-                        -También son llamados anhídridos carboxílicos.
-                        """)
-                
-            
-            
             if lentrada==lhidruros:
                 if prefijo1m == 1:
                         del prefijo1m
@@ -367,6 +292,17 @@ def mainbot():
                 nomen1 = (f"{obtprefijo(prefijo1)}-hidruro de {obtprefijo(prefijo2)}-{elemento}")
                 st.markdown(f'<p class="big-font2">{nomen1}</p>', unsafe_allow_html=True)
                 st.subheader("Hidruros:")
+                hidrurostxt=("""
+                - Los hidruros de los metales alcalinos (grupo I), alcalinotérreos (grupo II) y de algunos otros elementos del sistema periódico se forman directamente de los elementos a temperaturas elevadas.
+                - Otros pueden ser formados por intercambio del anión.
+                - Algunos hidruros de los elementos nobles se pueden formar también aprovechando el hidrógeno del metanol.
+                - Por lo general los hidruros son compuestos estequiométricos que presentan propiedades metálicas como por ejemplo la conductividad.
+                - Tienen una gran velocidad de difusión del hidrógeno por medio del sólido cuando se someten a temperatura elevadas.
+                - Los hidruros salinos por lo general se encuentran en estado sólido y son de color blanco o gris.
+                - Este tipo de hidruro se puede obtener por medio de reacciones directas del metal con el hidrógeno.
+                - Elementos como el fósforo, arsénico y sus compuestos son considerados tóxicos.
+                - Tienen agentes reductores bastante efectivos y no reaccionan con el agua o con los ácidos catalogados como no oxidantes.
+                    """)
                 st.markdown(f'<p class="text">{hidrurostxt}</p>', unsafe_allow_html=True)
                 st.image("hidruros.jpg", width = 500)
                                        
@@ -427,6 +363,18 @@ def mainbot():
                 nomen2 = (f"{obtprefijo(prefijo1)}-oxido de {obtprefijo(prefijo2)}-{elemento}")
                 st.markdown(f'<p class="big-font2">{nomen2}</p>', unsafe_allow_html=True)
                 st.subheader("Oxidos Metalicos:")
+                oxidostxt=("""
+                - Son combinaciones binarias de un metal con el oxígeno, en las que el oxígeno tiene número de oxidación (-2.)
+                - Poseen basicidad la cual es la capacidad que tiene una sustancia de ser ácido neutralizante cuando se encuentra en una solución de tipo acuosa.
+                - Tiene anfoterismo, en este aspecto se debe recordar que no todos los óxidos son iguales por lo que mientras esté ubicado más hacia la izquierda, el metal será más básico que el óxido.
+                - Por lo general, tienden a ser sólidos.
+                - Tienen un punto de fusión relativamente alto.
+                - Son cristalinos en su gran mayoría y, además, son medianamente solubles en agua.
+                - Son buenos conductores de la electricidad.
+                - Pueden estar presentes en los tres diferentes estados de agregación de la materia.
+                - Son compuestos de tipo inorgánico.
+                - El proceso para que se obtengan depende en gran manera de la naturaleza del metal o de la reactividad y de las condiciones físicas que le rodean.
+               """)
                 st.markdown(f'<p class="text">{oxidostxt}</p>', unsafe_allow_html=True)
                 st.image("oxidos.jpg", width = 500)
 
@@ -441,6 +389,14 @@ def mainbot():
                 nomen3 = (f"{obtprefijo(prefijo1)}-hidroxido de {obtprefijo(prefijo2)}-{elemento}")
                 st.markdown(f'<p class="big-font2">{nomen3}</p>', unsafe_allow_html=True)
                 st.subheader("Hidroxidos:")
+                hidroxidostxt=("""
+                - Los hidróxidos son un tipo de compuesto químico que está formado a partir de la unión de un elemento de tipo metálico o catiónico con un elemento que pertenece al grupo de los hidróxidos, o aniones.
+                - Se caracterizan por ser compuestos inorgánicos ternarios porque tienen en su molécula de hidrógeno, una molécula de oxígeno y un elemento de tipo metálico.
+                - Pueden desasociarse cuando se disuelven en agua. Tienen un carácter básico bastante fuerte porque el grupo hidroxilo tiene la capacidad de captar protones.
+                - Pueden hacer que el color del papel tornasol de un tono rojo a uno azul.
+                - Tienen la capacidad de reaccionar con los ácidos y producir de esta manera una sal y agua.
+                - Cuando hacer algún tipo de reacción puede liberar energía.
+                        """)
                 st.markdown(f'<p class="text">{hidroxidostxt}</p>', unsafe_allow_html=True)
                 st.image("hidroxidos.jpg", width = 500)
 
@@ -502,6 +458,17 @@ def mainbot():
                 nomen4 = (f"{obtprefijo(prefijo1)}-{obtraiz(elemento2)}uro de {obtprefijo(prefijo2)}-{elemento}")
                 st.markdown(f'<p class="big-font2">{nomen4}</p>', unsafe_allow_html=True)
                 st.subheader("Sales Binarias:")
+                salesbitxt = ("""
+                - Una sal binaria es una combinación que se hace entre un metal y un no metal en su estructura y que poseen además una fórmula química general como MmXn, donde M será el elemento metálico mientras que X el no metálico.
+                - Tienen cierta semejanza con la sal de cocina.
+                - Son también conocidas con el nombre de sales neutras.
+                - Tienen una consistencia sólida, son muy cristalinas y por lo general su color es blanco.
+                - Posee un sabor salado.
+                - Gran parte de las sales binarias son solubles cuando entran en contacto con el agua.
+                - En las sales binarias el elemento no metálico siempre actuará con su valencia fija frente al hidrógeno.
+                - Es uno de los tres tipos de sales que se pueden encontrar en la naturaleza.
+                - El no metal que forma parte de las sales binarias siempre utilizará su menor valencia.
+                - Son consideradas como parte fundamental de la química, principalmente en el campo educativo.""")
                 st.markdown(f'<p class="text">{salesbitxt}</p>', unsafe_allow_html=True)
                 st.image("salesbi.jpg", width = 500)
 
@@ -517,6 +484,20 @@ def mainbot():
                 nomen5 = (f"{obtraiz(elemento2)}uro de {obtprefijo(prefijo2)}-hidrogeno")
                 st.markdown(f'<p class="big-font2">{nomen5}</p>', unsafe_allow_html=True)
                 st.subheader("Hidracidos:")
+                hidracidostxt=("""
+                -También son conocidos como ácidos hidrácidos, sales binarias o hídricos ácidos, están hechos por dos compuestos binarios ácidos los cuales deben ser un hidrógeno
+                (del grupo halógeno o antígeno en la tabla periódica) y un no metal, sin presencia de oxígeno.
+                -Cuando se disuelven en agua son solubles.
+                -No poseen oxígeno en su composición.
+                -Liberan usualmente un muy denso humo blanco.
+                -Cuando se encuentran en su estado natural son gaseosos y para nombrarlos se utiliza el nombre del no metal con la terminación uro y seguido del nombre Hidrógeno.
+                -Se obtienen también por disolución acuosa.
+                -Son perfectos cuando se utilizan como conductor de energía eléctrica.
+                -Con respecto a su aspecto éstos son incoloros, son soluciones transparentes.
+                -También cuando entran en contacto con agua originan soluciones ácidas.
+                -Solo existen sietes ácidos hidrácidos que forman solo con los no metales de Cl, S, I, F, Se, Te.
+                -Sus puntos de ebullición son superiores a la de los anhídridos, por ejemplo, el Cloruro de Hidrógeno hierve a -85Co pero el Ácido Clorhídrico hierve a -48Co.
+                        """)
                 st.markdown(f'<p class="text">{hidracidostxt}</p>', unsafe_allow_html=True)
                 st.image("hidracidos.jpg", width = 500)
 
@@ -579,6 +560,17 @@ def mainbot():
                 nomen5 = (f"{obtprefijo(prefijo1)}-oxido de {obtprefijo(prefijo2)}-{elemento}")
                 st.markdown(f'<p class="big-font2">{nomen5}</p>', unsafe_allow_html=True)
                 st.subheader("Anhidridos:")
+                anhidridostxt=("""
+                -En química podemos definir los anhídridos como un compuestos químicos de tipo binario que surgen al juntar un No Metal con Oxígeno,
+                también son llamados como Óxidos No Metálicos u Óxidos Ácidos, cuya fórmula general es (RCO)2º.
+                -Son productos de la condensación de 2 moléculas de ácidos carboxílicos. 
+                -La fórmula de los anhídridos es del tipo X2On (donde X es un elemento no metálico y O es oxígeno) Ejemplos: SeO, So3, CO2. Poseen la característica de ser especialmente reactivos.
+                -Se pueden manejar en muchas áreas, lo habitual, donde son más vistos y usados es en la fabricación de medicamentos.
+                -Como por ejemplo en el ámbito medico existe uno muy usado llamado Ácido Acetilsalicílico un fármaco que es muy utilizado.
+                -Como ya se ha mencionado vienen a ser fruto de la deshidratación de dos moléculas, pero también existen casos donde pudiese ser una, en el caso intramolecular, de ácido carboxílico.
+                -También son llamados anhídridos carboxílicos.
+                """)
+                
                 st.markdown(f'<p class="text">{anhidridostxt}</p>', unsafe_allow_html=True)
                 st.image("anhidridos.jpg", width = 500)
 
