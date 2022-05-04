@@ -285,7 +285,7 @@ def mainbot():
                 nomen1 = (f"{obtprefijo(prefijo1)}-hidruro de {obtprefijo(prefijo2)}-{elemento}")
                 st.markdown(f'<p class="big-font2">{nomen1}</p>', unsafe_allow_html=True)
                 st.header("Hidruros:")
-                st.subheader("""
+                st.text("""
                 - Los hidruros de los metales alcalinos (grupo I), alcalinotérreos (grupo II) y de algunos otros elementos del sistema periódico se forman directamente de los elementos a temperaturas elevadas.
                 - Otros pueden ser formados por intercambio del anión.
                 - Algunos hidruros de los elementos nobles se pueden formar también aprovechando el hidrógeno del metanol.
@@ -355,7 +355,7 @@ def mainbot():
                 nomen2 = (f"{obtprefijo(prefijo1)}-oxido de {obtprefijo(prefijo2)}-{elemento}")
                 st.markdown(f'<p class="big-font2">{nomen2}</p>', unsafe_allow_html=True)
                 st.header("Oxidos Metalicos:")
-                st.subheader("""
+                st.text("""
                 - Son combinaciones binarias de un metal con el oxígeno, en las que el oxígeno tiene número de oxidación (-2.)
                 - Poseen basicidad la cual es la capacidad que tiene una sustancia de ser ácido neutralizante cuando se encuentra en una solución de tipo acuosa.
                 - Tiene anfoterismo, en este aspecto se debe recordar que no todos los óxidos son iguales por lo que mientras esté ubicado más hacia la izquierda, el metal será más básico que el óxido.
@@ -380,7 +380,7 @@ def mainbot():
                 nomen3 = (f"{obtprefijo(prefijo1)}-hidroxido de {obtprefijo(prefijo2)}-{elemento}")
                 st.markdown(f'<p class="big-font2">{nomen3}</p>', unsafe_allow_html=True)
                 st.header("Hidroxidos:")
-                st.subheader("""
+                st.text("""
                 - Los hidróxidos son un tipo de compuesto químico que está formado a partir de la unión de un elemento de tipo metálico o catiónico con un elemento que pertenece al grupo de los hidróxidos, o aniones.
                 - Se caracterizan por ser compuestos inorgánicos ternarios porque tienen en su molécula de hidrógeno, una molécula de oxígeno y un elemento de tipo metálico.
                 - Pueden desasociarse cuando se disuelven en agua. Tienen un carácter básico bastante fuerte porque el grupo hidroxilo tiene la capacidad de captar protones.
@@ -448,7 +448,7 @@ def mainbot():
                 nomen4 = (f"{obtprefijo(prefijo1)}-{obtraiz(elemento2)}uro de {obtprefijo(prefijo2)}-{elemento}")
                 st.markdown(f'<p class="big-font2">{nomen4}</p>', unsafe_allow_html=True)
                 st.header("Sales Binarias:")
-                st.subheader("""
+                st.text("""
                 - Una sal binaria es una combinación que se hace entre un metal y un no metal en su estructura y que poseen además una fórmula química general como MmXn, donde M será el elemento metálico mientras que X el no metálico.
                 - Tienen cierta semejanza con la sal de cocina.
                 - Son también conocidas con el nombre de sales neutras.
@@ -474,7 +474,7 @@ def mainbot():
                 nomen5 = (f"{obtraiz(elemento2)}uro de {obtprefijo(prefijo2)}-hidrogeno")
                 st.markdown(f'<p class="big-font2">{nomen5}</p>', unsafe_allow_html=True)
                 st.header("Hidracidos:")
-                st.subheader("""
+                st.text("""
                 -También son conocidos como ácidos hidrácidos, sales binarias o hídricos ácidos, están hechos por dos compuestos binarios ácidos los cuales deben ser un hidrógeno
                 (del grupo halógeno o antígeno en la tabla periódica) y un no metal, sin presencia de oxígeno.
                 -Cuando se disuelven en agua son solubles.
@@ -550,7 +550,7 @@ def mainbot():
                 nomen5 = (f"{obtprefijo(prefijo1)}-oxido de {obtprefijo(prefijo2)}-{elemento}")
                 st.markdown(f'<p class="big-font2">{nomen5}</p>', unsafe_allow_html=True)
                 st.header("Anhidridos:")
-                st.subheader("""
+                st.text("""
                 -En química podemos definir los anhídridos como un compuestos químicos de tipo binario que surgen al juntar un No Metal con Oxígeno,
                 también son llamados como Óxidos No Metálicos u Óxidos Ácidos, cuya fórmula general es (RCO)2º.
                 -Son productos de la condensación de 2 moléculas de ácidos carboxílicos. 
