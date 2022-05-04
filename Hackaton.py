@@ -202,8 +202,7 @@ def mainbot():
                 df2SearchedElement.dropna(inplace=True)
                 return df2SearchedElement.squeeze()
             
-            nomen1 =(f"{obtprefijo(prefijo1m)}{elemento2}{obtprefijo(prefijo2m)}{elemento}")
-
+            
             lentrada=[]
             for i in respuesta:
                 lentrada.append(respuesta)
@@ -346,7 +345,6 @@ def mainbot():
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{roxido}</p>', unsafe_allow_html=True)
                 st.subheader("Oxidos Metalicos:")
-                st.markdown(f'<p class="big-font2">{nomen1}</p>', unsafe_allow_html=True)
                 st.text("""
                 - Son combinaciones binarias de un metal con el oxígeno, en las que el oxígeno tiene número de oxidación (-2.)
                 - Poseen basicidad la cual es la capacidad que tiene una sustancia de ser ácido neutralizante cuando se encuentra en una solución de tipo acuosa.
