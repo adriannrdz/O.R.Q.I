@@ -269,6 +269,16 @@ def mainbot():
                     </style>
                     """, unsafe_allow_html=True)
             
+            st.markdown("""
+                    <style>
+                    .text {
+                        font-size:20px !important;
+                    }
+                    </style>
+                    """, unsafe_allow_html=True)
+
+                   
+            
 
             if lentrada==lhidruros:
                 if prefijo1m == 1:
@@ -285,6 +295,19 @@ def mainbot():
                 nomen1 = (f"{obtprefijo(prefijo1)}-hidruro de {obtprefijo(prefijo2)}-{elemento}")
                 st.markdown(f'<p class="big-font2">{nomen1}</p>', unsafe_allow_html=True)
                 st.subheader("Hidruros:")
+                st.markdown('<p class="text">
+                - Los hidruros de los metales alcalinos (grupo I), alcalinotérreos (grupo II) y de algunos otros elementos del sistema periódico se forman directamente de los elementos a temperaturas elevadas.
+                - Otros pueden ser formados por intercambio del anión.
+                - Algunos hidruros de los elementos nobles se pueden formar también aprovechando el hidrógeno del metanol.
+                - Por lo general los hidruros son compuestos estequiométricos que presentan propiedades metálicas como por ejemplo la conductividad.
+                - Tienen una gran velocidad de difusión del hidrógeno por medio del sólido cuando se someten a temperatura elevadas.
+                - Los hidruros salinos por lo general se encuentran en estado sólido y son de color blanco o gris.
+                - Este tipo de hidruro se puede obtener por medio de reacciones directas del metal con el hidrógeno.
+                - Elementos como el fósforo, arsénico y sus compuestos son considerados tóxicos.
+                - Tienen agentes reductores bastante efectivos y no reaccionan con el agua o con los ácidos catalogados como no oxidantes.
+                            </p>', unsafe_allow_html=True)
+                            
+                            
                 st.text("""
                 - Los hidruros de los metales alcalinos (grupo I), alcalinotérreos (grupo II) y de algunos otros elementos del sistema periódico se forman directamente de los elementos a temperaturas elevadas.
                 - Otros pueden ser formados por intercambio del anión.
