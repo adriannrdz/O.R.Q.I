@@ -285,8 +285,8 @@ def mainbot():
                 nomen1 = (f"{obtprefijo(prefijo1)}-hidruro de {obtprefijo(prefijo2)}-{elemento}")
                 st.markdown(f'<p class="big-font2">{nomen1}</p>', unsafe_allow_html=True)
                 st.header("Hidruros:")
-                st.subheader(f"""
-                - Los hidruros de los metales alcalinos (grupo I), alcalinotérreos (grupo II) y de algunos otros elementos del sistema periódico se forman directamente de los elementos a temperaturas elevadas.{\n}
+                st.subheader("""
+                - Los hidruros de los metales alcalinos (grupo I), alcalinotérreos (grupo II) y de algunos otros elementos del sistema periódico se forman directamente de los elementos a temperaturas elevadas.
                 - Otros pueden ser formados por intercambio del anión.
                 - Algunos hidruros de los elementos nobles se pueden formar también aprovechando el hidrógeno del metanol.
                 - Por lo general los hidruros son compuestos estequiométricos que presentan propiedades metálicas como por ejemplo la conductividad.
@@ -355,7 +355,7 @@ def mainbot():
                 nomen2 = (f"{obtprefijo(prefijo1)}-oxido de {obtprefijo(prefijo2)}-{elemento}")
                 st.markdown(f'<p class="big-font2">{nomen2}</p>', unsafe_allow_html=True)
                 st.header("Oxidos Metalicos:")
-                st.subheader(f"""
+                st.subheader("""
                 - Son combinaciones binarias de un metal con el oxígeno, en las que el oxígeno tiene número de oxidación (-2.)
                 - Poseen basicidad la cual es la capacidad que tiene una sustancia de ser ácido neutralizante cuando se encuentra en una solución de tipo acuosa.
                 - Tiene anfoterismo, en este aspecto se debe recordar que no todos los óxidos son iguales por lo que mientras esté ubicado más hacia la izquierda, el metal será más básico que el óxido.
