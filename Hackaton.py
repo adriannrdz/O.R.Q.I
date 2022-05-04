@@ -272,7 +272,7 @@ def mainbot():
             st.markdown("""
                     <style>
                     .text {
-                        font-size:20px !important;
+                        font-size:22px !important;
                     }
                     </style>
                     """, unsafe_allow_html=True)
@@ -292,16 +292,16 @@ def mainbot():
                 nomen1 = (f"{obtprefijo(prefijo1)}-hidruro de {obtprefijo(prefijo2)}-{elemento}")
                 st.markdown(f'<p class="big-font2">{nomen1}</p>', unsafe_allow_html=True)
                 st.subheader("Hidruros:")
-                hidrurostxt=("""
-                - Los hidruros de los metales alcalinos (grupo I), alcalinotérreos (grupo II) y de algunos otros elementos del sistema periódico se forman directamente de los elementos a temperaturas elevadas.
-                - Otros pueden ser formados por intercambio del anión.
-                - Algunos hidruros de los elementos nobles se pueden formar también aprovechando el hidrógeno del metanol.
-                - Por lo general los hidruros son compuestos estequiométricos que presentan propiedades metálicas como por ejemplo la conductividad.
-                - Tienen una gran velocidad de difusión del hidrógeno por medio del sólido cuando se someten a temperatura elevadas.
-                - Los hidruros salinos por lo general se encuentran en estado sólido y son de color blanco o gris.
-                - Este tipo de hidruro se puede obtener por medio de reacciones directas del metal con el hidrógeno.
-                - Elementos como el fósforo, arsénico y sus compuestos son considerados tóxicos.
-                - Tienen agentes reductores bastante efectivos y no reaccionan con el agua o con los ácidos catalogados como no oxidantes.
+                hidrurostxt=(f"""
+                - Los hidruros de los metales alcalinos (grupo I), alcalinotérreos (grupo II) y de algunos otros elementos del sistema periódico se forman directamente de los elementos a temperaturas elevadas.{\n}
+                - Otros pueden ser formados por intercambio del anión.{\n}
+                - Algunos hidruros de los elementos nobles se pueden formar también aprovechando el hidrógeno del metanol.{\n}
+                - Por lo general los hidruros son compuestos estequiométricos que presentan propiedades metálicas como por ejemplo la conductividad.{\n}
+                - Tienen una gran velocidad de difusión del hidrógeno por medio del sólido cuando se someten a temperatura elevadas.{\n}
+                - Los hidruros salinos por lo general se encuentran en estado sólido y son de color blanco o gris.{\n}
+                - Este tipo de hidruro se puede obtener por medio de reacciones directas del metal con el hidrógeno.{\n}
+                - Elementos como el fósforo, arsénico y sus compuestos son considerados tóxicos.{\n}
+                - Tienen agentes reductores bastante efectivos y no reaccionan con el agua o con los ácidos catalogados como no oxidantes.{\n}
                     """)
                 st.markdown(f'<p class="text">{hidrurostxt}</p>', unsafe_allow_html=True)
                 st.image("hidruros.jpg", width = 500)
@@ -363,17 +363,17 @@ def mainbot():
                 nomen2 = (f"{obtprefijo(prefijo1)}-oxido de {obtprefijo(prefijo2)}-{elemento}")
                 st.markdown(f'<p class="big-font2">{nomen2}</p>', unsafe_allow_html=True)
                 st.subheader("Oxidos Metalicos:")
-                oxidostxt=("""
-                - Son combinaciones binarias de un metal con el oxígeno, en las que el oxígeno tiene número de oxidación (-2.)
-                - Poseen basicidad la cual es la capacidad que tiene una sustancia de ser ácido neutralizante cuando se encuentra en una solución de tipo acuosa.
-                - Tiene anfoterismo, en este aspecto se debe recordar que no todos los óxidos son iguales por lo que mientras esté ubicado más hacia la izquierda, el metal será más básico que el óxido.
-                - Por lo general, tienden a ser sólidos.
-                - Tienen un punto de fusión relativamente alto.
-                - Son cristalinos en su gran mayoría y, además, son medianamente solubles en agua.
-                - Son buenos conductores de la electricidad.
-                - Pueden estar presentes en los tres diferentes estados de agregación de la materia.
-                - Son compuestos de tipo inorgánico.
-                - El proceso para que se obtengan depende en gran manera de la naturaleza del metal o de la reactividad y de las condiciones físicas que le rodean.
+                oxidostxt=(f"""
+                - Son combinaciones binarias de un metal con el oxígeno, en las que el oxígeno tiene número de oxidación (-2.){\n}
+                - Poseen basicidad la cual es la capacidad que tiene una sustancia de ser ácido neutralizante cuando se encuentra en una solución de tipo acuosa.{\n}
+                - Tiene anfoterismo, en este aspecto se debe recordar que no todos los óxidos son iguales por lo que mientras esté ubicado más hacia la izquierda, el metal será más básico que el óxido.{\n}
+                - Por lo general, tienden a ser sólidos.{\n}
+                - Tienen un punto de fusión relativamente alto.{\n}
+                - Son cristalinos en su gran mayoría y, además, son medianamente solubles en agua.{\n}
+                - Son buenos conductores de la electricidad.{\n}
+                - Pueden estar presentes en los tres diferentes estados de agregación de la materia.{\n}
+                - Son compuestos de tipo inorgánico.{\n}
+                - El proceso para que se obtengan depende en gran manera de la naturaleza del metal o de la reactividad y de las condiciones físicas que le rodean.{\n}
                """)
                 st.markdown(f'<p class="text">{oxidostxt}</p>', unsafe_allow_html=True)
                 st.image("oxidos.jpg", width = 500)
