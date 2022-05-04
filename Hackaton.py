@@ -282,7 +282,7 @@ def mainbot():
                     
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidruro}</p>', unsafe_allow_html=True)
-                nomen1 = (f"{obtprefijo(prefijo1)}hidruro de {obtprefijo(prefijo2)}{elemento}")
+                nomen1 = (f"{obtprefijo(prefijo1)}-hidruro de {obtprefijo(prefijo2)}-{elemento}")
                 st.markdown(f'<p class="big-font2">{nomen1}</p>', unsafe_allow_html=True)
                 st.subheader("Hidruros:")
                 st.text("""
@@ -352,7 +352,7 @@ def mainbot():
                     
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{roxido}</p>', unsafe_allow_html=True)
-                nomen2 = (f"{obtprefijo(prefijo1)}-oxido de {obtprefijo(prefijo2)}{elemento}")
+                nomen2 = (f"{obtprefijo(prefijo1)}-oxido de {obtprefijo(prefijo2)}-{elemento}")
                 st.markdown(f'<p class="big-font2">{nomen2}</p>', unsafe_allow_html=True)
                 st.subheader("Oxidos Metalicos:")
                 st.text("""
@@ -377,7 +377,7 @@ def mainbot():
                 rhidroxido= (f"{obtsimbolo(elemento)}(OH){prefijo1m}")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidroxido}</p>', unsafe_allow_html=True)
-                nomen3 = (f"{obtprefijo(prefijo1)}hidroxido de {obtprefijo(prefijo2)}{elemento}")
+                nomen3 = (f"{obtprefijo(prefijo1)}-hidroxido de {obtprefijo(prefijo2)}-{elemento}")
                 st.markdown(f'<p class="big-font2">{nomen3}</p>', unsafe_allow_html=True)
                 st.subheader("Hidroxidos:")
                 st.text("""
@@ -445,7 +445,7 @@ def mainbot():
                 
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rsalesbi}</p>', unsafe_allow_html=True)
-                nomen4 = (f"{obtprefijo(prefijo1)}{obtraiz(elemento2)}uro de {obtprefijo(prefijo2)}{elemento}")
+                nomen4 = (f"{obtprefijo(prefijo1)}-{obtraiz(elemento2)}uro de {obtprefijo(prefijo2)}-{elemento}")
                 st.markdown(f'<p class="big-font2">{nomen4}</p>', unsafe_allow_html=True)
                 st.subheader("Sales Binarias:")
                 st.text("""
@@ -471,7 +471,7 @@ def mainbot():
                 rhidracido= (f"H{prefijo1m}{obtsimbolo(elemento)}")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidracido}</p>', unsafe_allow_html=True)
-                nomen5 = (f"{obtraiz(elemento2)}uro de {obtprefijo(prefijo2)}hidrogeno")
+                nomen5 = (f"{obtraiz(elemento2)}uro de {obtprefijo(prefijo2)}-hidrogeno")
                 st.markdown(f'<p class="big-font2">{nomen5}</p>', unsafe_allow_html=True)
                 st.subheader("Hidracidos:")
                 st.text("""
@@ -546,7 +546,7 @@ def mainbot():
                 
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{ranhidrido}</p>', unsafe_allow_html=True)
-                nomen5 = (f"{obtprefijo(prefijo1)}-oxido de {obtprefijo(prefijo2)}{elemento}")
+                nomen5 = (f"{obtprefijo(prefijo1)}-oxido de {obtprefijo(prefijo2)}-{elemento}")
                 st.markdown(f'<p class="big-font2">{nomen5}</p>', unsafe_allow_html=True)
                 st.subheader("Anhidridos:")
                 st.text("""
