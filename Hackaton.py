@@ -500,6 +500,7 @@ def mainbot():
                         del prepar2int
                         prepar2int= ""
                     ranhidrido = (f"{obtsimbolo(elemento)}{prepar2int}O{prepar1int}")
+                    nomen5 = (f"{obtprefijo(prefijopar1)}-oxido de {obtprefijo(prefijopar2)}{elemento}")
                         
                 elif (resta == 0) and (prefijo1m < prefijo2m):
                     prefijopar1, prefijopar2= valpar(prefijo1m, prefijo2m)
@@ -542,7 +543,7 @@ def mainbot():
                 
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{ranhidrido}</p>', unsafe_allow_html=True)
-                #st.markdown(f'<p class="big-font2">{nomen5}</p>', unsafe_allow_html=True)
+                st.markdown(f'<p class="big-font2">{nomen5}</p>', unsafe_allow_html=True)
                 st.subheader("Anhidridos:")
                 st.text("""
                 -En química podemos definir los anhídridos como un compuestos químicos de tipo binario que surgen al juntar un No Metal con Oxígeno,
