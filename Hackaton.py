@@ -500,7 +500,7 @@ def mainbot():
                         del prepar2int
                         prepar2int= ""
                     ranhidrido = (f"{obtsimbolo(elemento)}{prepar2int}O{prepar1int}")
-                    nomen5 = (f"{obtprefijo(prefijopar1)}-oxido de {obtprefijo(prefijopar2)}{elemento}")
+                    nomen5 = (f"{obtprefijo(prefijo1)}-oxido de {obtprefijo(prefijo2)}{elemento}")
                         
                 elif (resta == 0) and (prefijo1m < prefijo2m):
                     prefijopar1, prefijopar2= valpar(prefijo1m, prefijo2m)
@@ -514,7 +514,7 @@ def mainbot():
                         del prepar2int
                         prepar2int= ""
                     ranhidrido = (f"{obtsimbolo(elemento)}{prepar2int}O{prepar1int}")
-                    nomen5 = (f"{obtprefijo(prefijopar1)}-oxido de {obtprefijo(prefijopar2)}{elemento}")
+                    nomen5 = (f"{obtprefijo(prefijo1)}-oxido de {obtprefijo(prefijo2)}{elemento}")
                         
                 elif (resta== 0) and (prefijo1m == prefijo2m):
                     prefijopar1, prefijopar2 = valparinv(prefijo1m, prefijo2m)
@@ -539,7 +539,7 @@ def mainbot():
                         del prefijo2m
                         prefijo2m= ""
                     ranhidrido = (f"{obtsimbolo(elemento)}{prefijo2m}O{prefijo1m}")
-                    nomen5 = (f"{obtprefijo(prefijopar1)}-oxido de {obtprefijo(prefijopar2)}{elemento}")
+                    nomen5 = (f"{obtprefijo(prefijo1)}-oxido de {obtprefijo(prefijo2)}{elemento}")
                 
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{ranhidrido}</p>', unsafe_allow_html=True)
