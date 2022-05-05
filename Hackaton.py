@@ -306,7 +306,7 @@ def mainbot():
                         del prepar2int
                         prepar2int= ""
                     roxido = (f"{obtsimbolo(elemento)}{prepar2int}{obtsimbolo(elemento2)}{prepar1int}")
-                    nomen2 = (f"{obtprefijo(prepar1int)}-oxido de {obtprefijo(prepar2int)}-{elemento}")
+                    nomen2 = (f"{obtprefijo(prefijopar1)}-oxido de {obtprefijo(prefijopar2)}-{elemento}")
                         
                 elif (resta == 0) and (prefijo1m < prefijo2m):
                     prefijopar1, prefijopar2= valpar(prefijo1m, prefijo2m)
@@ -320,7 +320,7 @@ def mainbot():
                         del prepar2int
                         prepar2int= ""
                     roxido = (f"{obtsimbolo(elemento)}{prepar2int}{obtsimbolo(elemento2)}{prepar1int}")
-                    nomen2 = (f"{obtprefijo(prepar1int)}-oxido de {obtprefijo(prepar2int)}-{elemento}")
+                    nomen2 = (f"{obtprefijo(prefijopar1)}-oxido de {obtprefijo(prefijopar2)}-{elemento}")
                         
                 elif (resta== 0) and (prefijo1m == prefijo2m):
                     prefijopar1, prefijopar2 = valparinv(prefijo1m, prefijo2m)
@@ -345,7 +345,7 @@ def mainbot():
                         del prefijo2m
                         prefijo2m= ""
                     roxido = (f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
-                    nomen2 = (f"{obtprefijo(prepar1int)}-oxido de {obtprefijo(prepar2int)}-{elemento}")
+                    nomen2 = (f"{obtprefijo(prefijo1)}-oxido de {obtprefijo(prefijo2)}-{elemento}")
                     
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{roxido}</p>', unsafe_allow_html=True)
