@@ -80,8 +80,11 @@ red= tflearn.fully_connected(red, len(salida[0]), activation="softmax")
 red = tflearn.regression(red)
 
 modelo = tflearn.DNN(red)
-modelo.fit(entrenamiento, salida, n_epoch=1000, batch_size=50, show_metric=True)
-modelo.save("modelo.tflearn")
+try: 
+    modelo.load("modelo.tflearn")
+except:
+    modelo.fit(entrenamiento, salida, n_epoch=1000, batch_size=50, show_metric=True)
+    modelo.save("modelo.tflearn")
 
 #Apartado de pagina web.
 st.set_page_config(layout="wide")
