@@ -400,6 +400,7 @@ def mainbot():
                         del prepar2int
                         prepar2int= ""
                     rsalesbi =(f"{obtsimbolo(elemento)}{prepar2int}{obtsimbolo(elemento2)}{prepar1int}")
+                    nomen4 = (f"{obtprefijo(prefijo1)}-{obtraiz(elemento2)}uro de {obtprefijo(prefijo2)}-{elemento}")
                         
                 elif (resta == 0) and (prefijo1m < prefijo2m):
                     prefijopar1, prefijopar2= valpar(prefijo1m, prefijo2m)
@@ -413,6 +414,7 @@ def mainbot():
                         del prepar2int
                         prepar2int= ""
                     rsalesbi =(f"{obtsimbolo(elemento)}{prepar2int}{obtsimbolo(elemento2)}{prepar1int}")
+                    nomen4 = (f"{obtprefijo(prefijo1)}-{obtraiz(elemento2)}uro de {obtprefijo(prefijo2)}-{elemento}")
                         
                 elif (resta== 0) and (prefijo1m == prefijo2m):
                     prefijopar1, prefijopar2 = valparinv(prefijo1m, prefijo2m)
@@ -425,7 +427,9 @@ def mainbot():
                     if prepar2int == 1:
                         del prepar2int
                         prepar2int= ""
-                    rsalesbi =(f"{obtsimbolo(elemento)}{prepar2int}{obtsimbolo(elemento2)}{prepar1int}")                        
+                    rsalesbi =(f"{obtsimbolo(elemento)}{prepar2int}{obtsimbolo(elemento2)}{prepar1int}")
+                    nomen4 = (f"{obtraiz(elemento2)}uro de {elemento}")
+                    
                         
                 else:
                     if prefijo1m == 1:
@@ -436,10 +440,10 @@ def mainbot():
                         del prefijo2m
                         prefijo2m= ""
                     rsalesbi =(f"{obtsimbolo(elemento)}{prefijo2m}{obtsimbolo(elemento2)}{prefijo1m}")
+                    nomen4 = (f"{obtprefijo(prefijo1)}-{obtraiz(elemento2)}uro de {obtprefijo(prefijo2)}-{elemento}")
                 
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rsalesbi}</p>', unsafe_allow_html=True)
-                nomen4 = (f"{obtprefijo(prefijo1)}-{obtraiz(elemento2)}uro de {obtprefijo(prefijo2)}-{elemento}")
                 st.markdown(f'<p class="big-font2">{nomen4}</p>', unsafe_allow_html=True)
                 st.subheader("Sales Binarias:")
                 st.text("""
@@ -521,7 +525,8 @@ def mainbot():
                     if prepar2int == 1:
                         del prepar2int
                         prepar2int= ""
-                    ranhidrido = (f"{obtsimbolo(elemento)}{prepar2int}O{prepar1int}")                        
+                    ranhidrido = (f"{obtsimbolo(elemento)}{prepar2int}O{prepar1int}") 
+                    nomen5 = (f"oxido de {elemento}")
                         
                 else:
                     if prefijo1m == 1:
@@ -535,7 +540,6 @@ def mainbot():
                 
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{ranhidrido}</p>', unsafe_allow_html=True)
-                nomen5 = (f"{obtprefijo(prefijo1)}-oxido de {obtprefijo(prefijo2)}-{elemento}")
                 st.markdown(f'<p class="big-font2">{nomen5}</p>', unsafe_allow_html=True)
                 st.subheader("Anhidridos:")
                 st.text("""
