@@ -15,8 +15,16 @@ resultante; en la parte inferior de este resultado se muestra una descripción a
 una tabla de valencias de apoyo y apartados de información adicional acerca de  las reacciones químicas
 
 Integrantes:
+
 Hugo Daniel Ramirez Loya
+Estudiante de Ingenieria fisica
+
 Diego Rodriguez Roa
+Estudiante de Ingenieria matematica
+
 Roberto Rosales Serrato
+Estudiante de Ingenieria aeroespacial
+
 Sergio Adrian Rodriguez Rivas
+Estudiante de Ingenieria aeroespacial
 
