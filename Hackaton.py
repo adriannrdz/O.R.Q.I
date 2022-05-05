@@ -542,7 +542,7 @@ def mainbot():
                 
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{ranhidrido}</p>', unsafe_allow_html=True)
-                st.markdown(f'<p class="big-font2">{nomen5}</p>', unsafe_allow_html=True)
+                #st.markdown(f'<p class="big-font2">{nomen5}</p>', unsafe_allow_html=True)
                 st.subheader("Anhidridos:")
                 st.text("""
                 -En química podemos definir los anhídridos como un compuestos químicos de tipo binario que surgen al juntar un No Metal con Oxígeno,
