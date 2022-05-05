@@ -14,7 +14,7 @@ el front end de la página web. En este apartado, el usuario es capaz de estable
 resultante; en la parte inferior de este resultado se muestra una descripción acerca de las características físicas y químicas de la familia del producto, así como 
 una tabla de valencias de apoyo y apartados de información adicional acerca de  las reacciones químicas
 
-Integrantes B):
+Integrantes :) :
 
 Hugo Daniel Ramirez Loya
 
