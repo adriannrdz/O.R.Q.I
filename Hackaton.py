@@ -466,7 +466,7 @@ def mainbot():
                 rhidracido= (f"H{prefijo1m}{obtsimbolo(elemento)}")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidracido}</p>', unsafe_allow_html=True)
-                nomen5 = (f"{obtraiz(elemento2)}uro de {obtprefijo(prefijo2)}-hidrogeno")
+                nomen5 = (f"{obtraiz(elemento)}uro de {obtprefijo(prefijo2)}-hidrogeno")
                 st.markdown(f'<p class="big-font2">{nomen5}</p>', unsafe_allow_html=True)
                 st.subheader("Hidracidos:")
                 st.text("""
