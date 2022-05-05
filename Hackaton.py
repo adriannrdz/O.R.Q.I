@@ -539,7 +539,7 @@ def mainbot():
                 
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{ranhidrido}</p>', unsafe_allow_html=True)
-                nomen6 = (f"{obtprefijo(prefijopar1)}-oxido de {obtprefijo(prefijopar2)}-{elemento}")
+                nomen6 = (f"{obtprefijo(prefijo1)}-oxido de {obtprefijo(prefijo2)}-{elemento}")
                 st.markdown(f'<p class="big-font2">{nomen6}</p>', unsafe_allow_html=True)
                 st.subheader("Anhidridos:")
                 st.text("""
