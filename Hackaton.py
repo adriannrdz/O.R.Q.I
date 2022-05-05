@@ -275,7 +275,7 @@ def mainbot():
                     
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidruro}</p>', unsafe_allow_html=True)
-                nomen1 = (f"{obtprefijo(prefijo1)}-hidruro de {obtprefijo(prefijo2)}-{elemento}")
+                nomen1 = (f"{obtprefijo(prefijo1)}-hidruro de {elemento}")
                 st.markdown(f'<p class="big-font2">{nomen1}</p>', unsafe_allow_html=True)
                 st.subheader("Hidruros:")
                 st.text("""
@@ -373,7 +373,7 @@ def mainbot():
                 rhidroxido= (f"{obtsimbolo(elemento)}(OH){prefijo1m}")
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{rhidroxido}</p>', unsafe_allow_html=True)
-                nomen3 = (f"{obtprefijo(prefijo1)}-hidroxido de {obtprefijo(prefijo2)}-{elemento}")
+                nomen3 = (f"{obtprefijo(prefijo1)}-hidroxido de {elemento}")
                 st.markdown(f'<p class="big-font2">{nomen3}</p>', unsafe_allow_html=True)
                 st.subheader("Hidroxidos:")
                 st.text("""
@@ -400,7 +400,7 @@ def mainbot():
                         del prepar2int
                         prepar2int= ""
                     rsalesbi =(f"{obtsimbolo(elemento)}{prepar2int}{obtsimbolo(elemento2)}{prepar1int}")
-                    nomen4 = (f"{obtprefijo(prefijo1)}-{obtraiz(elemento2)}uro de {obtprefijo(prefijo2)}-{elemento}")
+                    nomen4 = (f"{obtprefijo(prefijopar1)}-{obtraiz(elemento2)}uro de {obtprefijo(prefijopar2)}-{elemento}")
                         
                 elif (resta == 0) and (prefijo1m < prefijo2m):
                     prefijopar1, prefijopar2= valpar(prefijo1m, prefijo2m)
@@ -414,7 +414,7 @@ def mainbot():
                         del prepar2int
                         prepar2int= ""
                     rsalesbi =(f"{obtsimbolo(elemento)}{prepar2int}{obtsimbolo(elemento2)}{prepar1int}")
-                    nomen4 = (f"{obtprefijo(prefijo1)}-{obtraiz(elemento2)}uro de {obtprefijo(prefijo2)}-{elemento}")
+                    nomen4 = (f"{obtprefijo(prefijopar1)}-{obtraiz(elemento2)}uro de {obtprefijo(prefijopar2)}-{elemento}")
                         
                 elif (resta== 0) and (prefijo1m == prefijo2m):
                     prefijopar1, prefijopar2 = valparinv(prefijo1m, prefijo2m)
@@ -513,6 +513,7 @@ def mainbot():
                         del prepar2int
                         prepar2int= ""
                     ranhidrido = (f"{obtsimbolo(elemento)}{prepar2int}O{prepar1int}")
+                    nomen5 = (f"{obtprefijo(prefijopar1)}-oxido de {obtprefijo(prefijopar2)}{elemento}")
                         
                 elif (resta== 0) and (prefijo1m == prefijo2m):
                     prefijopar1, prefijopar2 = valparinv(prefijo1m, prefijo2m)
@@ -537,6 +538,7 @@ def mainbot():
                         del prefijo2m
                         prefijo2m= ""
                     ranhidrido = (f"{obtsimbolo(elemento)}{prefijo2m}O{prefijo1m}")
+                    nomen5 = (f"{obtprefijo(prefijopar1)}-oxido de {obtprefijo(prefijopar2)}{elemento}")
                 
                 cols[7].text("")
                 cols[7].markdown(f'<p class="big-font2">{ranhidrido}</p>', unsafe_allow_html=True)
