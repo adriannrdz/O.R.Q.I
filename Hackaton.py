@@ -581,142 +581,144 @@ def mainbot():
             st.text("")
             st.text("")
             
+            load = st.button("Informacion Adicional:")
             
-            with st.expander("Acerca De"):
-                st.write(f"""
-                La aplicacion es capaz de determinar reacciones quimicas inorganicas como se muestra a continuacion:
-                
-                Hidruros:
-                
-                Metal + Hidrogeno + Ninguno -----> Reaccion Hidruro
-                
-                Oxido Metalicos:
-                
-                Metal + Oxigeno + Ninguno -----> Reaccion Oxido Metálico
-                
-                Hidroxido:
-                
-                Metal + Oxigeno + Agua -----> Reaccion Hidroxido
-                
-                Sales Binarias:
-                
-                Metal + No metal + Ninguno -----> Reaccion Sal Binaria
-                
-                Hidracidos:
-                
-                No metal + Hidrogeno + Ninguno -----> Reaccion Hidracido
-                
-                Anhidridos:
-                
-                No metal + Oxigeno + Ninguno -----> Reaccion Anhidrido
-                
-                
-                
-                """)
-                
-            with st.expander("Reaccion Quimica"):
-                st.write(f"""
-            Las reacciones químicas (también llamadas cambios químicos o fenómenos químicos) son procesos termodinámicos de transformación de la materia. En estas reacciones intervienen dos o más sustancias (reactivos o reactantes), que cambian significativamente en el proceso, y pueden consumir o liberar energía para generar dos o más sustancias llamadas productos.
-            Toda reacción química somete a la materia a una transformación química, alterando su estructura y composición molecular (a diferencia de los cambios físicos que sólo afectan su forma o estado de agregación). Los cambios químicos generalmente producen sustancias nuevas, distintas de las que teníamos al principio.
-            
-            Cambios físicos y químicos en la materia :
-            
-            Mientras que cambios físicos de la materia son aquellos que alteran su forma sin cambiar su composición, los cambios químicos alteran la distribución y los enlaces de los átomos de la materia, logrando que se combinen de manera distinta obteniéndose así sustancias diferentes a las iniciales.
-            
-            Como se representa una reacción química:
-            
-            Las reacciones químicas se representan mediante ecuaciones químicas, es decir, fórmulas en las que se describen los reactivos participantes y los productos obtenidos
+            if load:            
+                with st.expander("Acerca De"):
+                    st.write(f"""
+                    La aplicacion es capaz de determinar reacciones quimicas inorganicas como se muestra a continuacion:
 
-            La forma general de representar una ecuación química es:
+                    Hidruros:
 
-            aA + bB ----> cC + dD
+                    Metal + Hidrogeno + Ninguno -----> Reaccion Hidruro
 
-            Donde:
-            
-            •	A y B son los reactivos.
-            
-            •	C y D son los productos.
-            
-            •	a, b, c y d son los coeficientes estequiométricos (son números que indican la cantidad de reactivos y productos) que deben ser ajustados de manera que haya la misma cantidad de cada elemento en los reactivos y en los productos. De esta forma se cumple la Ley de Conservación de la Materia.  
-                            """)
-                
-            with st.expander("Enlace Quimico"):
-                st.write("""
-                Un enlace químico es la fuerza que une a los átomos para formar compuestos químicos. Esta unión le confiere estabilidad al compuesto resultante. La energía necesaria para romper un enlace químico se denomina energía de enlace.
-                En este proceso los átomos ceden o comparten electrones de la capa de valencia, y se unen constituyendo nuevas sustancias homogéneas (no mezclas), inseparables a través de mecanismos físicos como el filtrado o el tamizado.
-                Existen tres tipos de enlace químico conocidos, dependiendo de la naturaleza de los átomos involucrados:
-                
-                •	Enlace covalente. Ocurre entre átomos no metálicos y de cargas electromagnéticas semejantes (por lo general altas), que se unen y comparten algunos pares de electrones de su capa de valencia. Es el tipo de enlace predominante en las moléculas orgánicas y puede ser de tres tipos: simple (A-A), doble (A=A) y triple (A≡A), dependiendo de la cantidad de electrones compartidos.
-                
-                •	Enlace iónico. Consiste en la atracción electrostática entre partículas con cargas eléctricas de signos contrarios llamadas iones (partícula cargada eléctricamente, que puede ser un átomo o molécula que ha perdido o ganado electrones, es decir, que no es neutro).
-                
-                •	Enlace metálico. Se da únicamente entre átomos metálicos de un mismo elemento, que por lo general constituyen estructuras sólidas, sumamente compactas. Es un enlace fuerte, que une los núcleos atómicos entre sí, rodeados de sus electrones como en una nube.
+                    Oxido Metalicos:
 
-                """)
-                
-            with st.expander("Elementos"):
-                st.write("""
-                -Metales 
-               
-                En el ámbito de la química, se conocen como metales o metálicos a aquellos elementos de la Tabla Periódica que se caracterizan por ser buenos conductores de la electricidad y del calor. Estos elementos tienen altas densidades y son generalmente sólidos a temperatura ambiente (excepto el mercurio). Muchos, además, pueden reflejar la luz, lo cual les otorga su brillo característico.
-                
-                Los metales son los elementos más numerosos de la Tabla Periódica y algunos forman parte de los más abundantes de la corteza terrestre. Una parte de ellos suele hallarse en estado de mayor o menor pureza en la naturaleza, aunque la mayoría forma parte de minerales del subsuelo terrestre y deben ser separados por el ser humano para utilizarlos.
+                    Metal + Oxigeno + Ninguno -----> Reaccion Oxido Metálico
 
-                -No metales 
-                
-                Los no metales son elementos poco abundantes en la Tabla Periódica, y se caracterizan por no ser buenos conductores del calor, ni de la electricidad. Sus propiedades son muy distintas a las de los metales. Por otra parte, forman enlaces covalentes para formar moléculas entre ellos.
-                
-                Los elementos esenciales para la vida forman parte de los no metales (oxígeno, carbono, hidrógeno, nitrógeno, fósforo y azufre). Estos elementos no metálicos tienen propiedades y aspectos muy diversos: pueden ser sólidos, líquidos o gaseosos a temperatura ambiente.
-                
-                """)
-                
-            with st.expander("Valencias"):
-                st.write(""" 
-                
-                En química, hablamos de valencia para referirnos al número de electrones que un átomo de un elemento químico determinado posee en su último nivel de energía. Otra forma de interpretar la valencia es como el número de electrones que un átomo de un determinado elemento químico debe ceder o aceptar para completar su último nivel de energía. Estos electrones son de especial relevancia, pues son los responsables de la formación de los enlaces químicos, por ejemplo, los enlaces covalentes (covalente: comparten valencia). Son estos electrones los que intervienen en las reacciones químicas.
-                
-                Existen dos tipos distintos de valencia:
-                
-                •	Valencia positiva máxima. Refleja la máxima capacidad combinatoria de un átomo, es decir, la mayor cantidad de electrones que puede ceder. Los electrones tienen carga negativa, así que un átomo que los cede obtiene una valencia positiva (+).
-                
-                •	Valencia negativa. Representa la capacidad de un átomo de combinarse con otro que presente valencia positiva. Los átomos que reciben electrones presentan una valencia negativa (-).
+                    Hidroxido:
 
-                                
-                """)
-                
-                
-            with st.expander("Probabilidades"):
-                st.write(f"""
-            Las cantidades que se muestran a continuacion representan las probabilidaddes que determina el programa con la finalidad de establecer
-            el tipo de elemento que se asigno en la parte superior de la pagina:
-            El orden de los numeros representan: (Agua, Hidroxido, Metal, No metal y Oxigeno, respectivamente)
-            
-            {lentrada}
-            
-            Primer elemento:
-            
-            {resultados}
-            
-            Segundo elemento:
-            
-            {resultados2}
-            
-            Tercer elemento:
-            
-            {resultados3}""")
-                
-                
-            with st.expander("Bibliografía"):
-                st.write(f"""
-                Fuente: https://concepto.de/reaccion-quimica/#ixzz7S0qhaIu5
+                    Metal + Oxigeno + Agua -----> Reaccion Hidroxido
 
-                Fuente: https://concepto.de/enlace-quimico/#ixzz7S0pvYxKK
-                
-                Fuente: https://concepto.de/metales/#ixzz7S0pFOklo
+                    Sales Binarias:
 
-                Fuente: https://concepto.de/no-metales/#ixzz7S0okhvvP
+                    Metal + No metal + Ninguno -----> Reaccion Sal Binaria
 
-                Fuente: https://concepto.de/valencia-en-quimica/#ixzz7S0oYxT8r""")
+                    Hidracidos:
+
+                    No metal + Hidrogeno + Ninguno -----> Reaccion Hidracido
+
+                    Anhidridos:
+
+                    No metal + Oxigeno + Ninguno -----> Reaccion Anhidrido
+
+
+
+                    """)
+
+                with st.expander("Reaccion Quimica"):
+                    st.write(f"""
+                Las reacciones químicas (también llamadas cambios químicos o fenómenos químicos) son procesos termodinámicos de transformación de la materia. En estas reacciones intervienen dos o más sustancias (reactivos o reactantes), que cambian significativamente en el proceso, y pueden consumir o liberar energía para generar dos o más sustancias llamadas productos.
+                Toda reacción química somete a la materia a una transformación química, alterando su estructura y composición molecular (a diferencia de los cambios físicos que sólo afectan su forma o estado de agregación). Los cambios químicos generalmente producen sustancias nuevas, distintas de las que teníamos al principio.
+
+                Cambios físicos y químicos en la materia :
+
+                Mientras que cambios físicos de la materia son aquellos que alteran su forma sin cambiar su composición, los cambios químicos alteran la distribución y los enlaces de los átomos de la materia, logrando que se combinen de manera distinta obteniéndose así sustancias diferentes a las iniciales.
+
+                Como se representa una reacción química:
+
+                Las reacciones químicas se representan mediante ecuaciones químicas, es decir, fórmulas en las que se describen los reactivos participantes y los productos obtenidos
+
+                La forma general de representar una ecuación química es:
+
+                aA + bB ----> cC + dD
+
+                Donde:
+
+                •	A y B son los reactivos.
+
+                •	C y D son los productos.
+
+                •	a, b, c y d son los coeficientes estequiométricos (son números que indican la cantidad de reactivos y productos) que deben ser ajustados de manera que haya la misma cantidad de cada elemento en los reactivos y en los productos. De esta forma se cumple la Ley de Conservación de la Materia.  
+                                """)
+
+                with st.expander("Enlace Quimico"):
+                    st.write("""
+                    Un enlace químico es la fuerza que une a los átomos para formar compuestos químicos. Esta unión le confiere estabilidad al compuesto resultante. La energía necesaria para romper un enlace químico se denomina energía de enlace.
+                    En este proceso los átomos ceden o comparten electrones de la capa de valencia, y se unen constituyendo nuevas sustancias homogéneas (no mezclas), inseparables a través de mecanismos físicos como el filtrado o el tamizado.
+                    Existen tres tipos de enlace químico conocidos, dependiendo de la naturaleza de los átomos involucrados:
+
+                    •	Enlace covalente. Ocurre entre átomos no metálicos y de cargas electromagnéticas semejantes (por lo general altas), que se unen y comparten algunos pares de electrones de su capa de valencia. Es el tipo de enlace predominante en las moléculas orgánicas y puede ser de tres tipos: simple (A-A), doble (A=A) y triple (A≡A), dependiendo de la cantidad de electrones compartidos.
+
+                    •	Enlace iónico. Consiste en la atracción electrostática entre partículas con cargas eléctricas de signos contrarios llamadas iones (partícula cargada eléctricamente, que puede ser un átomo o molécula que ha perdido o ganado electrones, es decir, que no es neutro).
+
+                    •	Enlace metálico. Se da únicamente entre átomos metálicos de un mismo elemento, que por lo general constituyen estructuras sólidas, sumamente compactas. Es un enlace fuerte, que une los núcleos atómicos entre sí, rodeados de sus electrones como en una nube.
+
+                    """)
+
+                with st.expander("Elementos"):
+                    st.write("""
+                    -Metales 
+
+                    En el ámbito de la química, se conocen como metales o metálicos a aquellos elementos de la Tabla Periódica que se caracterizan por ser buenos conductores de la electricidad y del calor. Estos elementos tienen altas densidades y son generalmente sólidos a temperatura ambiente (excepto el mercurio). Muchos, además, pueden reflejar la luz, lo cual les otorga su brillo característico.
+
+                    Los metales son los elementos más numerosos de la Tabla Periódica y algunos forman parte de los más abundantes de la corteza terrestre. Una parte de ellos suele hallarse en estado de mayor o menor pureza en la naturaleza, aunque la mayoría forma parte de minerales del subsuelo terrestre y deben ser separados por el ser humano para utilizarlos.
+
+                    -No metales 
+
+                    Los no metales son elementos poco abundantes en la Tabla Periódica, y se caracterizan por no ser buenos conductores del calor, ni de la electricidad. Sus propiedades son muy distintas a las de los metales. Por otra parte, forman enlaces covalentes para formar moléculas entre ellos.
+
+                    Los elementos esenciales para la vida forman parte de los no metales (oxígeno, carbono, hidrógeno, nitrógeno, fósforo y azufre). Estos elementos no metálicos tienen propiedades y aspectos muy diversos: pueden ser sólidos, líquidos o gaseosos a temperatura ambiente.
+
+                    """)
+
+                with st.expander("Valencias"):
+                    st.write(""" 
+
+                    En química, hablamos de valencia para referirnos al número de electrones que un átomo de un elemento químico determinado posee en su último nivel de energía. Otra forma de interpretar la valencia es como el número de electrones que un átomo de un determinado elemento químico debe ceder o aceptar para completar su último nivel de energía. Estos electrones son de especial relevancia, pues son los responsables de la formación de los enlaces químicos, por ejemplo, los enlaces covalentes (covalente: comparten valencia). Son estos electrones los que intervienen en las reacciones químicas.
+
+                    Existen dos tipos distintos de valencia:
+
+                    •	Valencia positiva máxima. Refleja la máxima capacidad combinatoria de un átomo, es decir, la mayor cantidad de electrones que puede ceder. Los electrones tienen carga negativa, así que un átomo que los cede obtiene una valencia positiva (+).
+
+                    •	Valencia negativa. Representa la capacidad de un átomo de combinarse con otro que presente valencia positiva. Los átomos que reciben electrones presentan una valencia negativa (-).
+
+
+                    """)
+
+
+                with st.expander("Probabilidades"):
+                    st.write(f"""
+                Las cantidades que se muestran a continuacion representan las probabilidaddes que determina el programa con la finalidad de establecer
+                el tipo de elemento que se asigno en la parte superior de la pagina:
+                El orden de los numeros representan: (Agua, Hidroxido, Metal, No metal y Oxigeno, respectivamente)
+
+                {lentrada}
+
+                Primer elemento:
+
+                {resultados}
+
+                Segundo elemento:
+
+                {resultados2}
+
+                Tercer elemento:
+
+                {resultados3}""")
+
+
+                with st.expander("Bibliografía"):
+                    st.write(f"""
+                    Fuente: https://concepto.de/reaccion-quimica/#ixzz7S0qhaIu5
+
+                    Fuente: https://concepto.de/enlace-quimico/#ixzz7S0pvYxKK
+
+                    Fuente: https://concepto.de/metales/#ixzz7S0pFOklo
+
+                    Fuente: https://concepto.de/no-metales/#ixzz7S0okhvvP
+
+                    Fuente: https://concepto.de/valencia-en-quimica/#ixzz7S0oYxT8r""")
 
             
                 
